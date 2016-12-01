@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Super Shop</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+      <div class="jumbotron">
+         <div class="container">
+   
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+           <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img" alt="SUPER Shop"></div></a>
+           
+            <button id="navbarToggle" 
+                    type="button" 
+                    class="navbar-toggle collapsed" 
+                    data-toggle="collapse" 
+                    data-target="#collapsable-nav" 
+                    aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+            </button>
+        </div> <!-- .navbar-header-->
+
+      <div id="collapsable-nav" 
+           class="collapse navbar-collapse">
+       
+      <ul id="nav-list" class="nav navbar-nav">
+        <li class="active"><a href="#">Категория 1<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Категория 2</a></li>
+        <li><a href="#">Категория 3</a></li>
+        <li><a href="#">Категория 4</a></li>
+      </ul>
+
+      <ul id="nav-list-1" class="nav navbar-nav navbar-right">
+        <li><a href="#" id="login"><img src="images/Icon_1.png">
+                                   <img src="images/login_register.png"></a></li>
+      </ul>                                     
+       </div> <!-- .collapse .navbar-collapse -->  
+
+       <div id="cart">
+            <p>46 945 <span>руб.</span></p>
+            <p1>2 предмета</p1>
+            <img src="images/cart_icon.png" alt="cart_icon">
+       </div>
+  
+      </div> <!-- .container -->
+    </nav> <!-- #header-nav -->  
+     
+        <div id="promo">
+        <p id="promo-name">Название</p>
+        <p id="promo-name2">Промо-товара</p>
+        <p id="promo-description">Описание промо-товара</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button" id="look-btn">Посмотреть +</a>
+        </div>
+    </div> <!-- end of container-->
+ </div> <!-- end of Jumbotron-->
+
+<div id="main-content" class="container">
+    <div id="home-tiles" class="row no-gutter-2">
+       <div class="col-xs-12" id="tile-header"><span>Новые товары</span>
+                                               <span id="arrows"> <img src="images/L_arrow.png">
+                                               <img src="images/R_arrow.png"></span></div> 
+       <div class="col-md-3 col-sm-6 col-xs-12">
+         <a href="#"><div id="img-tile"><span>Название товара<p>4 540руб.</p></span></div></a> 
+       </div>
+       <div class="col-md-3 col-sm-6 col-xs-12">
+         <a href="#"><div id="img-tile"><span>Название товара<p>4 540руб.</p></span></div></a>  
+       </div>
+       <div class="col-md-3 col-sm-12 col-xs-12">
+         <a href="#"><div id="img-tile"><span>Название товара<p>4 540руб.</p><br/><p1>9 990руб.</p1></span></div></a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+         <a href="#"><div id="img-tile"><span>Название товара<p>4 540руб.</p></span></div></a>  
+       </div>
+       <div class="col-md-3 col-sm-6 col-xs-12">
+         <a href="#"><div id="img-tile"><span>Название товара<p>4 540руб.</p></span></div></a>  
+       </div>
+       <div class="col-md-3 col-sm-12 col-xs-12">
+         <a href="#"><div id="img-tile"><div id="corner"><img src="images/corner_new.png"></div><span>Название товара<p>4 540руб.</p></span></div></a>  
+      </div> 
+       <div class="col-md-3 col-sm-12 col-xs-12">
+         <a href="#"><div id="img-tile"><div id="corner"><img src="images/corner_hot.png"></div><span>Название товара<p>4 540руб.</p></span></div></a>
+       </div>
+       <div class="col-md-3 col-sm-12 col-xs-12">
+         <a href="#"><div id="img-tile"><span>Название товара<p>4 540руб.</p></span></div></a>
+        </div>
+      </div> <!-- End of #home-tiles -->
+</div> <!-- End of #main-content -->
+
+<div id="banner" class="container">
+    <div id="banner-tiles" class="row no-gutter-2">
+      <div id="banner-1" class="col-xs-3"><span><p>заголовок</p><p1>промо-товара</p></span></div>
+      <div id="banner-2" class="col-xs-3"><span><p>заголовок</p><p1>промо-товара</p></span></div>
+      <div id="banner-3" class="col-xs-6"><span><p>заголовок</p><p1>промо-товара</p></span></div>
+    </div> <!-- end of #banner-tiles-->
+</div> <!-- end of #banner -->
+
+<div id="main-content-2" class="container">
+    <div id="home-tiles" class="row no-gutter-2">
+       <div class="col-xs-12" id="tile-header-2"><span>Популярные товары</span></div> 
+       <div class="col-md-3 col-sm-6 col-xs-12">
+         <a href="#"><div id="img-tile"><span>Название товара<p>4 540руб.</p></span></div></a>  
+       </div>
+       <div class="col-md-3 col-sm-6 col-xs-12">
+         <a href="#"><div id="img-tile"> <div id="corner"><img src="images/corner_sale.png"></div><span>Название товара<p>4 540руб.</p><br/><p1>9 990руб.</p1></span></div></a>  
+       </div>
+       <div class="col-md-3 col-sm-6 col-xs-12">
+         <a href="#"><div id="img-tile"><span>Название товара<p>4 540руб.</p></span></div></a>  
+       </div>
+       <div class="col-md-3 col-sm-6 col-xs-12">
+         <a href="#"><div id="img-tile"> <div id="corner"><img src="images/corner_hot.png"></div><span>Название товара<p>4 540руб.</p></span></div></a>  
+       </div>
+     </div> <!-- End of #home-tiles --> 
+  </div> <!-- End of #main-content -->
+
+<div id="banner-info" class="container">
+   <div id="info" class="row no-gutter-2">
+      <div id="banner-4" class="col-xs-12">
+            <div id="promo-2">
+              <h3>O магазине</h3> 
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia iaculis blandit. Phasellus vitae est eu sem mattis dignissim eget non ligula. Vestibulum dignissim viverra tincidunt. Mauris commodo sollicitudin turpis vitae luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris laoreet orci ut sapien bibendum condimentum.</p><br/>
+              <p>Nullam velit ex, convallis eget malesuada vestibulum, convallis a nisl. Nunc fringilla, mi non facilisis volutpat, libero ipsum ultricies nisi, ac venenatis purus urna ut ante. Aenean placerat, felis at ullamcorper vehicula, dolor orci ultrices ligula, id fringilla elit risus at nisl.
+              </p>
+            </div>
+      </div>
+   </div>
+</div>
+
+
+ <footer class="panel-footer">
+    <div class="container">
+      <div class="row no-gutter-2">
+        <section id="footer-info" class="col-sm-4">
+          <p>Шаблон для экзаменационного задания.<br/> Разработан специально для "Всероссийской школы программирования".</p>
+        </section>
+        <section id="copyright" class="col-sm-4">
+          <div class="text-center">&copy; SUPER Shop 2016</div>
+        </section>
+        <section id="go-up" class="col-sm-4">
+          <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+		     <a class="btn btn-link" href="#" role="button"><span>Наверх</span> <img src="images/Up_arrow.png"></a>
+        </section>
+
+        
+
+      </div> <!-- end of row -->
+    </div> <!-- end of container-->
+  </footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+<!--    <script src="js/script.js"></script> -->
+
+</body>
+</html>
