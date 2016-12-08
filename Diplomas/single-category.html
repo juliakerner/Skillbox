@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Super Shop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body id="category_page_body">
+
+<div id="category-page-top" class="container">
+  <nav class="navbar navbar-full navbar-light bg-faded">
+                    <button class="navbar-toggler hidden-lg-up" 
+                            type="button" data-toggle="collapse" 
+                            data-target="#navbarResponsive" aria-controls="navbarResponsive" 
+                            aria-expanded="false" aria-label="Toggle navigation">
+                    </button>
+
+        <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+          <a class="navbar-brand visible-md visible-lg" href="index.html"></a>
+          <ul id="navbar-list"  class="nav navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="category.html">Категория 1<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Категория 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Категория 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Категория 4</a>
+            </li>
+
+            <li class="nav-item dropdown float-xs-right">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="responsiveNavbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/Icon_1.png" />
+                            <img src="images/login_register.png" /></a>
+              <div class="dropdown-menu" aria-labelledby="responsiveNavbarDropdown">
+                <a class="dropdown-item" href="#">Войти</a>
+                <a class="dropdown-item" href="#">Зарегистрироваться</a>
+              </div>
+            </li>
+          </ul>
+        </div> <!--end of #navbarResponsive -->
+  </nav> <!-- end of .navbar navbar-full navbar-light bg-faded --> 
+
+                <div id="cart">
+                    <p>46 945 <span>руб.</span>
+                    </p>
+                    <p1>2 предмета</p1>
+                    <img src="images/cart_icon.png" alt="cart_icon">
+                </div>
+
+      <div class="page-header">
+        <h1>Категория 1<br/>
+            <small><a href="category.html" style="color: #ed1651">вернуться в каталог</a></h1>
+      </div>             
+</div> <!-- END of.CONTAINER #category-page-top -->
+
+<div class="container" id="single-category">
+  <div class="row no-gutter-2" id="product-description">
+
+     <div class="col-md-5 col-sm-6 col-xs-12">
+       <img class="img-fluid" src="images/single-category.png">
+
+     </div>
+
+     <div id="product-name" class="col-md-4 col-sm-6 col-xs-12">
+        <p class="h2">Название товара
+          <img src="images/red_line.png">
+          <small class="text-muted">Описание товара</small>
+        </p>
+
+
+        
+          <form  class="form-inline" > 
+             <div class="form-group">
+                <label for="exampleSelect1">Выберите вариант:</label>
+                  <select class="form-control form-control-sm" id="SizeSelect">
+                    <option>Размер 36</option>
+                    <option>Размер 38</option>
+                    <option>Размер 40</option>
+                    <option>Размер 42</option>
+                    <option>Размер 44</option>
+                  </select>
+             </div>
+           </form>
+      
+
+     </div> <!-- end of #product-name -->
+
+     <div class="col-md-3">CCC</div> 
+  </div> <!-- end of .row-no-gutter-2 #product-description -->
+</div> <!-- end of .container #single-category-->
+
+<div class="container" id="other-products">
+    <div id="home-tiles" class="row no-gutter-2">
+       <div class="col-xs-12" id="tile-header-single">
+                <span>Другие товары из категории &laquo;Категория 1&raquo;</span>
+                <span id="arrows">
+                  <a class="btn pull-right" href="#"><img src="images/L_arrow.png"></a>
+                  <a class="btn pull-right" href="#"><img src="images/R_arrow.png"></a>
+                </span>
+       </div> 
+
+       <div class="col-lg-3 col-md-6 col-xs-12"> <a href="#"><div id="img-tile"><img class="img-fluid" src="images/product_img.png" /><span>Название товара<p>4 540руб.</p></span></div></a> 
+       </div>
+
+       <div class="col-lg-3 col-md-6 col-xs-12"> <a href="#"><div id="img-tile"><img class="img-fluid" src="images/product_img.png" /><div id="corner"><img src="images/corner_sale.png" /></div>
+                     <span>Название товара<p>4 540руб.</p><br /><p1>9 990руб.</p1></span></div></a> 
+       </div>
+
+       <div class="col-lg-3 col-md-6 col-xs-12"> <a href="#"><div id="img-tile"><img class="img-fluid" src="images/product_img.png" /><span>Название товара<p>4 540руб.</p></span></div></a> 
+       </div>
+
+       <div class="col-lg-3 col-md-6 col-xs-12"> <a href="#"><div id="img-tile"><img class="img-fluid" src="images/product_img.png" /><div id="corner"><img src="images/corner_hot.png" /></div><span>Название товара<p>4 540руб.</p></span></div></a> 
+        </div>
+
+    </div> <!-- End of #home-tiles -->
+</div> <!-- end of .container #other-products -->
+
+<footer class="card-footer">
+    <div class="container">
+        <div class="row no-gutter-2">
+            <section id="footer-info" class="col-md-4">
+                <p>Шаблон для экзаменационного задания.
+                <br />Разработан специально для "Всероссийской школы программирования".</p>
+            </section>
+            <section id="copyright" class="col-md-4">
+                <div class="text-xs-center">© 555 2016</div>
+            </section>
+            <section id="go-up" class="col-md-4">
+                <!-- Deemphasize a button by making it look like a link while maintaining
+                button behavior --> 
+                <a class="btn btn-link" href="#" role="button">
+                <span>Наверх</span> 
+                <img src="images/Up_arrow.png" /></a>
+            </section>
+        </div> <!-- end of row -->
+    </div> <!-- end of container-->
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+<!--    <script src="js/script.js"></script> -->
+
+</body>
+</html>     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
