@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Super Shop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body id="category_page_body">
+
+<div id="category-page-top" class="container">
+        <nav class="navbar navbar-full navbar-light bg-faded">
+                    <button class="navbar-toggler hidden-lg-up" 
+                            type="button" data-toggle="collapse" 
+                            data-target="#navbarResponsive" aria-controls="navbarResponsive" 
+                            aria-expanded="false" aria-label="Toggle navigation">
+                    </button>
+
+        <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+          
+          <a class="navbar-brand visible-md visible-lg" href="index.html"></a>
+
+          <ul id="navbar-list"  class="nav navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="category.html">Категория 1<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Категория 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Категория 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Категория 4</a>
+            </li>
+
+            <li class="nav-item dropdown float-xs-right">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="responsiveNavbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/Icon_1.png" />
+                            <img src="images/login_register.png" /></a>
+              <div class="dropdown-menu" aria-labelledby="responsiveNavbarDropdown">
+                <a class="dropdown-item" href="#">Войти</a>
+                <a class="dropdown-item" href="#">Зарегистрироваться</a>
+          </div>
+             </li>
+            </ul>
+        </div>
+      </nav>  
+
+                <div id="cart">
+                    <p>46 945 <span>руб.</span>
+                    </p>
+                    <p1>2 предмета</p1>
+                    <img src="images/cart_icon.png" alt="cart_icon">
+                </div>
+        </nav> <!-- #header-nav -->
+
+      <div class="page-header">
+        <h1>оформление заказа</h1>
+      </div>                  
+</div> <!--.container #category-page-top -->
+
+<div id="accordion-box" class="container">
+
+<div id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="card">
+    <div class="card-header" role="tab" id="headingOne">
+      <h4 class="mb-0">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         <span> 1.</span> Контактная информация
+        </a>
+      </h4>
+    </div>
+
+    <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="card-block">
+        <div class="container">
+          <div class="row">
+            <div id="new-customer-form" class="col-md-5 col-sm-12">
+              <h5>Для новых покупателей</h5> 
+                <form>
+                    <div class="form-group">
+                      <label for="InputContactInfo">Контактное лицо (ФИО):</label>
+                      <input type="text" class="form-control" id="InputContactInfo" placeholder="Сергей Сергеевич">
+                    </div>
+                    <div class="form-group">
+                      <label for="tel-input">Контактный телефон:</label>
+                      <input class="form-control" type="tel" value="8-(555)-555-5555" id="tel-input">
+                    </div>
+                    <div class="form-group">
+                      <label for="InputEmail1">Ваш Email:</label>
+                      <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="mail@company.ru">
+                    </div>
+                </form>
+                <input class="btn btn-primary" type="submit" value="Продолжить">
+            </div>
+
+            <div id="fast-login-form" class="col-md-7 col-sm-12">
+              <h5>Быстрый вход</h5>
+                <form>
+                    <div class="form-group">
+                      <label for="InputEmail1">Ваш Email:</label>
+                      <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="mail@company.ru">
+                    </div>
+                    <div class="form-group">
+                      <label for="InputPassword1">Пароль:</label>
+                      <input type="password" class="form-control" id="InputPassword1">
+                    </div>
+                </form>
+                <input class="btn btn-primary" type="submit" value="Войти">
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Для восстановления пароля свяжитесь с нами по телефону 8-(800)-888-8888">Восстановить пароль
+                </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingTwo">
+      <h4 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         <span> 2.</span> Информация о доставке
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="card-block">
+        <div class="container">
+          <div class="row">
+
+            <div id="address-form" class="col-md-5 col-sm-12">
+              <h6>Адрес доставки</h6>
+                <form>
+                  <div class="form-group">
+                      <label for="InputCity">Город:</label>
+                      <input type="text" class="form-control" id="InputCity" placeholder="Москва">
+                  </div>
+
+                  <div class="form-group">
+                      <label for="InputStreet">Улица:</label>
+                      <input type="text" class="form-control" id="InputStreet">
+                  </div>
+
+                  <div class="form-group float-xs-right">
+                      <label for="InputApartment">Квартира:</label>
+                      <input type="text" class="form-control" id="InputApartment">
+                  </div>
+
+                  <div class="form-group">
+                      <label for="InputHouse">Дом:</label>
+                      <input type="text" class="form-control" id="InputHouse">
+                  </div>                  
+                </form>
+            </div>
+
+            <div id="delivery-form" class="col-md-3 col-sm-12">
+              <h6>Способ доставки</h6>
+          
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        Option one 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        Option two 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        Option three
+                      </label>
+                    </div>
+            
+            </div>
+
+            <div id="comment-form" class="col-md-4 col-sm-12">
+              <h6>Комментарий к заказу</h6>
+              <div class="form-group">
+                <label for="Textarea">Введите ваш комментарий:</label>
+                <textarea class="form-control" id="Textarea" rows="10" placeholder="Текст комментария"></textarea>
+              </div>
+            </div>
+
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingThree">
+      <h4 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         <span> 3.</span> Подтверждение заказа
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="card-block">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+
+</div> <!-- end of #accordion-box -->
+
+
+<footer class="card-footer">
+    <div class="container">
+        <div class="row no-gutter-2">
+            <section id="footer-info" class="col-md-5">
+                <p>Шаблон для экзаменационного задания.
+                    <br />Разработан специально для "Всероссийской школы программирования".</p>
+            </section>
+            <section id="copyright" class="col-md-3">
+                <div class="text-xs-center">© 555 2016</div>
+            </section>
+            <section id="go-up" class="col-md-4">
+                <!-- Deemphasize a button by making it look like a link while maintaining
+                button behavior --> <a class="btn btn-link" href="#" role="button"><span>Наверх</span> <img src="images/Up_arrow.png" /></a>
+            </section>
+        </div>    <!-- end of row -->
+    </div>   <!-- end of container-->
+</footer>                                 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>     

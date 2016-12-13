@@ -63,12 +63,65 @@
 </div> <!-- END of.CONTAINER #category-page-top -->
 
 <div class="container" id="single-category">
-  <div class="row no-gutter-2" id="product-description">
+  <div class="row-no-gutter-2" id="product-description">
 
-     <div class="col-md-5 col-sm-6 col-xs-12">
+<div id="lightbox" class="col-md-5 col-sm-12 col-xs-12">
+
+          <div class="col-xs-12" style="padding: 0;">
+
+                      <div id="big_pic" class="row">
+                          <a href="../images/single-category.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-12">
+                              <img src="images/single-category.png" class="img-fluid"></a>
+                      </div>
+
+                      
+                  <div class="container-fluid">
+                      <div class="row">   
+                          <a href="../images/cat1_banner2.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                              <img src="images/cat1_banner2.png" class="img-fluid">
+                          </a>
+
+                          <a href="../images/cat1_banner.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                              <img src="images/cat1_banner.png" class="img-fluid">
+                          </a>
+                    
+                          <a href="#" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                              <img src="images/Banner_3.png" class="img-fluid">
+                          </a>
+
+                          <a href="#" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                              <img src="images/Banner_2.png" class="img-fluid">
+                          </a>    
+                      </div>
+                  </div>    
+
+          </div>
+
+</div> <!-- end of #lightbox -->
+
+
+     <!-- <div class="col-md-5 col-sm-6 col-xs-12">
        <img class="img-fluid" src="images/single-category.png">
+    
+          <div class="row">
+              <div class="column">
+                <img src="#" onclick="openModal();currentSlide(1)" class="hover-shadow">
+              </div>
+              <div class="column">
+                <img src="#" onclick="openModal();currentSlide(2)" class="hover-shadow">
+              </div>
+              <div class="column">
+                <img src="#" onclick="openModal();currentSlide(3)" class="hover-shadow">
+              </div>
+              <div class="column">
+                <img src="#" onclick="openModal();currentSlide(4)" class="hover-shadow">
+              </div>
+          </div>
 
      </div>
+  -->
+
+
 
      <div id="product-name" class="col-md-4 col-sm-6 col-xs-12">
         <p class="h2">Название товара
@@ -76,25 +129,47 @@
           <small class="text-muted">Описание товара</small>
         </p>
 
-
-        
-          <form  class="form-inline" > 
-             <div class="form-group">
-                <label for="exampleSelect1">Выберите вариант:</label>
-                  <select class="form-control form-control-sm" id="SizeSelect">
-                    <option>Размер 36</option>
-                    <option>Размер 38</option>
-                    <option>Размер 40</option>
-                    <option>Размер 42</option>
-                    <option>Размер 44</option>
-                  </select>
-             </div>
-           </form>
-      
-
+               <select id="SizeSelect" class="custom-select">
+                  <label for="SizeSelect">Выберите вариант:</label>
+                    <option selected>Выберите вариант:</option>
+                    <option value="36">Размер 36</option>
+                    <option value="38">Размер 38</option>
+                    <option value="40">Размер 40</option>
+                    <option value="42">Размер 42</option>
+                    <option value="44">Размер 44</option>
+                </select>
+    
      </div> <!-- end of #product-name -->
 
-     <div class="col-md-3">CCC</div> 
+
+     <div id="order" class="col-md-3 col-sm-6 col-xs-12">
+
+          <div class="row-no-gutter-2">
+               <div id="box1" class="col-xs-12"> 
+                <small>9 990руб.</small>
+                <h3>4 540руб.</h3>
+                <div class="form-check">
+                     <label class="form-check-label">
+                     <input class="form-check-input" type="checkbox" value="">
+                      есть в наличии
+                     </label>
+                </div>
+                <!-- <img src="images/in_stock.png"> -->
+               </div>
+
+               <div id="box2" >
+                  <a href="shoping-cart.html"><img class="img-fluid" src="images/buy_btn.png"></a> 
+               </div>
+         
+                <div id="box3">
+                    <section><img src="images/free_shipping.png"></section> 
+                    <section><img src="images/hot_line.png"></section>
+                    <section><img src="images/gifts.png"></section>         
+                </div>  
+          </div>
+
+     </div>
+
   </div> <!-- end of .row-no-gutter-2 #product-description -->
 </div> <!-- end of .container #single-category-->
 
@@ -127,11 +202,11 @@
 <footer class="card-footer">
     <div class="container">
         <div class="row no-gutter-2">
-            <section id="footer-info" class="col-md-4">
+            <section id="footer-info" class="col-md-5">
                 <p>Шаблон для экзаменационного задания.
                 <br />Разработан специально для "Всероссийской школы программирования".</p>
             </section>
-            <section id="copyright" class="col-md-4">
+            <section id="copyright" class="col-md-3">
                 <div class="text-xs-center">© 555 2016</div>
             </section>
             <section id="go-up" class="col-md-4">
