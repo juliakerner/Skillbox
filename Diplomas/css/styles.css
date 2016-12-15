@@ -538,11 +538,11 @@ background-color: white;
 height: 580px;	
 }
 
-#lightbox {
-height: 100%;
-						border: 1px solid black;
-padding: 0;
-}
+								#lightbox {
+								height: 100%;
+														border: 1px solid black;
+								padding: 0;
+								}
 
 #big_pic {
 margin-bottom: 20px;
@@ -593,17 +593,17 @@ font-size: 14px;
 font-style: normal;	
 }
 
-#SizeSelect {
-position: absolute;
-top: 25%;
-left: 10%;
-width: 85%;	
-color: #000000;
-background-color: #e9e9e9;
-border: none;
-border-radius: 0;
-font-size: 14px;
-}
+								#SizeSelect {
+								position: absolute;
+								top: 25%;
+								left: 10%;
+								width: 85%;	
+								color: #000000;
+								background-color: #e9e9e9;
+								border: none;
+								border-radius: 0;
+								font-size: 14px;
+								}
 
 #order {
 	position: relative;
@@ -640,7 +640,7 @@ top: 30%;
 font-style: normal;
 }
 
-.form-check {
+#in-stock {
 position: absolute;
 left: 25%;
 top: 70%;	
@@ -774,7 +774,7 @@ font-style: italic;
  height: 150px;
  }
 
-#table-footer p {
+#table-footer p, #table-footer1 p {
 font-weight: bolder;
 font-style: italic;
 font-size: 24px;
@@ -782,14 +782,22 @@ font-size: 24px;
 	clear: left;
 }
 
-#table-footer p span {
+#table-footer p span, #table-footer1 p span {
 font-size: 30px;
 padding-left: 30px;	
 }
 
-#img2 {
-	float: right;
-	clear: right;
+#purchase-btn {
+width: 285px;
+height: 50px;
+border-radius: 0;
+background-color: #ed1651;
+border: 0;
+font-size: 18px;
+font-weight: bolder;
+position: absolute;	
+right: 40px;
+bottom: 40px;
 }
 
 #img1 {
@@ -797,7 +805,7 @@ position: absolute;
 bottom: 40px;
 }
 
-#img1:hover, #img2:hover{
+#img1:hover, #purchase-btn:hover{
 	box-shadow: 8px 8px 5px #999999;
 }
 
@@ -850,6 +858,11 @@ background-color: #222429;
 	margin-bottom: 15px;
 }
 
+#new-customer-form label, #fast-login-form label {
+	color: #999999;
+	margin-bottom: 0;
+}
+
 #new-customer-form .btn, #fast-login-form .btn {
 	margin-top: 15px;
 	border-radius: 0;
@@ -877,6 +890,12 @@ box-shadow: 8px 8px 5px #999999;
 	text-decoration: underline;
 }
 
+#address-form label,  #comment-form label {
+	font-size: 14px;
+	color: #999999;
+	margin-bottom: 0;
+}
+
 #address-form h6, #delivery-form h6, #comment-form h6 {
 	color: #ed1651;
 	font-weight: bolder;
@@ -888,26 +907,146 @@ box-shadow: 8px 8px 5px #999999;
  margin-right: 25px;
 }
 
-
 #delivery-form h6 {
-	margin-bottom: 50px;
-}
-
-#delivery-form {
-	height: auto;
-	align-content: left;
-							border: 1px solid black;
-
+	margin-bottom: 40px;
 }
 
 div.form-check {
-	margin-bottom:  15px;
-
+position: relative;
+left: 0;
 }
 
 #Textarea {
 	position: absolute;
 	width: 95%;
+}
+
+#delivery-btn {
+width: 155px;
+height: 50px;
+margin-left:  35px;
+margin-bottom: 35px;
+border-radius: 0;
+background-color: #ed1651;
+border: 0;
+font-size: 18px;	
+}
+#delivery-btn:hover {
+box-shadow: 8px 8px 5px #999999;	
+}
+
+#th1a, #th2 {
+text-align: left;
+}
+
+#card-block3 {
+padding-left: 30px;	
+}
+
+#td-1 {
+font-style: italic;
+}
+
+#td-2 {
+font-style: italic;
+}
+
+#td-3 {
+font-style: italic;
+font-weight: bolder;
+}
+
+#td-1, #td-2, #td-3, #th2 {
+line-height: 3rem;
+border: 0;
+}	
+
+#th1a, #th1b {
+border-top: 0;
+}
+
+#table-footer1 {
+	border: 0;
+padding-right: 30px;
+padding-top: 20px;
+margin-bottom: 20px;	
+}
+
+#collapseThree-table1 td, #collapseThree-table1 th {
+text-align: left;
+border: 0;	
+}
+
+#collapseThree-table1 td p, #collapseThree-table1 th p, #collapseThree-table1 td p1 {
+font-size: 14px;
+color: #999999;	
+}
+
+#collapseThree-table1 td p span, #collapseThree-table1 th p span, #collapseThree-table1 td p1 span {
+font-size: 16px;
+color: #000000;	
+}
+
+#collapseThree-table1 td {
+padding-left: 80px;	
+}
+
+#house-appt p, #house-appt p1 {
+width: 30%;
+}
+
+#house-appt p {
+	float: right;
+}
+
+
+#confirmation-btn {
+width: 245px;
+height: 50px;
+margin-bottom: 35px;
+border-radius: 0;
+background-color: #ed1651;
+border: 0;
+font-size: 18px;	
+}
+
+#confirmation-btn:hover {
+box-shadow: 8px 8px 5px #999999;	
+}
+
+/* End of Checkout-1 page */
+/* CHECKOUT_2 page */
+
+
+
+#checkout-2 {
+background-color: #ffffff;
+margin-bottom:  20px;
+padding: 25px;
+padding-bottom: 35px;
+}
+
+#checkout-2-btn {
+width: 230px;
+height: 50px;
+margin-top: 10px;
+margin-bottom: 35px;
+border-radius: 0;
+background-color: #ed1651;
+border: 0;
+font-size: 18px;	
+}
+
+#checkout-2-btn:hover {
+box-shadow: 8px 8px 5px #999999;	
+}
+
+#checkout-2 h5 {
+font-weight: bolder;	
+}
+
+#checkout-2 h5 > span {
+color: 	#ed1651;
 }
 
 

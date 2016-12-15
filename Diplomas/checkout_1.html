@@ -89,7 +89,7 @@
                     </div>
                     <div class="form-group">
                       <label for="tel-input">Контактный телефон:</label>
-                      <input class="form-control" type="tel" value="8-(555)-555-5555" id="tel-input">
+                      <input class="form-control" type="tel" value="8-(000)-000-0000" id="tel-input">
                     </div>
                     <div class="form-group">
                       <label for="InputEmail1">Ваш Email:</label>
@@ -129,7 +129,9 @@
         </a>
       </h4>
     </div>
+
     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+    <form id="delivery-info">
       <div class="card-block">
         <div class="container">
           <div class="row">
@@ -161,26 +163,24 @@
 
             <div id="delivery-form" class="col-md-3 col-sm-12">
               <h6>Способ доставки</h6>
-          
                     <div class="form-check">
                       <label class="form-check-label">
                         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        Option one 
+                        Курьерская доставка с оплатой при получении
                       </label>
                     </div>
                     <div class="form-check">
                       <label class="form-check-label">
                         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        Option two 
+                        Почта России с наложенным платежом
                       </label>
                     </div>
                     <div class="form-check">
                       <label class="form-check-label">
                         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        Option three
+                        Доставка через терминалы QIWI Post
                       </label>
-                    </div>
-            
+                    </div>              
             </div>
 
             <div id="comment-form" class="col-md-4 col-sm-12">
@@ -189,13 +189,15 @@
                 <label for="Textarea">Введите ваш комментарий:</label>
                 <textarea class="form-control" id="Textarea" rows="10" placeholder="Текст комментария"></textarea>
               </div>
-            </div>
+            </div> <!--end of comment-form-->
+          </div> <!-- end of .row--> 
+        </div> <!-- end of .container -->
+      </div> <!-- end of .card-block -->
+    <input  id="delivery-btn" class="btn btn-primary" type="submit" value="Продолжить">
+    </form> <!--end of #delivery-info-->
+    </div> <!--end of #collapse-two --> 
+  </div> <!-- end of .card -->
 
-          </div>  
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="card">
     <div class="card-header" role="tab" id="headingThree">
       <h4 class="mb-0">
@@ -205,12 +207,93 @@
       </h4>
     </div>
     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="card-block">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>
+      <div id="card-block3" class="card-block">
+
+      <table>
+        <h6 style="color: #ed1651; font-weight: bolder;">Состав заказа:</h6>
+
+          <table id="collapseThree-table" class="table">
+            <thead>
+              <tr>
+                <th id="th1a" colspan="3">Товар</th> 
+                <th id="th1b">Стоимость</th>
+                <th id="th1b">Количество</th>
+                <th id="th1b">Итого</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="tr-2">
+                <th id="th2" colspan="3" scope="row">Название товара</th> 
+                <td id="td-1">4 540руб.</td>
+                <td id="td-2">1</td>
+                <td id="td-3">4 540руб.</td>
+              </tr>
+              <tr id="tr-2">
+                <th id="th2" colspan="3" scope="row">Название товара</th> 
+                <td id="td-1">4 540руб.</td>
+                <td id="td-2">2</td>
+                <td id="td-3">9 080руб.</td>
+              </tr>
+              <tr id="tr-2">
+                <th id="th2" colspan="3" scope="row">Название товара</th> 
+                <td id="td-1">4 540руб.</td>
+                <td id="td-2">10</td>
+                <td id="td-3">45 400руб.</td>
+              </tr>
+              <tr>
+                <td id="table-footer1" colspan="6">
+                  <p>Итого: <span>72 640руб.</span></p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+        <h6 style="color: #ed1651; font-weight: bolder;">Доставка:</h6> 
+      
+          <table id="collapseThree-table1" class="table">
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <p>Контактное лицо (ФИО):<br/><span>Имя заказчика</span></p>
+                </th> 
+                <td>
+                  <p>Город:<br><span>Москва</span></p>
+                </td>
+                <td  colspan="3">
+                  <p>Способ доставки:<br><span>Курьерская доставка<br>с оплатой при получении</span></p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <p>Контактный телефон:<br/><span>+7 916 000-00-00</span></p>
+                </th> 
+                <td>
+                  <p>Улица:<br><span>Название улицы</span></p>
+                </td>
+                <td id="comment" colspan="3" rowspan="2">
+                  <p>Комментарий к заказу:<br><span>Текст комментария</span></p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <p>Email:<br><span>mail@company.ru</span></p>
+                </th> 
+                <td id="house-appt">
+                  <p>Квартира:<br><span>150</span></p>
+                  <p1>Дом:<br><span>10</span></p1>
+                </td>
+                <td colspan="3"></td>
+              </tr>
+            </tbody>
+            </table>
+<a href="checkout_2.html">
+           <input  id="confirmation-btn" class="btn btn-primary" type="submit" value="Подтвердить заказ"></a> 
+        </table>
+      
+      </div> <!-- end of #card-block3 -->
+    </div> <!-- end of .card -->
+  </div> <!-- end of #collapseThree -->
+</div> <!-- end of .accordion-->
 
 </div> <!-- end of #accordion-box -->
 
