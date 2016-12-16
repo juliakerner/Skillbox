@@ -59,24 +59,37 @@
                 </div>
         </nav> <!-- #header-nav -->
 
-      <div class="page-header">
-        <h1>оформление заказа</h1>
-      </div>                  
+        <div class="page-header">
+          <h1>вход</h1>
+        </div>                  
 </div> <!--.container #category-page-top -->
 
-  <div  class="container">
-    <div id="checkout-2" class="row-no-gutter-2" col-xs-12>
-      <h5>Заказ # 24415 <span>успешно оформлен</span><br><br>
-        <small>Спасибо за ваш заказ.<br><br>
-               В ближайшее время с вами свяжется оператор<br>
-               для уточнения времени доставки. 
-        </small>
-      </h5>
-        <a href="index.html" id="checkout-2-btn" class="btn btn-link" role="button"> <span>Вернуться в магазин</span>
-        </a>
-    </div>
+<div class="container">
+   <form id="login-page-form">
+  <div  class="row-no-gutter-2">
+      <div class="col-md-6 col-sm-12" style="border-right: 1px solid #dee1e3; height: 100%;">
+        <h5 style="margin-bottom: 30px;">Зарегистрированный пользователь</h5> 
+              <div class="form-group">
+                  <label for="InputEmail3">Email адрес:</label>
+                  <input type="email" class="form-control" id="InputEmail3" aria-describedby="emailHelp" placeholder="mail@company.ru">
+              </div>
+              <div class="form-group">
+                  <label for="InputPassword4">Пароль:</label>
+                  <input type="password" class="form-control" id="InputPassword4">
+              </div>
+              <div id="buttons">
+                  <input id="login-btn" class="btn btn-primary" type="submit" value="Войти">
+                  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Для восстановления пароля свяжитесь с нами по телефону 8-(800)-888-8888">Забыли пароль?
+                  </button> 
+              </div>    
+      </div>
+      <div class="col-md-6 col-sm-12" style="padding-left: 40px;">
+         <h5>Новый пользователь</h5> 
+         <a id="register-btn-link" class="btn btn-link" href="registration.html" role="button"><span>Зарегистрироваться</span></a>
+      </div>
   </div>
-
+   </form>
+</div>
 
 <footer class="card-footer">
     <div class="container">
@@ -103,3 +116,13 @@
   <script src="js/script.js"></script>
 </body>
 </html>     
+
+
+
+
+
+
+
+
+
+

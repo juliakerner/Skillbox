@@ -23,6 +23,13 @@ nav.navbar {
 padding: 0;
 }
 
+button.navbar-toggler {
+float: right;
+margin: 10px;
+background-color: #ed1651;
+border-radius: 0;
+}
+
 .navbar-brand {
 background: url('../images/brand_name.png') no-repeat;
 width: 170px;
@@ -148,8 +155,7 @@ color: white;
 /* HOME PAGE */
 
 #promo {
-font-family: "Supermolot";
-color: #000000;	
+color: #000000;
 height: 240px;
 width: 510px;
 position: absolute;
@@ -885,7 +891,7 @@ box-shadow: 8px 8px 5px #999999;
  height: 50px;	
 }
 
-#fast-login-form .btn-secondary {
+#fast-login-form .btn-secondary { /* popover */
 	background: transparent;
 	text-decoration: underline;
 }
@@ -1017,8 +1023,6 @@ box-shadow: 8px 8px 5px #999999;
 /* End of Checkout-1 page */
 /* CHECKOUT_2 page */
 
-
-
 #checkout-2 {
 background-color: #ffffff;
 margin-bottom:  20px;
@@ -1034,7 +1038,11 @@ margin-bottom: 35px;
 border-radius: 0;
 background-color: #ed1651;
 border: 0;
-font-size: 18px;	
+font-size: 18px;
+color: #ffffff;
+text-decoration: none;
+padding-top: 15px;
+padding-bottom: 15px;
 }
 
 #checkout-2-btn:hover {
@@ -1049,28 +1057,269 @@ font-weight: bolder;
 color: 	#ed1651;
 }
 
+/* end of checkout_2 page */
+/* REGISTRATION page & LOGIN page */
+
+#registration-form {
+background-color: #ffffff;
+margin-bottom: 20px;
+padding: 25px;
+padding-bottom: 65px;
+}
+
+#InputContactInfo2, #InputEmail2, #InputPassword2, #InputPassword3 {
+width: 100%;
+color: #000000;
+}
+
+#registration-form label {
+font-size: 14px;
+color: #999999;	
+}
+
+#register-btn {
+width: 220px;
+height: 50px;
+margin-bottom: 35px;
+border-radius: 0;
+background-color: #ed1651;
+border: 0;
+font-size: 18px;
+color: #ffffff;	
+margin-left: 15px;
+margin-top: 10px;
+}
+
+#register-btn-link {
+width: 220px;
+height: 50px;
+margin-bottom: 35px;
+border-radius: 0;
+background-color: #ed1651;
+border: 0;
+font-size: 18px;
+color: #ffffff;	
+margin-left: 15px;
+margin-top: 10px;
+text-decoration: none;
+margin-left: 0;
+padding-top: 15px;	
+}
+
+#register-btn:hover, #register-btn-link:hover, #login-btn:hover {
+box-shadow: 8px 8px 5px #999999;	
+}
+
+#login-page-form {
+background-color: #ffffff;
+height: 385px;
+margin-bottom: 20px;
+padding: 25px;
+padding-bottom: 65px;	
+}
+
+#login-page-form h5 {
+font-weight: bolder;
+font-style: italic;
+}
+
+#login-page-form label {
+font-size: 14px;
+color: #999999;
+}
+
+#InputEmail3, #InputPassword4 {
+width: 95%;	
+}
+
+#login-btn {
+border: 4px solid #ed1651;
+border-radius: 0;
+background: transparent;
+color: #000000;
+margin-top: 15px;
+margin-right: 15px;
+}
+
+#buttons button {
+background-color: transparent;
+border: none;
+color:  #ed1651;
+margin-top: 10px;	
+}
+
+#buttons button:hover {
+	text-decoration: underline;
+}
+
+/* end of registration page & login page */
 
 
 
 /**** Large devices only ****/
 @media (min-width: 1200px) {
 
+#promo {
+height: 400px;
+width: 510px;
+position: absolute;
+left: 10%;
 }
 
 /**** Medium devices only ****/
 @media (min-width: 992px) and (max-width: 1199px) {
+#promo {
+height: 400px;
+width: 510px;
+position: absolute;
+left: 8%;
+line-height: 0.7;
+float: left;
+padding-top: 30px;
+}
+
+h1 {
+font-size: 6vw;
+font-weight: bold;
+font-style: italic;
+text-transform: uppercase;
+}
+
+#promo-name2 {
+font-size: 5.2vw;
+font-style: italic;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+#promo-description {
+font-size: 1.5vw;
+text-align: left;
+color: white;
+} 
+
+#look-btn {
+	width: 220px;
+	height: 50px;
+font-size: 1.7vw;
+font-style: italic;
+background: transparent;
+border: 2px solid red;
+border-radius: 0;
+float: right;
+padding: 15px 20px;
+margin-top: 30px;
+margin-right: 60px;
+}
 
 }
 
 /**** Small devices only ****/
 @media (min-width: 768px) and (max-width: 991px) {
+#cart {
+	float: left;
+}
+
+#promo {
+	color: #000000;
+height: 400px;
+width: 510px;
+position: absolute;
+left: 15%;
+padding-top: 180px;
+line-height: 0.7;
+float: left;
+}
+
+h1 {
+font-size: 6vw;
+font-weight: bold;
+font-style: italic;
+text-transform: uppercase;
+}
+
+#promo-name2 {
+font-size: 5.2vw;
+font-style: italic;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+#promo-description {
+font-size: 1.5vw;
+text-align: left;
+color: white;
+} 
+
+#look-btn {
+	width: 220px;
+	height: 50px;
+font-size: 1.7vw;
+font-style: italic;
+background: transparent;
+border: 2px solid red;
+border-radius: 0;
+float: right;
+padding: 15px 20px;
+margin-top: 30px;
+}
+
+
+
 
 }
 
 
 /**** Extra small devices only ****/
 @media (max-width: 767px) {
+#cart {
+	float: left;
+}
 
+#promo {
+color: #000000;
+height: 400px;
+width: 330px;
+position: absolute;
+left: 15%;
+padding-top: 200px;
+line-height: 0.7;
+float: left;
+
+}
+
+h1 {
+font-size: 6vw;
+font-weight: bold;
+font-style: italic;
+text-transform: uppercase;
+}
+
+#promo-name2 {
+font-size: 5.2vw;
+font-style: italic;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+#promo-description {
+font-size: 1.8vw;
+text-align: left;
+color: white;
+} 
+
+#look-btn {
+	width: 100px;
+	height: 20px;
+font-size: 2vw;
+font-style: italic;
+background: transparent;
+border: 2px solid red;
+border-radius: 0;
+float: left;
+padding: 5px;
+margin-top: 30px;
+}
 }
 
 

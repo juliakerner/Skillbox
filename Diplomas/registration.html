@@ -59,23 +59,41 @@
                 </div>
         </nav> <!-- #header-nav -->
 
-      <div class="page-header">
-        <h1>оформление заказа</h1>
-      </div>                  
+        <div class="page-header">
+          <h1>регистрация</h1>
+        </div>                  
 </div> <!--.container #category-page-top -->
 
-  <div  class="container">
-    <div id="checkout-2" class="row-no-gutter-2" col-xs-12>
-      <h5>Заказ # 24415 <span>успешно оформлен</span><br><br>
-        <small>Спасибо за ваш заказ.<br><br>
-               В ближайшее время с вами свяжется оператор<br>
-               для уточнения времени доставки. 
-        </small>
-      </h5>
-        <a href="index.html" id="checkout-2-btn" class="btn btn-link" role="button"> <span>Вернуться в магазин</span>
-        </a>
-    </div>
-  </div>
+<div class="container">
+ <form id="registration-form">
+  <div class="row-no-gutter-2 col-md-6 col-sm-12">
+     <div class="form-group">
+          <label for="InputContactInfo2">Контактное лицо (ФИО):</label>
+          <input type="text" class="form-control" id="InputContactInfo2" placeholder="Сергей">
+      </div> 
+      <div class="form-group">
+          <label for="InputEmail2">Email адрес:</label>
+          <input type="email" class="form-control" id="InputEmail2" aria-describedby="emailHelp" placeholder="mail@company.ru">
+      </div>
+   </div>
+
+   <div class="row-no-gutter-2 col-md-6 col-sm-12">
+     <div class="form-group">
+          <label for="InputPassword2">Пароль:</label>
+          <input type="password" class="form-control" id="InputPassword2">
+     </div>
+     <div class="form-group">
+          <label for="InputPassword3">Повторите пароль:</label>
+          <input type="password" class="form-control" id="InputPassword3">
+     </div>
+   </div> <!-- end of .row -->
+    <input id="register-btn" class="btn btn-primary" type="submit" value="Зарегистрироваться">
+  </form> 
+</div> <!-- end of .container -->
+
+
+
+
 
 
 <footer class="card-footer">
@@ -103,3 +121,13 @@
   <script src="js/script.js"></script>
 </body>
 </html>     
+
+
+
+
+
+
+
+
+
+
