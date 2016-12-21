@@ -24,8 +24,15 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
+$(function(){
+    $('body').tooltip({ selector: '[data-toggle="tooltip"]' });
+});
 
+/* popover */
 
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
 
 
 

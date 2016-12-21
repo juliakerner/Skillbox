@@ -57,38 +57,92 @@
                     <p1>2 предмета</p1>
                     <img src="images/cart_icon.png" alt="cart_icon">
                 </div>
-        </nav> <!-- #header-nav --> 
+        </nav> <!-- #header-nav -->
 
         <div class="page-header">
-          <h1>вход</h1>
+          <h1>личный кабинет</h1>
         </div>                  
 </div> <!--.container #category-page-top -->
 
 <div class="container">
-   <form id="login-page-form">
-  <div  class="row-no-gutter-2">
-      <div class="col-md-6 col-sm-12" style="border-right: 1px solid #dee1e3; height: 100%;">
-        <h5 style="margin-bottom: 30px;">Зарегистрированный пользователь</h5> 
+  <div id="account-page" class="row-no-gutter-2">
+   <form id="account-page-form">
+      <div class="col-md-6 col-sm-12" style="border-right: 1px solid #dee1e3; height: 110%;">
+        <h4 style=" ">Ваши данные</h4> 
               <div class="form-group">
-                  <label for="InputEmail3">Email адрес:</label>
-                  <input type="email" class="form-control" id="InputEmail3" aria-describedby="emailHelp" placeholder="mail@company.ru">
+                      <label for="InputContactInfo1">Контактное лицо (ФИО):</label>
+                      <input type="text" class="form-control" id="InputContactInfo1" placeholder="Сергей">
               </div>
+                    <div class="form-group">
+                      <label for="tel-input-1">Контактный телефон:</label>
+                      <input class="form-control" type="tel" value="8-(000)-000-0000" id="tel-input-1">
+                    </div>
               <div class="form-group">
-                  <label for="InputPassword4">Пароль:</label>
-                  <input type="password" class="form-control" id="InputPassword4">
+                      <label for="InputEmail4">Ваш Email:</label>
+                      <input type="email" class="form-control" id="InputEmail4" aria-describedby="emailHelp" placeholder="mail@company.ru">
               </div>
-              <div id="buttons">
-                  <input id="login-btn" class="btn btn-primary" type="submit" value="Войти">
-                  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Для восстановления пароля свяжитесь с нами по телефону 8(800)-888-8888">Забыли пароль?
-                  </button> 
-              </div>    
+        <h4 style="margin-top: 40px;">Адрес доставки</h4>  
+               <div class="form-group">
+                      <label for="InputCity1">Город:</label>
+                      <input type="text" class="form-control" id="InputCity1" placeholder="Москва">
+                  </div>
+
+                  <div class="form-group">
+                      <label for="InputStreet1">Улица:</label>
+                      <input type="text" class="form-control" id="InputStreet1" placeholder="Название улицы">
+                  </div>
+
+                  <div class="form-group float-xs-right">
+                      <label for="InputApartment1">Квартира:</label>
+                      <input type="text" class="form-control" id="InputApartment1">
+                  </div>
+
+                  <div class="form-group">
+                      <label for="InputHouse1">Дом:</label>
+                      <input type="text" class="form-control" id="InputHouse1">
+                  </div>        
+        <h4 style="margin-top: 40px;">Изменение пароля</h4> 
+                  <div class="form-group">
+                        <label for="InputPassword5">Введите новый пароль:</label>
+                        <input type="password" class="form-control" id="InputPassword5">
+                   </div>
+                   <div class="form-group">
+                        <label for="InputPassword6">Повторите новый пароль:</label>
+                        <input type="password" class="form-control" id="InputPassword6">
+                   </div>  
+
+        <input id="save-btn" class="btn btn-primary" type="submit" value="Сохранить">
       </div>
-      <div class="col-md-6 col-sm-12" style="padding-left: 40px;">
-         <h5>Новый пользователь</h5> 
-         <a id="register-btn-link" class="btn btn-link" href="registration.html" role="button"><span>Зарегистрироваться</span></a>
+    </form>
+
+      <div id="your_orders1" class="col-md-6 col-sm-12">
+         <h4 style="margin-bottom: 20px;">Ваши заказы</h4> 
+        <table id="your_orders" class="table">
+  <tbody>
+    <tr>
+      <th id="order-#" scope="row">
+        <h5>#4653<br/><span>(45 468руб.)</span><br/><small>01.01.2015 в 15:54</small></h5>
+      </th>
+      <td id="order-status" colspan="3">Ожидает доставки</td>
+    </tr>
+    <tr>
+      <th id="order-#" scope="row">
+        <h5>#2415<br/><span>(2 100руб.)</span><br/><small>01.01.2015 в 11:10</small></h5>
+      </th>
+      <td id="order-status" colspan="3">Доставлен</td>
+    </tr>
+    <tr>
+      <th id="order-#" scope="row">
+        <h5>#2158<br/><span>(2 100руб.)</span><br/><small>01.01.2015 в 11:10</small></h5>
+      </th>
+      <td id="order-status" colspan="3">Доставлен</td>
+    </tr>
+  </tbody>
+</table>
       </div>
-  </div>
-   </form>
+
+  </div> <!-- end of .row-no-gutter-2 -->
+  
 </div>
 
 <footer class="card-footer">

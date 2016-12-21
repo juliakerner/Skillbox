@@ -212,7 +212,8 @@ padding: 28px;
 
 #arrows {
 position: absolute;
-right: 30px;	
+right: 30px;
+top: 0;	
 }
 
 #main-content {
@@ -292,42 +293,37 @@ width: 100%;
 height:100%;
 }
 
-#banner-1 span, #banner-2 span, #banner-3 span {
+#banner-1 span, #banner-3 span {
 height: 30%;
 width: 100%;
 position: absolute;
 bottom: 20px;
 left: 0;	
 line-height: 1.8rem;
-}
-
-#banner-1 span p, #banner-2 span p, #banner-3 span p {
 text-transform: uppercase;
 font-size: 32px;
-font-weight: bold;
 font-style: italic;
 color: #000000;	
 margin-left: 20px;
-margin-bottom: 0;
 }
 
-#banner-2 span p {
-margin-right: 20px;	
-}
-
-#banner-1 span p1, #banner-2 span p1, #banner-3 span p1 {
-text-transform: uppercase;	
+#banner-2 span {
+height: 30%;
+width: 100%;
+position: absolute;
+bottom: 20px;
+left: 0;	
+line-height: 1.8rem;
+text-transform: uppercase;
 font-size: 32px;
 font-style: italic;
 color: #000000;	
-margin-left: 20px;
-}
-
-#banner-2 span p, #banner-2 span p1 {
+margin-right: 20px;
+margin-left: -20px;
 text-align: right;
 }
 
-#banner-3 span p, #banner-3 span p1 {
+#banner-3 span {
 color: white;	
 }
 
@@ -428,16 +424,25 @@ font-size: 14px;
 padding-top: 10px;
 }
 
-#tile-header-category button {
+#tile-header-category a {
 border-radius: 0;
 border: none;
 background-color: #dee1e3;	
 margin: 5px;
+color: #000000;
 }
 
-#tile-header-category button:hover {
+#tile-header-category button {
+border-radius: 0;
+border: none;
+background-color: transparent;	
+margin: 5px;
+}
+ 
+#tile-header-category a:hover{
 background-color: #ed1651;
 color: white;
+text-decoration: none;
 }
 
 #img-tile-category {
@@ -758,9 +763,18 @@ background-color: #e9e9e9;
 width: 70%;
 }
 
-#spinner {
-background-color: #e9e9e9;
-}
+						#spinner {
+						background-color: #e9e9e9;
+						}
+						#minus-btn, #plus-btn {
+						background-color: transparent;	
+						}
+						#minus-btn {
+							border-right: 1px solid #dadada;
+						}
+						#plus-btn {
+							border-left: 1px solid #dadada;
+						}
 
 #td5 {
 color: #555555;
@@ -1106,7 +1120,7 @@ margin-left: 0;
 padding-top: 15px;	
 }
 
-#register-btn:hover, #register-btn-link:hover, #login-btn:hover {
+#register-btn:hover, #register-btn-link:hover, #login-btn:hover,#save-btn:hover  {
 box-shadow: 8px 8px 5px #999999;	
 }
 
@@ -1152,23 +1166,83 @@ margin-top: 10px;
 	text-decoration: underline;
 }
 
-/* end of registration page & login page */
+/* end of registration page & login page *
+/* ACCOUNT page */
 
+#account-page {
+background-color: #ffffff;
+height: 990px;
+padding: 20px;
+margin-bottom: 20px;								
+}
+
+#account-page h4 {
+font-weight: bolder;
+font-style: italic;	
+}
+#account-page-form label {
+font-size: 14px;
+color: #999999;
+}
+
+#InputContactInfo1, #tel-input-1, #InputEmail4, #InputCity1, #InputStreet1, #InputPassword5, #InputPassword6 {
+width: 95%;	
+}
+
+#InputApartment1, #InputHouse1 {
+width: auto;
+margin-right: 25px;
+}
+
+#save-btn {
+margin-top: 20px;
+border-radius: 0;
+border: none;
+background-color: #ed1651;	
+}
+
+#your_orders th {
+text-align: left;
+}
+
+#your_orders h5 span {
+font-size: 16px;	
+}
+
+#your_orders h5 small {
+font-size: 12px;
+color: #999999;
+}
+
+#your_orders td {
+text-align: right;
+font-size: 30px;
+color: #ed1651;
+} 
+
+#your_orders1 {
+padding-left: 40px;
+}
+
+/* end of account page */
 
 
 /**** Large devices only ****/
-@media (min-width: 1200px) {
+ /*@include media-breakpoint-up(lg)*/ @media (min-width: 1200px){
 
 #promo {
+	color: #000000;
 height: 400px;
 width: 510px;
 position: absolute;
 left: 10%;
 }
-
+}
 /**** Medium devices only ****/
-@media (min-width: 992px) and (max-width: 1199px) {
+ /*@include media-breakpoint-up(md)*/ @media (min-width: 992px) and (max-width: 1199px) {
+
 #promo {
+	color: #000000;
 height: 400px;
 width: 510px;
 position: absolute;
@@ -1178,7 +1252,7 @@ float: left;
 padding-top: 30px;
 }
 
-h1 {
+#promo-name {
 font-size: 6vw;
 font-weight: bold;
 font-style: italic;
@@ -1212,10 +1286,11 @@ margin-top: 30px;
 margin-right: 60px;
 }
 
+
 }
 
 /**** Small devices only ****/
-@media (min-width: 768px) and (max-width: 991px) {
+/* @include media-breakpoint-up(sm) */ @media (min-width: 768px) and (max-width: 991px) {
 #cart {
 	float: left;
 }
@@ -1231,7 +1306,7 @@ line-height: 0.7;
 float: left;
 }
 
-h1 {
+#promo-name {
 font-size: 6vw;
 font-weight: bold;
 font-style: italic;
@@ -1264,7 +1339,22 @@ padding: 15px 20px;
 margin-top: 30px;
 }
 
+#your_orders1 {
+padding-left: 0;
+}
 
+#tile-header-single span {
+	font-size: 80%;
+}
+
+.page-header h1{
+font-size: 6vw;
+}
+
+}
+ #img2 {
+ 	width: 25%;
+ }
 
 
 }
@@ -1288,7 +1378,7 @@ float: left;
 
 }
 
-h1 {
+#promo-name {
 font-size: 6vw;
 font-weight: bold;
 font-style: italic;
@@ -1309,8 +1399,8 @@ color: white;
 } 
 
 #look-btn {
-	width: 100px;
-	height: 20px;
+	width: 150px;
+	height: 30px;
 font-size: 2vw;
 font-style: italic;
 background: transparent;
@@ -1320,6 +1410,26 @@ float: left;
 padding: 5px;
 margin-top: 30px;
 }
+
+#tile-header-single {
+	padding: 10px;
+}
+
+#tile-header-single span {
+	font-size: 70%;
+}
+
+
+.page-header h1{
+font-size: 5vw;	
+}
+
+
+}
+ #img2 {
+ 	width: 25%;
+ }
+
 }
 
 
