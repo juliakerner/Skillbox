@@ -285,7 +285,7 @@ border: none;
 
 .img-fluid {
 width: 100%;
-height: 80%;
+height: 74%;
 }
 
 #img-banner {
@@ -1362,6 +1362,7 @@ font-size: 6vw;
 
 /**** Extra small devices only ****/
 @media (max-width: 767px) {
+
 #cart {
 	float: left;
 }
