@@ -174,6 +174,15 @@ color: white;
 
 /* HOME PAGE */
 
+/*
+.carousel-inner > .carousel-item {
+  position: relative;
+  display: none;
+  -webkit-transition: .6s ease-in-out left;
+  -o-transition: .6s ease-in-out left;
+ transition: ;
+}*/
+
 #promo {
 color: #000000;
 height: 240px;
@@ -296,7 +305,7 @@ left: 0;
 
 #banner-1, #banner-2, #banner-3 {
 height: 315px;
-margin-bottom: 0;
+margin-bottom: 80px;
 background-position: center;
 position: relative;
 border: none;
@@ -671,7 +680,7 @@ font-family: "Supermolot";
 /*************************************/
 
 #single-category {
-margin-bottom: 20px;
+margin-bottom: 100px;
 padding-left: 15px;
 }
 
@@ -1349,16 +1358,166 @@ padding-left: 40px;
 /* end of account page */
 
 
+/***** BACKEND ******//***** BACKEND ******//***** BACKEND ******/
+
+#b-nav {
+	height: 100%;
+	width: 25%;
+	max-width: 200px;
+	background-color: #38495C;
+	padding: 0;
+}
+
+#b-content {
+	height: 90%;
+	max-width: 2000px;
+	background-color: #ECF0F1;
+	position: absolute;
+	left: 230px;
+    top: 90px;
+    overflow: auto;
+}
+
+#b-logo /** Super Shop green**/ {
+	width: 100%;
+	height: 90px;
+	background-color: #65C97A;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2.1rem;
+	line-height: .9;
+	padding-top: .8rem;
+	margin-bottom: 1.2rem;
+}
+
+#b-logo strong {
+	font-size: 2.6rem;
+}
+
+#b-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+ #b-navbar li {
+ 	height: 50px;
+ 	opacity: .7;
+ }
+
+ #b-navbar li a {
+    display: block;
+    color: #ECF0F1;
+    padding: 8px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 100%;
+}
+
+/* Change the link color on hover */
+#b-navbar li a:hover {
+    background-color: #273341;
+    color: #ffffff;
+}
+
+#b-logout-link {
+	height: 50px;
+	width: 200px;
+	text-align: center;
+	color: #65C97A;
+	position: absolute;
+	bottom:  0;
+}
+
+#admin-email{
+	position: absolute;
+	bottom: 3%;
+	color: #ffffff;
+	font-size: .9rem;
+	max-width: 100%;
+	margin: auto;
+	padding: 25px;
+}
+
+
+#b-page-header h1 {
+font-size: 3.5rem;
+font-weight: lighter;
+color:  #38495C;
+text-transform: uppercase;
+color: #000000;
+margin: 0;
+position: absolute;
+top: 1%;
+left: 30%;
+font-style: normal;
+font-family: 'Noto Sans', sans-serif;
+opacity: .7;
+height: 80px;
+}
+
+#b-content {
+	background-color: #ffffff;
+}
+
+#b-table-orders tr:hover {
+	border-left: 5px solid #8448A8;
+	background-color: rgba(0, 0, 0, 0.075);
+}
+
+#b-table-orders thead tr th {
+	font-size: 1rem;
+	text-transform:  uppercase;
+	text-align: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#b-table-orders th, #b-table-orders td {
+ 	text-align: left;
+ 	vertical-align: middle;
+ 	padding-left: 15px;
+ 	padding-right: 15px;
+ 	max-width: 300px;
+ 	min-width: 150px;
+}
+
+select#b-order-status.form-control {
+	max-width: 120px;
+	max-height: 100%;
+	background-color: transparent;
+	border-bottom: 1px dashed #000;
+	border-radius: 0;
+}
+
+select.form-control {
+  -moz-appearance: none;
+   -webkit-appearance: none;
+   appearance: none;
+}
+
+.form-group {
+	margin-bottom: 0;
+}
+
+#datetime-input {
+	max-width:100%;
+	font-size: .9rem;
+	background-color: transparent;
+}
+
+
+/***** END of BACKEND ******/
+
 /**** Large devices only ****/
  /*@include media-breakpoint-up(lg)*/ @media (min-width: 1200px){
-/*
-#promo {
-	color: #000000;
-height: 400px;
-width: 510px;
-position: absolute;
+#b-page-header h1, #b-content  {
+	left: 230px;
+}
 
-}*/
+
 }
 /**** Medium devices only ****/
  /*@include media-breakpoint-up(md)*/ @media (min-width: 992px) and (max-width: 1199px) {
@@ -1406,6 +1565,13 @@ margin-top: 30px;
 margin-right: 60px;
 }
 
+#banner-1, #banner-2 {
+	margin-bottom: 0;
+}
+
+#b-page-header h1, #b-content  {
+	left: 230px;
+}
 
 }
 
@@ -1490,6 +1656,9 @@ font-size: 20px;
 }
 
 
+#banner-1, #banner-2 {
+	margin-bottom: 0;
+}
 
 }
 
@@ -1583,7 +1752,74 @@ padding-top: 20px;
 padding-left: 20px;
 }
 
+#banner-1, #banner-2 {
+	margin-bottom: 0;
+}
 
+#b-logo {
+	width: 100%;
+	height: 90px;
+	background-color: #65C97A;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 5vw;
+	line-height: .9;
+	padding-top: .8rem;
+	margin-bottom: 1.2rem;
+}
+
+#b-logo strong {
+	font-size: 6vw;
+}
+
+#b-page-header h1 {
+	font-size: 6vw;
+	top: 2%;
+}
+
+#b-navbar li a {
+    font-size: 70%;
+}
+
+#b-logout-link {
+	height: 30px;
+	width: 150px;
+	text-align: center;
+	color: #65C97A;
+	font-size: 90%;
+	position: absolute;
+	bottom:  3%;
+}
+
+#admin-email{
+	position: absolute;
+	bottom: 3%;
+	color: #ffffff;
+	font-size: 70%;
+	max-width: 100%;
+}
+
+#b-content {
+	left: 190px;
+}
+
+#b-table-orders thead  tr th {
+	font-size: 70%;
+	text-transform:  uppercase;
+}
+
+select#b-order-status.form-control {
+	font-size: 90%;
+	width: 95%;
+}
+
+
+#datetime-input {
+	max-width: 90%;
+	font-size: .8rem;
+	background-color: transparent;
+}
 }
 
 /**** Super-Extra small devices only ****/
@@ -1686,6 +1922,92 @@ padding-top: 25px;
 background-color: #ffffff;
 margin-bottom: 20px;
 width: 370px;
+}
+
+#banner-1, #banner-2 {
+	margin-bottom: 0;
+}
+
+#b-logo {
+	width: 100%;
+	height: 60px;
+	background-color: #65C97A;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 4vw;
+	line-height: .9;
+	padding-top: .8rem;
+	margin-bottom: .5rem;
+}
+
+#b-logo strong {
+	font-size: 5vw;
+}
+
+#b-page-header h1 {
+	font-size: 5.5vw;
+	top: 2%;
+}
+
+#b-navbar li a {
+    font-size: 50%;
+}
+
+#b-logout-link {
+	height: 30px;
+	width: 100px;
+	text-align: center;
+	color: #65C97A;
+	font-size: 80%;
+	position: absolute;
+	bottom: 2%;
+}
+
+#admin-email{
+	position: absolute;
+	bottom: 5%;
+	color: #ffffff;
+	font-size: 60%;
+	max-width: 100%;
+	padding: 0;
+	margin-left: 3px;
+}
+
+#b-content {
+	left: 26%;
+	top: 60px;
+}
+
+#b-table-orders thead tr th{
+	font-size: 70%;
+	text-transform:  uppercase;
+}
+
+#b-table-orders tr {
+	font-size: 60%;
+}
+
+#b-table-orders td a {
+	font-size: 80%;
+}
+
+select#b-order-status.form-control {
+	font-size: 90%;
+	width: 95%;
+}
+
+#b-table-orders tr td {
+ 	text-align: left;
+ 	padding-left: 5px;
+ 	padding-right: 5px;
+ 	max-width: 200px;
+ 	min-width: 100px;
+}
+
+#datetime-input {
+	font-size: .6rem;
+	background-color: transparent;
 }
 
 }

@@ -1,24 +1,5 @@
-/* Home page slide show
-var slideIndex1 = 0;
-showSlides1();
 
-function showSlides1() {
-    var i;
-    var slides = document.getElementsByClassName("homeSlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex1 = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex1-1].style.display = "block";  
-    dots[slideIndex1-1].className += " active";
-    setTimeout(showSlides1, 5000); // Change image every 5 seconds
-}
-*/
+
 /* Spinner */
 
 $(document).on('click', '.number-spinner button', function () {    
@@ -28,10 +9,12 @@ $(document).on('click', '.number-spinner button', function () {
 	
 	if (btn.attr('data-dir') == 'up') {
 		newVal = parseInt(oldValue) + 1;
-	} else {
+	} 
+  else {
 		if (oldValue > 1) {
 			newVal = parseInt(oldValue) - 1;
-		} else {
+		} 
+    else {
 			newVal = 1;
 		}
 	}
