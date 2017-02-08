@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Super Shop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body style="height: 100%; background-size: 100%; background-color: #ECF0F1;">
+
+<div class="containter" class="col-xs-12" style="height: 100%; margin: 0; background-color: #ECF0F1;">
+	<div id="b-nav">
+		<div id="b-logo" class="text-align-center">
+			super <br/><strong>shop</strong> 
+		</div>
+
+		<div id="b-navbar">
+			<ul>
+			  <li><a href="backend_orders.html" class="active"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>  заказы</a></li>
+			  <li><a href=" "><i class="fa fa-user-o fa-2x" aria-hidden="true"></i> пользователи</a></li>
+			  <li><a href=" "><i class="fa fa-truck fa-2x" aria-hidden="true"></i> товары</a></li>
+			  <li><a href=" "><i class="fa fa-th fa-2x" aria-hidden="true"></i> категории</a></li>
+			</ul>
+		</div>
+		
+		<p id="admin-email">email@example.com</p>	
+		<a id="b-logout-link" class="btn btn-link" href="#" role="button">выйти</a>	
+
+	</div> <!-- end of #b-nav -->
+
+     <div id="b-page-header">
+		<h1>заказ<span style="color: #447EB4;"> #4831 </span><small>(у курьера)</small></h1>
+	 </div> 
+	 
+	<div id="b-content" class="containter-fluid">
+		
+		<table id="b-order-info" class="table table-responsive">
+		  <thead>
+		    <tr>
+		      <th colspan="6">Содержимое заказа</th>
+		    </tr>
+		  </thead>
+
+		   <tfoot>	
+		    <tr>
+		      <td id="tf2" colspan="6">
+		      	<div class="form-group row">
+		      		<label for="order-total" id="order-total-label" class="col-sm-2 col-form-label">Итоговая сумма</label>
+		      		<div class="col-1">
+		      		<input id="order-total" type="text" name="order-total" placeholder="29 970руб." class="col-sm-3 h4">
+		      		</div>
+		      	</div>
+			  </td>
+
+		    </tr>
+		   </tfoot>	
+
+		  <tbody>
+		    <tr>
+		      <td id="td21" colspan="">Название товара</td>
+		       <td id="td22" ><span>2 500</span><small> руб.</small></td>
+		      <td><input type="text" class="col-sm-2" id="quantity"></td>
+		      <td><span>BBB</span><small> руб.</small></td>
+		      <td><a href=" " class="text-danger">убрать из заказа</a></td>
+		    </tr>
+
+		    <tr>
+		       <td id="td21" colspan="">Название товара</td>
+		       <td id="td22"><span>15 470</span><small> руб.</small></td>
+		      <td><input type="text" class="col-sm-2" id="quantity"></td>
+		      <td><span>BBB</span><small> руб.</small></td>
+		      <td><a href=" " class="text-danger">убрать из заказа</a></td>
+		    </tr>
+
+		    <tr>
+		      <td id="td21" colspan="">Название товара</td>
+		      <td id="td22"><span>6 000</span><small> руб.</small></td>
+		      <td><input type="text" class="col-sm-2" id="quantity"></td>
+		      <td><span>BBB</span><small> руб.</small></td>
+		      <td><a href=" " class="text-danger">убрать из заказа</a></td>
+		    </tr>
+	   
+		  </tbody>
+		</table>
+
+		<table id="b-order-info-1" class="table table-responsive">
+		  <thead>
+		    <tr>
+		      <th colspan="6">Информация о заказе</th>
+		    </tr>
+		  </thead>
+
+		  <tbody>
+              <tr>
+                <td>
+                  <small>Контактное лицо (ФИО):</small><br/><input id="b-name" type="text" placeholder="Имя заказчика">
+                </td> 
+                <td>
+                  <small>Город: </small><br><input id="b-city" type="text" placeholder="Москва">
+                </td>
+                <td id="b-delivery" rowspan="4">
+                  <small>Способ доставки: </small><br><span>Курьерская доставка<br>с оплатой при получении</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <small>Контактный телефон:</small><br/><input id="b-phone" type="tel" placeholder="+7 916 000 0000">
+                </td> 
+                <td>
+                  <small>Улица: </small><br><input id="b-str" type="text" placeholder="Название улицы">
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <small>Email: </small><br><input id="b-email" type="email" placeholder="email@company.ru">
+                </td> 
+                <td id="">				 
+                  <small>Дом: </small><input type="text" id="house" placeholder="10">
+                  <small>Квартира: </small><input type="text" id="apt" placeholder="150">    
+                </td>
+              </tr>
+
+               <tr>
+                <td  colspan="2">
+                <div id="b-comment">
+                <small>Комментарий к заказу:</small>
+                <textarea class="form-control" id="b-comment" rows="3" placeholder="Текст комментария"></textarea>
+                </div>
+                </td>
+              </tr>
+
+            </tbody>
+		</table>
+	 	
+	</div> <!-- end of #b-content -->
+	 
+	</div> <!-- end of #b-page-content -->	
+</div> <!-- end of .container -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
