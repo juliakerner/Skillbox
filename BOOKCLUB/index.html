@@ -7,20 +7,34 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="bookclub.css">
-    <title>КАШТАНКА</title>
+    <title>BOOKCLUB</title>
   </head>
   <body>
 <div class="bg-container">	
 
       <div class="masthead-clearfix">
-        <div class="inner">
-         <a href="index.html" class="active"><h2 class="masthead-brand">Russian Bookclub <br>
-         <small>of Atlanta</small></h2></a>
+       <div class="inner" style="background-color: rgba(0, 0, 0, 0.5);">          
+       <a href="index.html"><h2 class="masthead-brand">Russian Bookclub <br>
+         <small style="background-color: rgba(0, 0, 0, 0.5);">of Atlanta</small></h2></a>
 
           <ul class="nav masthead-nav">
-            <li>
+            <!-- <li>
               <a href="Kashtanka.html" target=" ">Наши встречи</a>
+            </li> -->
+
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Наши встречи/Архив
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="Kashtanka.html">Каштанка</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
             </li>
 
             <li>
@@ -38,7 +52,7 @@
 
       <div class="mastfoot">
         <div class="inner">	
-         <p>© 555~ 2017</p>
+         <p style="background-color: rgba(0, 0, 0, 0.5);">© 555~ 2017</p>
         </div>
       </div>
 

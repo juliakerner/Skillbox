@@ -7,20 +7,30 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="bookclub.css">
-    <title>КАШТАНКА</title>
+    <title>BOOKCLUB</title>
   </head>
   <body id="kashtanka_words_body">
   
   <div class="cover-container">
       <div class="masthead-clearfix">
         <div class="inner">
-         <a href="index.html" class="active"><h2 class="masthead-brand">Russian Bookclub <br>
+         <a href="index.html"><h2 class="masthead-brand">Russian Bookclub <br>
          <small>of Atlanta</small></h2></a> 
 
           <ul class="nav masthead-nav">
-            <li class="active">
-              <a href="kashtanka.html" target=" ">Наши встречи</a>
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Наши встречи/Архив
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item active" href="Kashtanka.html">Каштанка</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
             </li>
 
             <li>
@@ -35,98 +45,94 @@
       </div>
  
  <div class="main-content">
-    <h1>Историко-бытовой словарь </h1> <br><br>
+    <h1 class="animated lightSpeedIn">Историко-бытовой словарь </h1> <br><br>
 
     <p>Язык – постоянно изменяющееся явление. В его состав входят новые слова и выражения, обозначающие новые понятия. Другие лексические единицы выпадают, забываются или становятся непонятными в связи с исчезновением из жизни явлений, которые они обозначали. Третьи – изменяют свое значение. Это закономерный процесс.</p><br>
 
-    <button id="kashtankaModalbtn" type="button" class="btn btn-link" data-toggle="modal" data-target="#kashtankaModalLong"><h2>Итак, что же такое устаревшие слова?</h2></button><br><br>
+    <button id="kashtankaModalbtn" type="button" class="btn btn-link" data-toggle="modal" data-target="#kashtankaModalLong"><h2 class="animated fadeInLeft">Итак, что же такое устаревшие слова?</h2></button><br><br>
 
-    <p>В рассказе А.П.Чехова "Каштанка" мы находим устаревшие слова. Значение некоторых из них понятны и сейчас. Но есть слова, значение которых необходимо найти в <a id="popover" tabindex="0" class="" role="button" data-toggle="popover" data-trigger="focus" title="СЛОВАРИ. ВИДЫ И ОСОБЕННОСТИ"  data-placement="left" data-content="Вот как описывают разные словари одно и то же слово:
-
-Орфографический словарь
-
-Песня – единственное число, женский род, мн. число – песни.
-
-Толковый словарь
-
-Песня - стихотворное и музыкальное произведение для исполнения голосом, голосами.
-
-Музыкальный энциклопедический словарь
-
-Песня – наиболее распространённый жанр вокальной музыки, а также общее обозначение поэтического произведения, предназначенного для пения.
-
-Англо-русский словарь
-
-Song – песня.
-
-Франко-русский словарь
-
-Chanson – песня.
-
-Фразеологический словарь
-
-Из песни слов не выкинешь - ничего не поделаешь — приходится сказать всю (обычно горькую, неприятную) все, не пропуская никаких, в том числе и неприятных, подробностей.
-
-Словарь синонимов
-
-Песня – песнь, повторение, песнопение, гимн, псалом, ода, рапсодия, романс, кантата, ноктюрн, серенада, ария.">словаре.</a></p>
+    <p>В рассказе А.П.Чехова "Каштанка" мы находим устаревшие слова. Значение некоторых из них понятны и сейчас. Но есть слова, значение которых необходимо найти в <a  style="cursor:help;" id="popover" tabindex="0" class="" role="button" data-toggle="popover" data-trigger="focus" title="СЛОВАРИ.<br/> ВИДЫ И ОСОБЕННОСТИ"  data-placement="bottom" data-html="true" data-content="<strong>Вот как описывают разные словари одно и то же слово:</strong><br/><br/>
+    <i><strong>Орфографический словарь</strong></i><br/>
+    Песня – единственное число, женский род, мн. число – песни. <br/><br/>
+    <i><strong>Толковый словарь</strong></i><br/>
+    Песня - стихотворное и музыкальное произведение для исполнения голосом, голосами.<br/><br/>
+    <i><strong>Музыкальный энциклопедический словарь</strong></i><br/>
+    Песня – наиболее распространённый жанр вокальной музыки, а также общее обозначение поэтического произведения, предназначенного для пения.<br/><br/>
+    <i><strong>Англо-русский словарь</strong></i><br/>
+    Song – песня.<br/><br/>
+    <i><strong>Франко-русский словарь</strong></i><br/>
+    Chanson – песня.<br/><br/>
+    <i><strong>Фразеологический словарь</strong></i><br/>
+    <q>Из песни слов не выкинешь</q> - ничего не поделаешь — приходится сказать всю (обычно горькую, неприятную) все, не пропуская никаких, в том числе и неприятных, подробностей.<br/><br/>
+    <i><strong>Словарь синонимов</strong></i><br/>
+    Песня – песнь, повторение, песнопение, гимн, псалом, ода, рапсодия, романс, кантата, ноктюрн, серенада, ария. ">словаре.</a></p>
 
 <div class="clearfix"></div>
 
-<div class="card play-card">ПОИГРАЕМ?</div>
+<div class="card play-card"
+onclick="document.getElementById('lohanka').style.display='inline';">ПОИГРАЕМ?</div>
 <div class="card card-inverse">
-  <img id="lohanka" class="card-img" src="images/lohanka.jpg" alt="Card image" >
-  <div id="lohanka-txt" class="card-img-overlay">
+  <img id="lohanka" class="card-img animated zoomInDown" src="images/lohanka.jpg" alt="Card image" >
+  <div id="lohanka-txt" class="card-img-overlay animated slideInLeft">
     <h4 class="card-title">ЛОХАНЬ</h4>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p><br><br>
-    <p class="card-text"><small>«Они из большой <strong>лохани</strong> с жадностью ели помои, от которых шёл белый пар и очень вкусный запах.»</small></p>
+    <p class="card-text">Деревянный или металлический сосуд круглой или овальной формы с невысокими краями, предназначенный для различных хозяйственных надобностей (сливания воды, мытья посуды и т.п.).
+</p><br><br>
+    <p class="card-text animated rubberBand"><small>«Они из большой <strong>лохани</strong> с жадностью ели помои, от которых шёл белый пар и очень вкусный запах.»</small></p>
   </div>
 </div>
-<div class="card play-card">ПОИГРАЕМ?</div>
+<div class="card play-card"
+onclick="document.getElementById('baklushi').style.display='inline';">ПОИГРАЕМ?</div>
 <div class="card card-inverse">
-  <img class="card-img" src="images/lohanka.jpg" alt="Card image">
-  <div class="card-img-overlay">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <img id="baklushi" class="card-img animated zoomInUp" src="images/baklushi.jpg" alt="Card image">
+  <div class="card-img-overlay animated slideInDown">
+    <h4 class="card-title">БИТЬ БАКЛУШИ - бездельничать.</h4>
+    <p class="card-text">В старину отколотые от полена чурки — заготовки для деревянной посуды — называли баклушами. Их изготовление считалось лёгким, не требующим усилий и умения делом. Сейчас мы употребляем выражение «бить баклуши» для обозначения безделья.
+    </p>
+    <p class="card-text animated rubberBand"><small>«Пора нам, Тётка, делом заняться. Довольно тебе <strong>бить баклуши</strong>.»</small></p>
   </div>
 </div>
-<div class="card play-card">ПОИГРАЕМ?</div>
+<div class="card play-card"
+onclick="document.getElementById('zhelezka').style.display='inline';">ПОИГРАЕМ?</div>
 <div class="card card-inverse">
-  <img class="card-img" src="images/lohanka.jpg" alt="Card image">
-  <div class="card-img-overlay">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <img id="zhelezka" class="card-img animated zoomInLeft" src="images/zhelezka.jpg" alt="Card image">
+  <div class="card-img-overlay animated slideInRight">
+    <h4 class="card-title">КОННО-ЖЕЛЕЗКА</h4>
+    <p class="card-text">(конно-железная городская дорога) — вид общественного транспорта, широко применявшегося до перевода железной дороги на паровую, тепловую, электрическую или канатную тягу.</p><br><br>
+    <p class="card-text animated rubberBand"><small>«Она прыгала, бросалась с лаем на <strong>вагоны конно-железки</strong>, забегала во дворы.»</small></p>
   </div>
 </div>
-<div class="card play-card">ПОИГРАЕМ?</div>
+<div class="card play-card"
+onclick="document.getElementById('cilindr').style.display='inline';">ПОИГРАЕМ?</div>
 <div class="card card-inverse">
-  <img class="card-img" src="images/lohanka.jpg" alt="Card image">
-  <div class="card-img-overlay">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <img id="cilindr" class="card-img animated zoomInRight" src="images/cilindr.jpg" alt="Card image">
+  <div class="card-img-overlay animated slideInLeft">
+    <h4 class="card-title">ЦИЛИНДР</h4>
+    <p class="card-text">Высокая шляпа в виде цилиндра с небольшими твердыми полями. Предком цилиндра является так называемая «круглая шляпа» - с полями и высокой тульей, появившаяся в испанской мужской моде ещё в 15 веке. Англичане стали носить эту шляпу как повседневный головной убор в 80-х годах 18 века.</p>
+    <p class="card-text animated rubberBand"><small>«Он опять вышел и через минуту вернулся в шубе и в <strong>цилиндре</strong>.»</small></p>
   </div>
 </div>
-<div class="card play-card">ПОИГРАЕМ?</div>
+<div class="card play-card"
+onclick="document.getElementById('kaloshi').style.display='inline';">ПОИГРАЕМ?</div>
 <div class="card card-inverse">
-  <img class="card-img" src="images/lohanka.jpg" alt="Card image">
-  <div class="card-img-overlay">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <img id="kaloshi" class="card-img animated zoomInUp" src="images/kaloshi.jpg" alt="Card image">
+  <div class="card-img-overlay animated slideInUp">
+    <h4 class="card-title">КАЛОШИ</h4>
+    <p class="card-text">Непромокаемые (обычно резиновые) накладки, надеваемые на обувь, некоторые виды используются как самостоятельная обувь(садовые, утеплённые, и т.д.).
+    Галоши из тонкой резины носят с валенками. В прошлом их носили для защиты обуви, и на туфли, и на ботинки.</p><br>
+    <p class="card-text animated rubberBand"><small>«Какой-то негодяй прошел в новых <strong>калошах</strong>.»</small></p>
   </div>
 </div>
-<div class="card play-card">ПОИГРАЕМ?</div>
+<div class="card play-card"
+onclick="document.getElementById('traktir').style.display='inline';">ПОИГРАЕМ?</div>
 <div class="card card-inverse">
-  <img class="card-img" src="images/lohanka.jpg" alt="Card image">
-  <div class="card-img-overlay">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <img id="traktir" class="card-img animated zoomInDown" src="images/traktir.jpg" alt="Card image">
+  <div class="card-img-overlay animated slideInRight">
+    <h4 class="card-title">ТРАКТИР</h4>
+    <p class="card-text">В старину - гостиница с рестораном, позднее - ресторан низшего разряда. </p><br><br><br>
+    <p class="card-text animated rubberBand"><small>«Oт сестры пошел он к знакомому переплетчику, от переплетчика в <strong>трактир</strong>.»</small></p>
   </div>
 </div>
+<a class="card play-card" style="width: 80%; margin-right: 10%; cursor: wait; text-decoration: none;" href="kashtanka-words.html">ЕЩЕ РАЗ?</a>
 
 </div> <!--end of .main-content-->
   

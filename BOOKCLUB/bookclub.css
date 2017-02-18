@@ -1,8 +1,5 @@
 /*
 
-* Based on Cover by https://twitter.com/mdo"  @mdo
-* added cover image and background color to match (green)
-*
 * Globals
 
 */
@@ -88,20 +85,6 @@ color: #fff;
     background-size: cover;
 } 
 
-
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-/*.site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%; 
-  min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-}
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}*/
 .cover-container {
   margin-right: auto;
   margin-left: auto;
@@ -121,16 +104,41 @@ margin-top: 50%;
  * Header
  */
 .masthead-brand {
-  margin-top: 2rem;
-  margin-bottom: 10px;
+  /*margin-top: 2rem;*/
+  margin-bottom: 1rem;
   font-style: italic;
   text-align: left;
 }
+
+#dropdownMenuButton {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-weight: bold;
+  padding-top: 4px;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+} 
+
+#dropdownMenuButton-readers {
+  background: transparent;
+  border: none;
+  color:  #e67300;
+  font-weight: bold;
+  padding-top: 4px;
+  font-size: 16px;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/*#dropdownMenuButton a {
+  font-size: 16px;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}*/
 
 .masthead-nav > li,
 .masthead-nav-readers > li {
   display: inline-block;
 }
+
 .masthead-nav > li + li,
 .masthead-nav-readers > li + li  {
   margin-left: 20px;
@@ -242,16 +250,18 @@ a.btn-secondary.btn-lg.btn-block:hover {
  }
  
  .card {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   margin-left: 0;
   min-width: 30%;
   -webkit-box-shadow: 16px 17px 30px -4px rgba(85,51,17,1);
   -moz-box-shadow: 16px 17px 30px -4px rgba(85,51,17,1);
   box-shadow: 16px 17px 30px -4px rgba(85,51,17,1);
  }
+
  .card-title {
   color: #e67300;
   font-size: 1.75rem;
+
  }
   p.card-text {
     color: #553311;
@@ -259,12 +269,14 @@ a.btn-secondary.btn-lg.btn-block:hover {
     font-style: italic;
   }
 
-.card-inverse {
-  text-align: left;
-}
+ .card-img-top {
+  position: relative;
+ } 
 
-.card-inverse .card-title {
-color: #553311;
+  .enlarge:hover {
+  transform:scale(1.5,2);
+  transform-origin:0 0;
+  z-index: 1030;
 }
 
  /*
@@ -301,6 +313,7 @@ color: #553311;
 .btn-link#kashtankaModalbtn {
 color: inherit;
 font-weight: bold;
+cursor:help;
 }
 
 .btn-link#kashtankaModalbtn:focus,
@@ -315,15 +328,30 @@ font-weight: bold;
   color: #553311;
   font-weight: bolder; 
 }
-p.card-text small {
-  line-height: .1;
-}
 
 .card-inverse {
   width: 48%;
+  min-height: 25rem;
   float: right;
   margin-right: 1rem;
+  text-align: left;
+  background: transparent;
 }
+
+.card-inverse .card-title,
+ .card-inverse small {
+/*color: rgba(43, 26, 8, 1);*/
+color: rgba(48, 12, 3, 1);
+line-height: 1.2;
+}
+
+
+ .card-inverse .card-text {
+/*color: rgba(255, 255, 255, 1);*/
+color: rgba(242, 85, 44, 1); 
+line-height: 1.2;
+}
+
 
 .play-card {
   width: 48%;
@@ -337,9 +365,23 @@ p.card-text small {
   float:right;
 }
 
+.play-card:hover {
+box-shadow:9px 12px 9px #fff;
+background-color: #4d3319;
+color: inherit;
+cursor: pointer;
+}
 
 .card-img-overlay {
   display: none;
+}
+
+.card-img {
+display: none;
+}
+
+.card-img:hover {
+  opacity: .5;
 }
 
 .card-inverse:hover .card-img-overlay{
@@ -358,6 +400,29 @@ p.card-text small {
   .cover-container {
     width: 80%; /* Must be percentage or pixels for horizontal alignment */
   }
+
+.dropdown-menu,
+.dropdown {
+  width: 80%;
+  font-size: .9em;
+  padding-left: 0;
+}
+
+#dropdownMenuButton,
+#dropdownMenuButton-readers {
+  padding-left: 0;
+  font-size: .9em;
+  }
+
+.masthead-nav > li > a,
+.masthead-nav-readers > li > a {
+  font-size: 12px;
+}
+
+.masthead-nav > li + li,
+.masthead-nav-readers > li + li  {
+  margin-left: 10px;
+} 
 
  .inner-cover{
   margin-top: 50%;
@@ -425,6 +490,11 @@ font-size: 4vw;
 }
 .main-content p {
   font-size: 3vw;
+}
+
+.card-inverse .card-text,
+.card-inverse .card-text small {
+  font-size: 95%;
 }
 
 

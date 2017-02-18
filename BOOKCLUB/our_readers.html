@@ -7,8 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="bookclub.css">
-    <title>КАШТАНКА</title>
+    <title>BOOKCLUB</title>
 </head>
 <body id="our_readers_body">
 
@@ -20,12 +21,21 @@
 
       <div class="masthead-clearfix">
         <div class="inner">
-          <a href="index.html" class="active"><h2 class="masthead-brand">Russian Bookclub <br>
+          <a href="index.html"><h2 class="masthead-brand">Russian Bookclub <br>
          <small>of Atlanta</small></h2></a>
 
           <ul class="nav masthead-nav-readers">
             <li>
-              <a href="Kashtanka.html">Наши встречи</a>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton-readers" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Наши встречи/Архив
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="Kashtanka.html">Каштанка</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
             </li>
 
             <li class="active">
@@ -43,8 +53,8 @@
 
     <div class="card-deck">
 	
-		<div class="card">
-		  <img class="card-img-top" src="images/аlex-sm.jpeg" alt="Card image cap">
+		<div class="card animated slideInLeft">
+		  <img class="card-img-top enlarge" src="images/аlex-sm.jpeg" alt="Card image cap">
 		  <div class="card-block">
 		    <h4 class="card-title">АЛЁША</h4>
 		    <p class="card-text">Старательно учится любить книги. Даже те, что без картинок. Даже те, которые на русском :) </p>
@@ -52,8 +62,8 @@
 		</div>
 
 
-		<div class="card">
-		  <img class="card-img-top" src="images/kolya-sm.jpeg" alt="Card image cap">
+		<div class="card animated slideInDown">
+		  <img class="card-img-top enlarge" src="images/kolya-sm.jpeg" alt="Card image cap">
 		  <div class="card-block">
 		    <h4 class="card-title">КОЛЯ</h4>
 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -62,8 +72,8 @@
 	
 
 	
-		<div class="card">
-		  <img class="card-img-top" src="images/nick-sm.jpeg" alt="Card image cap">
+		<div class="card animated slideInRight">
+		  <img class="card-img-top enlarge" src="images/nick-sm.jpeg" alt="Card image cap">
 		  <div class="card-block">
 		    <h4 class="card-title">НИК</h4>
 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -72,18 +82,18 @@
 
 		
 
-		<div class="card">
-		  <img class="card-img-top" src="images/аlina-sm.jpeg" alt="Card image cap">
+		<div class="card animated slideInLeft">
+		  <img class="card-img-top enlarge" src="images/anya-sm.jpeg" alt="Card image cap">
 		  <div class="card-block">
-		    <h4 class="card-title">АЛИНА</h4>
+		    <h4 class="card-title">АНЯ</h4>
 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 		  </div>
 		</div>
 
 	
 	
-		<div class="card">
-		  <img class="card-img-top" src="images/tanya-sm.jpeg" alt="Card image cap">
+		<div class="card animated slideInUp">
+		  <img class="card-img-top enlarge" src="images/tanya-sm.jpeg" alt="Card image cap">
 		  <div class="card-block">
 		    <h4 class="card-title">ТАНЯ</h4>
 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -92,10 +102,10 @@
 
 		
 	
-		<div class="card">
-		  <img class="card-img-top" src="images/anya-sm.jpeg" alt="Card image cap">
+		<div class="card animated slideInRight">
+		  <img class="card-img-top enlarge" src="images/аlina-sm.jpeg" alt="Card image cap">
 		  <div class="card-block">
-		    <h4 class="card-title">AНЯ</h4>
+		    <h4 class="card-title">АЛИНА</h4>
 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 		  </div>
 		</div>

@@ -7,20 +7,30 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="bookclub.css">
-    <title>КАШТАНКА</title>
+    <title>BOOKCLUB</title>
   </head>
   <body id="kashtanka-body">
   	
     <div class="cover-container">
       <div class="masthead-clearfix">
         <div class="inner">
-          <a href="bookclub_home.html" class="active"><h2 class="masthead-brand">Russian Bookclub <br>
+          <a href="index.html" class="active"><h2 class="masthead-brand">Russian Bookclub <br>
          <small>of Atlanta</small></h2></a>
 
           <ul class="nav masthead-nav">
             <li class="active">
-              <a href="Kashtanka.html" target=" ">Наши встречи</a>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Наши встречи/Архив
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="Kashtanka.html">Каштанка</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
             </li>
 
             <li>
@@ -38,9 +48,9 @@
         <h1 class="cover-heading">Историко-бытовой словарь</h1>
 
         <p class="lead">Где мы встречаем устаревшие слова, кто их использует (часть лексики, которая продолжает использоваться в исторической, художественной, публицистической литературе)...
-        </p>
+        </p><br/>
 
-        <a class="btn-secondary btn-lg btn-block" href="kashtanka-words.html">Узнать больше</a>
+        <a class="btn-secondary btn-lg btn-block animated pulse infinite" href="kashtanka-words.html">Узнать больше</a>
       </div> <!--inner cover -->
 
       <div class="mastfoot">
