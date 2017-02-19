@@ -117,7 +117,8 @@ margin-top: 50%;
   background: transparent;
   border: none;
   color: inherit;
-  font-weight: bold;
+  font-family: inherit;
+  font-size: 18px;
   padding-top: 4px;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 } 
@@ -125,17 +126,13 @@ margin-top: 50%;
 #dropdownMenuButton-readers {
   background: transparent;
   border: none;
+  font-size: 18px;
   color:  #e67300;
-  font-weight: bold;
   padding-top: 4px;
-  font-size: 16px;
+  font-family: inherit;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
-/*#dropdownMenuButton a {
-  font-size: 16px;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-}*/
 
 .masthead-nav > li,
 .masthead-nav-readers > li {
@@ -150,7 +147,6 @@ margin-top: 50%;
   padding-right: 0;
   padding-left: 0;
   font-size: 18px;
-  font-weight: bold;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.95);
   border-bottom: 2px solid transparent;
@@ -159,8 +155,7 @@ margin-top: 50%;
 .masthead-nav-readers > li > a {
   padding-right: 0;
   padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 18px;
   color: #fff; /* IE8 proofing */
   color: rgba(230,115,0,.95);
   border-bottom: 2px solid transparent;
