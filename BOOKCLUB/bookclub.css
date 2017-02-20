@@ -244,7 +244,9 @@ a.btn-secondary.btn-lg.btn-block:hover {
  */
  .card-deck {
   max-width: 1200px;
+  max-width: 1200px;
   margin-top: 20%;
+  margin-bottom: 10%;
  }
  
  .card {
@@ -304,8 +306,12 @@ a.btn-secondary.btn-lg.btn-block:hover {
   font-style: italic;
 }
 
-.modal-content {
+.modal-title {
  color: #4d3319;
+}
+
+.modal-body {
+  color: rgba(242, 85, 44, 1); 
 }
 
 .btn-link#kashtankaModalbtn {
@@ -320,7 +326,7 @@ cursor:help;
 }
 
 .popover-content {
-  color: #553311;
+  color: rgba(242, 85, 44, 1); 
 }
 .popover-title {
   color: #553311;
