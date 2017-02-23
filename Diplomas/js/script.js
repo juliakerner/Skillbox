@@ -37,7 +37,7 @@ $(function () {
   $('[data-toggle="popover"]').popover()
 })
 
-/** MODAL/Lightbox **/
+/** MODAL/Lightbox *********************************************/
 
 function openModal() {
   document.getElementById('myModal').style.display = "block";
@@ -76,7 +76,12 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
+/*************************************************************/
 
+function registerName() {
+ var x = document.getElementById("InputContactInfo2");
+ document.getElementById("InputContactInfo1").innerHTML = x.innerHTML;
+}
 
 
 
