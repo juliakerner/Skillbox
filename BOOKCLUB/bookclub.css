@@ -189,22 +189,6 @@ margin-top: 50%;
 }
 
 
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav,
-  .masthead-nav-readers {
-    float: right;
-  }
-
-  .clearfix {
-  width: 100%;
-  height: 10rem;
-}
-}
-
-
 /*
  * Cover
  */
@@ -395,13 +379,17 @@ display: none;
  * Affix and center
  */
 
- @media (min-width: 400px) and (max-width: 767px) {
+ @media (min-width: 300px) and (max-width: 767px) {
 
   .masthead,
   .mastfoot,
   .cover-container {
     width: 80%; /* Must be percentage or pixels for horizontal alignment */
   }
+
+.masthead-brand {
+  font-size: 70%;
+}  
 
 .dropdown-menu,
 .dropdown {
@@ -435,17 +423,20 @@ display: none;
     bottom: 0;
     margin-top: 5rem;
     text-align: center;
+    font-size: 60%; 
   }
 
 .card-deck {
   margin-bottom: 5rem;
 }
 
-.main-content h1 {
+.main-content h1,
+h1.cover-heading {
     margin-top: 5rem;
     font-size: 6vw;
 }
-.main-content p {
+.main-content p,
+p.lead {
   font-size: 3vw;
 }
 
@@ -462,9 +453,26 @@ font-size: 4vw;
   width: 100%;
   margin-right: 0;
 }
+
 }
 
+
+
 @media (min-width: 768px) and (max-width: 991px) {
+
+.masthead-brand {
+    float: left;
+  }
+  .inner.masthead-nav,
+  .masthead-nav-readers {
+    float: right;
+  }
+
+  .clearfix {
+  width: 100%;
+  height: 10rem;
+}
+
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
@@ -477,12 +485,12 @@ font-size: 4vw;
   /* Start the vertical centering */
   
   /* Handle the widths */
-  .masthead,
+ .inner.masthead,
   .mastfoot,
   .cover-container {
-    width: 80%; /* Must be percentage or pixels for horizontal alignment */
+    width: 90%; /* Must be percentage or pixels for horizontal alignment */
   }
-
+ 
 .main-content {
   margin-top: 15rem;
 }
@@ -499,25 +507,40 @@ font-size: 4vw;
   font-size: 95%;
 }
 
-
-
 }
 
 @media (min-width: 992px) {
+
+.masthead-brand {
+    float: left;
+  }
+
+  .masthead-nav,
+  .masthead-nav-readers {
+    float: right;
+    margin-bottom: 10rem;
+  }
+
+  .clearfix {
+  width: 100%;
+  height: 10rem;
+}
+
   .masthead,
   .mastfoot,
   .cover-container {
     width: 90%;
   }
 
-  .masthead {
+.masthead {
     position: fixed;
     top: 0;
-  }
-  .mastfoot {
+  }  
+
+.mastfoot {
     position: fixed;
     bottom: 0;
-  }
+  } 
 
 .clearfix {
   width: 90%;
