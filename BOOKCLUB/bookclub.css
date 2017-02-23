@@ -378,15 +378,13 @@ cursor: pointer;
 
 .card-img-overlay {
   display: none;
+  background-color: rgba(255, 255, 255, 0.8)
 }
 
 .card-img {
 display: none;
 }
 
-.card-img:hover {
-  opacity: .5;
-}
 
 .card-inverse:hover .card-img-overlay{
   display: block;
