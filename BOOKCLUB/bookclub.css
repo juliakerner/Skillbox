@@ -33,6 +33,10 @@ body {
   font-family: "American Typewriter";
 }
 
+div {
+  display: block;
+}
+
 #kashtanka-body {
  background: url('./images/kashtanka_bg.jpeg') no-repeat center fixed; 
   -webkit-background-size: cover;
@@ -97,6 +101,64 @@ color: #fff;
     background-size: cover;
 } 
 
+/*#blog-body {
+position: absolute; 
+background: url('./images/blog_bg.jpg') fixed;
+height: 100%; 
+color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
+
+.parallax {
+  /* The image used */
+    background-image: url('./images/blog_bg.jpg');
+
+    /* Full height */
+    height: 100%; 
+    position: relative;
+    opacity: 0.75;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-2 {
+  /* The image used */
+    background-image: url('./images/blog_bg_2.jpg');
+
+    /* Full height */
+    min-height: 40%; 
+    position: relative;
+    opacity: 0.65;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-3 {
+  /* The image used */
+    background-image: url('./images/blog_bg_3.jpg');
+
+    /* Full height */
+    min-height: 100%; 
+    position: relative;
+    opacity: 0.75;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 .cover-container {
@@ -105,10 +167,11 @@ color: #fff;
 }
 
 /* Padding for spacing */
-/*.inner {
-  padding: 30px;
+
+.panel {
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
-*/
 
 /*
  * Header
@@ -117,6 +180,7 @@ color: #fff;
 #navbar {
   margin-top: 5%;
   padding-left: 5%;
+  text-align: start;
 }
 
 a.nav-link,
@@ -170,6 +234,13 @@ a.nav-link-readers.active {
 
 .navbar-toggler {
   background-color: rgba(255,255,255,.80);
+}
+
+div.dropdown-menu {
+width: 100%;
+background-color: rgba(255,255,255,.5);
+border: none;
+border-radius: 0;
 }
 
 a.dropdown-item.active {
@@ -273,6 +344,67 @@ a.btn-secondary.btn-lg.btn-block:hover {
 
 
 
+ /*
+ * blog page
+ */
+
+.soon {
+  height: 30rem;
+  width: 100%;
+  background-color: #000;
+  opacity: .8;
+  text-align: start;
+  font-family: ;
+  font-size: 5rem;
+  color: #fff;
+  padding: 8rem;
+}
+
+.soon_en {
+ height: 25rem;
+  width: 100%;
+  background-color: #cc6600;
+  opacity: .7;
+  text-align: end;
+  font-family: Zapfino;
+  font-size: 3rem;
+  color: #fff;
+  padding: 7rem 
+}
+
+.scroll {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.scroll-2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.scroll span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.scroll-2 span.border-2 {
+  background-color:  #cc6600;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
  /*
  * photos page
  */
@@ -379,6 +511,8 @@ padding-bottom: 13rem;
 color: inherit;
 font-weight: bold;
 cursor:help;
+max-width: 100%;
+padding: 0;
 }
 
 .btn-link#kashtankaModalbtn:focus,
@@ -458,7 +592,8 @@ display: none;
 
  @media (min-width: 300px) and (max-width: 767px) {
 
-  .cover-container {
+
+.cover-container {
     width: 80%; /* Must be percentage or pixels for horizontal alignment */
   }
 
@@ -471,7 +606,7 @@ display: none;
 } 
  
 #footer {
-    padding: 3rem;
+    padding: 1.5rem;
     font-size: 80%; 
   }
 
@@ -489,8 +624,9 @@ p.lead {
   font-size: 3vw;
 }
 
+
 #kashtankaModalbtn h2{
-font-size: 4vw;
+font-size: 85%;
 }
 
 #multik-btn  {
@@ -502,7 +638,7 @@ font-size: 4vw;
   height: 5rem;
 }
 
-.card-inverse {
+div.card.card-inverse {
   width: 100%;
   margin-right: 0;
 }
@@ -530,10 +666,23 @@ font-size: 4vw;
 
 .testbutton {
 position: fixed;
-left: 2rem;
-top: 75rem;
+left: 1rem;
+top: 70rem;
 z-index: 10;
 }
+
+.soon {
+  font-size: 2rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.soon_en {
+  font-size: 1.3rem;
+  padding-top: 7rem;
+  text-align: center;
+}
+
 
 }
 
@@ -541,10 +690,10 @@ z-index: 10;
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-  .clearfix {
+  /*.clearfix {
   width: 100%;
   height: 10rem;
-}
+}*/
    
   /* Start the vertical centering */
   
@@ -573,6 +722,21 @@ z-index: 10;
 .inner-cover {
 margin-top: 40%;
 }
+
+
+.soon {
+  font-size: 3.5rem;
+  padding-top: 5.5rem;
+  text-align: center;
+}
+
+.soon_en {
+  font-size: 2.3rem;
+  padding-top: 7rem;
+  text-align: center;
+}
+
+
 
 }
 
