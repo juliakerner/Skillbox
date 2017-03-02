@@ -37,6 +37,21 @@ div {
   display: block;
 }
 
+/*#bazhov-body {
+ background: url('./images/bazhov_bg.jpg') no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  height: 100%;
+  
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  position: absolute;
+}*/
+
 #kashtanka-body {
  background: url('./images/kashtanka_bg.jpeg') no-repeat center fixed; 
   -webkit-background-size: cover;
@@ -45,7 +60,7 @@ div {
   background-size: cover;
   
   height: 100%;
-  background-color: #fbefcc;
+  /*background-color: #fbefcc;*/
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
@@ -60,7 +75,7 @@ div {
   background-size: cover;
   
   height: 100%;
-  background-color: #fbefcc;
+/*  background-color: #fbefcc;*/
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5); 
@@ -74,13 +89,13 @@ div {
   background-size: cover;
   
   height: 100%;
-  background-color: #fbefcc;
+  /*background-color: #fbefcc;*/
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   position: absolute;
 }
 
-#home_body {
+#home-body {
 position: absolute; 
 background: url('./images/homepage_bg.jpg') fixed;
 height: 100%; 
@@ -91,7 +106,7 @@ color: #fff;
 } 
 
 
-#photos_body {
+#photos-body {
 position: absolute; 
 background: url('./images/photos_bg.jpg') fixed;
 height: 100%; 
@@ -151,6 +166,53 @@ color: #fff;
     background-size: cover;
 }
 
+.parallax-4 {
+  /* The image used */
+    background-image: url('./images/bazhov_bg.jpg');
+
+    /* Full height */
+    min-height: 100%; 
+    position: relative;
+    opacity: 0.9;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-5 {
+  /* The image used */
+    background-image: url('./images/bazhov_bg_2.jpeg');
+
+    /* Full height */
+    min-height: 40%; 
+    position: relative;
+    opacity: 0.9;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-6 {
+  /* The image used */
+    background-image: url('./images/bazhov_bg_3.jpg');
+
+    /* Full height */
+    min-height: 100%; 
+    position: relative;
+    opacity: 0.9;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .cover-container {
   margin-right: auto;
@@ -212,7 +274,7 @@ a.nav-link-readers.active {
 }
 
 #navbarNavDropdown a {
-  color: inherit;
+  color: #fff;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   font-size: 1.2rem;
 }
@@ -267,9 +329,23 @@ a.btn-secondary.btn-lg.btn-block:hover {
 
 #footer {
   color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.8);
   text-align: center;
-  padding: 5rem;
+  padding: 5rem 0;
+ }
+
+a#up-btn {
+color: rgba(255,255,255,.8);
+font-size: 1.25rem;
+padding: 15px;
+background-color: #111;
+opacity: .8;
+border-radius: 2rem;
+position: fixed;
+bottom: 10rem;
+right: 0;
+cursor: pointer;
+text-decoration: none;
 }
 
 /*
@@ -314,7 +390,10 @@ a.btn-secondary.btn-lg.btn-block:hover {
   z-index: 1030;
 }
 
-#multik {
+#multik, 
+#multik-1,
+#multik-2,
+#multik-3 {
   display: none;
 }
 
@@ -333,6 +412,19 @@ a.btn-secondary.btn-lg.btn-block:hover {
   cursor: pointer;
 }
 
+#multik-btn-close {
+  padding: 10px 20px;
+  opacity: .5;
+  color: #fff;
+  font-size: 1.25rem;
+  border-radius: 2rem;
+  background-color: rgba(0,0,0,0.85);
+}
+
+#multik-btn-close:hover {
+  opacity: 1;
+  cursor: pointer;
+}
 
 
  /*
@@ -363,15 +455,20 @@ a.btn-secondary.btn-lg.btn-block:hover {
   padding: 7rem 
 }
 
-.scroll {
-  position: absolute;
-  top: 50%;
-  left: 0;
+
+.bazhov-words {
+ height: 35rem;
   width: 100%;
-  text-align: center;
-  color: #000;
+  background-color: #cc6600;
+  opacity: .7;
+  text-align: end;
+  font-family: Zapfino;
+  font-size: 3rem;
+  color: #fff;
+  padding: 7rem 
 }
 
+.scroll,
 .scroll-2 {
   position: absolute;
   top: 50%;
@@ -380,6 +477,25 @@ a.btn-secondary.btn-lg.btn-block:hover {
   text-align: center;
   color: #000;
 }
+
+.scroll-4 {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  color: #000;
+}
+
+.scroll-4 span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  border-radius: 100px;
+}
+
 
 .scroll span.border {
   background-color: #111;
@@ -396,6 +512,7 @@ a.btn-secondary.btn-lg.btn-block:hover {
   font-size: 25px;
   letter-spacing: 10px;
 }
+
  /*
  * photos page
  */
@@ -597,7 +714,7 @@ display: none;
 } 
  
 #footer {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     font-size: 80%; 
   }
 
@@ -624,10 +741,10 @@ font-size: 85%;
   font-size: 85%;
 }
 
-.clearfix {
+./*clearfix {
   width: 90%;
   height: 5rem;
-}
+}*/
 
 div.card.card-inverse {
   width: 100%;
@@ -668,10 +785,20 @@ z-index: 10;
   text-align: center;
 }
 
-.soon_en {
+.soon_en,
+.bazhov-words {
   font-size: 1.3rem;
   padding-top: 7rem;
   text-align: center;
+}
+
+.scroll-4 span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 15px;
+  letter-spacing: 4px;
+  border-radius: 100px;
 }
 
 

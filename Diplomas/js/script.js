@@ -79,8 +79,8 @@ function showSlides(n) {
 /*************************************************************/
 
 function registerName() {
- var x = document.getElementById("InputContactInfo2");
- document.getElementById("InputContactInfo1").innerHTML = x.innerHTML;
+ var x = document.getElementById("InputContactInfo2").value;
+ document.getElementById("InputContactInfo1").innerHTML = x;
 }
 
 
