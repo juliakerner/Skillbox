@@ -37,8 +37,8 @@ div {
   display: block;
 }
 
-/*#bazhov-body {
- background: url('./images/bazhov_bg.jpg') no-repeat center fixed; 
+#pushkin-body {
+ background: url('./images/pushkin_bg.jpg') no-repeat center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -50,7 +50,7 @@ div {
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   position: absolute;
-}*/
+}
 
 #kashtanka-body {
  background: url('./images/kashtanka_bg.jpeg') no-repeat center fixed; 
@@ -115,6 +115,10 @@ color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
 } 
+
+#indians-body {
+  position: absolute;
+}
 
 /* instead of blog_body */
 
@@ -203,6 +207,23 @@ color: #fff;
     background-image: url('./images/bazhov_bg_3.jpg');
 
     /* Full height */
+    min-height: 60%; 
+    position: relative;
+    opacity: 0.9;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.parallax-7 {
+  /* The image used */
+    background-image: url('./images/bazhov_bg_4.jpg');
+
+    /* Full height */
     min-height: 100%; 
     position: relative;
     opacity: 0.9;
@@ -214,10 +235,60 @@ color: #fff;
     background-size: cover;
 }
 
+.parallax-ind {
+ /* The image used */
+    background-image: url('./images/indians_bg_1.jpg');
+
+    /* Full height */
+    height: 100%; 
+    position: relative;
+    opacity: 0.75;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.parallax-ind-2 {
+ /* The image used */
+    background-image: url('./images/indians_bg_2.jpeg');
+
+    /* Full height */
+    height: 100%; 
+    position: relative;
+    opacity: 0.75;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.parallax-ind-3 {
+ /* The image used */
+    background-image: url('./images/indians_bg_3.jpg');
+
+    /* Full height */
+    height: 100%; 
+    position: relative;
+    opacity: 0.75;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
 .cover-container {
   margin-right: auto;
   margin-left: auto;
 }
+
+
 
 /* Padding for spacing */
 
@@ -393,7 +464,8 @@ text-decoration: none;
 #multik, 
 #multik-1,
 #multik-2,
-#multik-3 {
+#multik-3,
+#multik-4 {
   display: none;
 }
 
@@ -454,7 +526,6 @@ text-decoration: none;
   color: #fff;
   padding: 7rem 
 }
-
 
 .bazhov-words {
  height: 35rem;
@@ -801,6 +872,19 @@ z-index: 10;
   border-radius: 100px;
 }
 
+a#up-btn {
+color: rgba(255,255,255,.8);
+font-size: 1rem;
+padding: 12px;
+background-color: #111;
+opacity: .8;
+border-radius: 2rem;
+position: fixed;
+bottom: 5rem;
+right: 0;
+cursor: pointer;
+text-decoration: none;
+}
 
 }
 
