@@ -90,24 +90,15 @@
             <td id="td2">Есть в наличии</td>
             <td id="td3">4 540руб.</td>
             <td id="td4">
-            <div class="input-group">
-                <span class="input-group-btn">
-                    <button id="minus-btn" type="button" class="btn btn-default number-spinner" data-value="decrease" data-target="#spinner" data-toggle="spinner">
-                        <span>-</span>
-                    </button>
-                </span>
-                <input type="text" data-ride="spinner" id="spinner" class="form-control input-number" value="1">
-                <span class="input-group-btn">
-                    <button id="plus-btn" type="button" class="btn btn-default number-spinner" data-value="increase" data-target="#spinner" data-toggle="spinner">
-                        <span>+</span>
-                    </button>
-                 </span>
-              </div>
+                <input type="number" data-ride="" id="spinner" 
+                       class="form-control input-number" value="1" min="1">
             </td>  
-            <td id="td5"><span>4 540руб.</span><button type="button" class="close" aria-label="Close">
+            <td id="td5"><span>4 540руб.</span>
+                <a  href="javascript:void(0);"
+                type="button" class="close-spinner" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-                </button>
-            </td>
+                </a>
+           </td>
           </tr>
           <tr>
             <th scope="row"><img src="images/product_img1.png" /></th>
@@ -115,7 +106,9 @@
             <td id="td2">Есть в наличии</td>
             <td id="td3">4 540руб.</td>
             <td id="td4">
-            <div class="input-group">
+             <input type="number" data-ride="" id="spinner" 
+                       class="form-control input-number" value="1" min="1">
+            <!-- <div class="input-group">
                 <span class="input-group-btn">
                     <button id="minus-btn" type="button" class="btn btn-default" data-value="decrease" data-target="#spinner" data-toggle="spinner">
                         <span>-</span>
@@ -127,10 +120,12 @@
                         <span>+</span>
                     </button>
                  </span>
-              </div></td>
-            <td id="td5"><span>4 540руб.</span><button type="button" class="close" aria-label="Close">
+              </div></td> -->
+            <td id="td5"><span>4 540руб.</span>
+              <a  href="javascript:void(0);"
+                type="button" class="close-spinner" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-                </button>
+              </a>
             </td>
           </tr>
           <tr>
@@ -138,29 +133,14 @@
             <td id="td1">Название товара</td>
             <td id="td2">Есть в наличии</td>
             <td id="td3">4 540руб.</td>
-            <td id="td4"><div class="input-group">
-                <span class="input-group-btn">
-<!--spinner-->         <button id="minus-btn" type="button" class="btn btn-default" 
-                               data-value="decrease" 
-                               data-target="#spinner" 
-                               data-toggle="spinner">
-                        <span>-</span>
-                       </button>
-                </span>
-                <input type="text" 
-                       data-ride="spinner" id="spinner" 
-                       class="form-control input-number" value="1">
-                <span class="input-group-btn">
-                    <button id="plus-btn" type="button" class="btn btn-default" 
-                            data-value="increase" data-target="#spinner" 
-                            data-toggle="spinner">
-                        <span>+</span>
-                    </button>
-                 </span>
-              </div></td>
-            <td id="td5"><span>4 540руб.</span><button type="button" class="close" aria-label="Close">
+            <td id="td4">
+             <input type="number" data-ride="" id="spinner" 
+                       class="form-control input-number" value="1" min="1">
+            <td id="td5"><span>4 540руб.</span>
+              <a  href="javascript:void(0);"
+                type="button" class="close-spinner" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-                </button>
+              </a>
             </td>
           </tr>
         </tbody>

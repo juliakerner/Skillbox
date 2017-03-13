@@ -90,23 +90,27 @@
               <h5>Для новых покупателей</h5> 
                     <div class="form-group">
                       <label for="InputContactInfo">Контактное лицо (ФИО):</label>
-                      <input type="text" class="form-control" id="InputContactInfo" placeholder="Сергей Сергеевич">
+                      <input type="text" class="form-control" id="InputContactInfo" placeholder="Сергей Сергеевич"
+                      onchange="document.getElementById('cust-name').innerHTML=this.value;">
                     </div>
                     <div class="form-group">
                       <label for="tel-input">Контактный телефон:</label>
-                      <input class="form-control" type="tel" value="8-(000)-000-0000" id="tel-input">
+                      <input class="form-control" type="tel" value="8-(000)-000-0000" id="tel-input"
+                      onchange="document.getElementById('cust-phone').innerHTML=this.value;">
                     </div>
                     <div class="form-group">
                       <label for="InputEmail1">Ваш Email:</label>
-                      <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="mail@company.ru">
+                      <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="mail@company.ru"
+                      onchange="document.getElementById('cust-email').innerHTML=this.value;">
                     </div>
-                <input class="btn btn-primary" type="submit" value="Продолжить">
+                <button class="btn btn-primary" type="submit" value="Продолжить"
+                onclick="myAccordion();">Продолжить</button>
               </form>
             </div>
 
             <div id="fast-login-form" class="col-md-7 col-sm-12">
               <h5>Быстрый вход</h5>
-                <form>
+                <form action="" method="Post">
                     <div class="form-group">
                       <label for="InputEmail1">Ваш Email:</label>
                       <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="mail@company.ru">
@@ -116,7 +120,7 @@
                       <input type="password" class="form-control" id="InputPassword1">
                     </div>
                 </form>
-                <input class="btn btn-primary" type="submit" value="Войти">
+                <button class="btn btn-primary" type="submit" value="Войти">Войти</button>
                 <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Для восстановления пароля свяжитесь с нами по телефону 8-(800)-888-8888">Восстановить пароль
                 </button>
             </div>
@@ -143,62 +147,70 @@
 
             <div id="address-form" class="col-md-5 col-sm-12">
               <h6>Адрес доставки</h6>
-                <form>
+                <form method="Post" action="" >
                   <div class="form-group">
                       <label for="InputCity">Город:</label>
-                      <input type="text" class="form-control" id="InputCity" placeholder="Москва">
+                      <input type="text" class="form-control" id="InputCity" placeholder="Москва"
+                      onchange="document.getElementById('cust-city').innerHTML=this.value;">
                   </div>
 
                   <div class="form-group">
                       <label for="InputStreet">Улица:</label>
-                      <input type="text" class="form-control" id="InputStreet">
+                      <input type="text" class="form-control" id="InputStreet"
+                      onchange="document.getElementById('cust-str').innerHTML=this.value;">
                   </div>
 
                   <div class="form-group float-xs-right">
                       <label for="InputApartment">Квартира:</label>
-                      <input type="text" class="form-control" id="InputApartment">
+                      <input type="text" class="form-control" id="InputApartment"
+                      onchange="document.getElementById('cust-apt').innerHTML=this.value;">
                   </div>
 
                   <div class="form-group">
                       <label for="InputHouse">Дом:</label>
-                      <input type="text" class="form-control" id="InputHouse">
+                      <input type="text" class="form-control" id="InputHouse"
+                      onchange="document.getElementById('cust-house').innerHTML=this.value;">
                   </div>                  
-                </form>
             </div>
 
             <div id="delivery-form" class="col-md-3 col-sm-12">
               <h6>Способ доставки</h6>
                     <div class="form-check">
                       <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Курьерская доставка с оплатой при получении" 
+                        onchange="document.getElementById('del-method').innerHTML=this.value;">
                         Курьерская доставка с оплатой при получении
                       </label>
                     </div>
                     <div class="form-check">
                       <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Почта России с наложенным платежом"
+                        onchange="document.getElementById('del-method').innerHTML=this.value;">
                         Почта России с наложенным платежом
                       </label>
                     </div>
                     <div class="form-check">
                       <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Доставка через терминалы QIWI Post"
+                        onchange="document.getElementById('del-method').innerHTML=this.value;">
                         Доставка через терминалы QIWI Post
                       </label>
-                    </div>              
+                    </div>                  
             </div>
 
             <div id="comment-form" class="col-md-4 col-sm-12">
               <h6>Комментарий к заказу</h6>
               <div class="form-group">
                 <label for="Textarea">Введите ваш комментарий:</label>
-                <textarea class="form-control" id="Textarea" rows="10" placeholder="Текст комментария"></textarea>
+                <textarea class="form-control" id="Textarea" rows="10" placeholder="Текст комментария"
+                onchange="document.getElementById('comment-txt').innerHTML=this.value;"></textarea>
               </div>
             </div> <!--end of comment-form-->
           </div> <!-- end of .row--> 
         </div> <!-- end of .container -->
       </div> <!-- end of .card-block -->
-    <input  id="delivery-btn" class="btn btn-primary" type="submit" value="Продолжить"> 
+    <button  id="delivery-btn" class="btn btn-primary" type="submit" value="Продолжить">Продолжить
+    </button> 
     </form> <!--end of #delivery-info-->
     </div> <!--end of #collapse-two --> 
   </div> <!-- end of .card -->
@@ -259,40 +271,41 @@
             <tbody>
               <tr>
                 <th scope="row">
-                  <p>Контактное лицо (ФИО):<br/><span>Имя заказчика</span></p>
+                  <p>Контактное лицо (ФИО):<br/><span id="cust-name">Имя заказчика</span></p>
                 </th> 
                 <td>
-                  <p>Город:<br><span>Москва</span></p>
+                  <p>Город:<br><span id="cust-city">Москва</span></p>
                 </td>
                 <td  colspan="3">
-                  <p>Способ доставки:<br><span>Курьерская доставка<br>с оплатой при получении</span></p>
+                  <p>Способ доставки:<br><span id="del-method">Курьерская доставка<br>с оплатой при получении</span></p>
                 </td>
               </tr>
               <tr>
                 <th scope="row">
-                  <p>Контактный телефон:<br/><span>+7 916 000-00-00</span></p>
+                  <p>Контактный телефон:<br/><span id="cust-phone">+7 916 000-00-00</span></p>
                 </th> 
                 <td>
-                  <p>Улица:<br><span>Название улицы</span></p>
+                  <p>Улица:<br><span id="cust-str">Название улицы</span></p>
                 </td>
                 <td id="comment" colspan="3" rowspan="2">
-                  <p>Комментарий к заказу:<br><span>Текст комментария</span></p>
+                  <p>Комментарий к заказу:<br><span id="comment-txt">Текст комментария</span></p>
                 </td>
               </tr>
               <tr>
                 <th scope="row">
-                  <p>Email:<br><span>mail@company.ru</span></p>
+                  <p>Email:<br><span id="cust-email">mail@company.ru</span></p>
                 </th> 
                 <td id="house-appt">
-                  <p>Квартира:<br><span>150</span></p>
-                  <p1>Дом:<br><span>10</span></p1>
+                  <p>Квартира:<br><span id="cust-apt">150</span></p>
+                  <p1>Дом:<br><span id="cust-house">10</span></p1>
                 </td>
                 <td colspan="3"></td>
               </tr>
             </tbody>
             </table>
-<a href="checkout_2.html">
-           <input  id="confirmation-btn" class="btn btn-primary" type="submit" value="Подтвердить заказ"></a> 
+           <!-- <a href="checkout_2.html"> -->
+           <button id="confirmation-btn" class="btn btn-primary" type="submit" value="Подтвердить заказ">Подтвердить заказ</button>
+
         </table>
       
       </div> <!-- end of #card-block3 -->

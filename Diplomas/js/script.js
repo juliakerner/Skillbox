@@ -83,6 +83,16 @@ function registerName() {
  document.getElementById("InputContactInfo1").innerHTML = x;
 }
 
+function myAccordion() {
+    var x = document.getElementById('collapseTwo');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+        } 
+   // else {
+    //     x.style.display = 'none';
+    // }
+}
+
 
 
 
