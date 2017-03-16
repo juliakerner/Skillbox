@@ -224,9 +224,9 @@ color: #fff;
     background-image: url('./images/bazhov_bg_4.jpg');
 
     /* Full height */
-    min-height: 100%; 
+    min-height: 80%; 
     position: relative;
-    opacity: 0.9;
+    opacity: .9;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -527,6 +527,15 @@ text-decoration: none;
   padding: 7rem 
 }
 
+ /*
+ * Bazhov page
+ */
+
+#carouselExampleIndicators{
+  max-width: 1076px;
+  margin: auto;
+}
+
 .bazhov-words {
  height: 35rem;
   width: 100%;
@@ -538,6 +547,20 @@ text-decoration: none;
   color: #fff;
   padding: 7rem 
 }
+
+.bazhov-slides {
+  background-color: #cc6600;
+  opacity: .9;
+  padding: 5rem; 
+}
+
+.carousel-caption {
+  bottom: 35px;
+  left: 5%;
+  right: 5%;
+  padding: 0.5rem 1rem;
+}
+
 
 .scroll,
 .scroll-2 {
@@ -567,6 +590,44 @@ text-decoration: none;
   border-radius: 100px;
 }
 
+.scroll-5 {
+  position: absolute;
+  top: 150%;
+  right: 5%;
+  width: 30rem;
+  background-color: #fff;
+  border-radius: 15rem;
+  height: 30rem;
+  text-align: center;
+  opacity: .85;
+  box-shadow:10px 10px 15px #999;
+}
+
+.scroll-5 h2 {
+  padding: 5rem;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.scroll-6 {
+  position: absolute;
+  right: 5%;
+  width: 30rem;
+  background-color: #e69900;
+  border-radius: 15rem;
+  height: 30rem;
+  text-align: center; 
+  box-shadow:10px 10px 15px #999;
+  z-index: 1;
+  opacity: .75;
+}
+
+
+.scroll-6 h2 {
+  padding: 5rem;
+  font-style: italic;
+  font-weight: bolder;
+}
 
 .scroll span.border {
   background-color: #111;
@@ -863,6 +924,11 @@ z-index: 10;
   text-align: center;
 }
 
+.scroll span.border,
+.scroll-2 span.border-2{
+  font-size: 90%;
+}
+
 .scroll-4 span.border {
   background-color: #111;
   color: #fff;
@@ -886,6 +952,40 @@ cursor: pointer;
 text-decoration: none;
 }
 
+.pos-f-t h2 {
+ font-size: 90%; 
+}
+
+.scroll-5 {
+  position: absolute;
+  top: 150%;
+  right: 5%;
+  width: 20rem;
+  background-color: #fff;
+  border-radius: 10rem;
+  height: 20rem;
+  text-align: center;
+}
+
+.scroll-6 {
+  position: absolute;
+  right: 5%;
+  width: 20rem;
+  border-radius: 10rem;
+  height: 20rem;
+  text-align: center;
+}
+
+ .scroll-5 h2,
+ .scroll-6 h2 {
+  font-size: 90%;
+  padding: 3.7rem;
+ }
+
+ .scroll-5 h4,
+ .scroll-6 h4 {
+  font-size: 90%;
+ }
 }
 
 
