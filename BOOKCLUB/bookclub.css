@@ -986,6 +986,18 @@ text-decoration: none;
  .scroll-6 h4 {
   font-size: 90%;
  }
+
+#carouselExampleIndicators{
+  max-height: 
+}
+
+img.d-block.img-fluid {
+  max-height: 300px;  
+}
+div#carousel {
+  max-height: 300px;
+}
+
 }
 
 
