@@ -994,9 +994,11 @@ text-decoration: none;
 img.d-block.img-fluid {
   max-height: 300px;  
 }
+
 div#carousel {
   max-height: 300px;
 }
+
 
 }
 
