@@ -37,6 +37,7 @@
           Наши встречи/Архив
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="kurolesov.html">Приключения Васи<br/>Куролесова</a>        
           <a class="dropdown-item" href="bazhov.html">Сказы П.П.Бажова</a>
           <a class="dropdown-item" href="kashtanka.html">А.П.Чехов Каштанка</a>
           <a class="dropdown-item" href="indians.html">Индейские сказки</a>
@@ -47,14 +48,20 @@
   </div>
 </nav> 
 
-<a class="btn-secondary btn-lg testbutton" href="photos.html">Сначала!</a>
+<!-- <a class="btn-secondary btn-lg testbutton" href="photos.html">Сначала!</a> -->
 
 <!--*** KASHTANKA ***-->
+<div class="btn-group btn-block">
+  <a id="karousel-btn" class="btn-secondary btn-block"
+            onclick="document.getElementById('carousel').style.display='block';">
+            <small>Посмотреть фотки</small> - <i>Каштанка</i>
+  </a>
+  <button id="karousel-btn-close" type="button" class="close" data-dismiss="carousel" aria-label="Close"
+                      onclick="document.getElementById('carousel').style.display='none';">
+                <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 
-<a id="karousel-btn" class="btn-secondary btn-block"
-          onclick="document.getElementById('carousel').style.display='block';">
-          <small>Посмотреть фотки</small> - <i>Каштанка</i>
-</a>
 
 <div id="carousel">
 <div id="carouselKashtanka" class="carousel slide" data-ride="carousel">
@@ -205,10 +212,16 @@
 
 <!--*** INDIAN TAILES ***-->
 
-<a id="karousel-btn" class="btn-secondary btn-block"
+<div class="btn-group btn-block">
+  <a id="karousel-btn" class="btn-secondary btn-block"
           onclick="document.getElementById('carousel_2').style.display='block';">
           <small>Посмотреть фотки</small> - <i>Индейские сказки</i>
 </a>
+  <button id="karousel-btn-close" type="button" class="close" data-dismiss="carousel-2" aria-label="Close"
+                      onclick="document.getElementById('carousel_2').style.display='none';">
+                <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 
 <div id="carousel_2">
 <div id="carouselIndian" class="carousel slide" data-ride="carousel">
@@ -283,11 +296,6 @@
 </div>
 </div> <!--end of #carousel -->
 
-
-
-
-
-
 <div id="carousel">
 <div id="carouselKashtanka" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -318,13 +326,7 @@
 </div> <!--end of #carousel -->
 
 
-<!-- <div class="carousel-item">
-  <img src="..." alt="...">
-  <div class="carousel-caption d-none d-md-block">
-    <h3>Каштанка</h3>
-    <p>...</p>
-  </div>
-</div>  -->
+
 
 <nav id="footer" class="navbar fixed-bottom navbar-light">
   <span style="background-color: rgba(0, 0, 0, 0.2);">© 555 ~ 2017<span>
