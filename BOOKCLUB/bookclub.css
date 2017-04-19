@@ -732,7 +732,7 @@ span.kurolesov-mult {
  * photos page
  */
 
-.testbutton {
+/*.testbutton {
 position: fixed;
 left: 2rem;
 top: 40rem;
@@ -759,7 +759,7 @@ opacity: .7;
   background: -ms-linear-gradient(top,  #A87F4A,  #4F3C23);
   background: -webkit-gradient(linear, left top, left bottom, from(#A87F4A), to(#4F3C23));
   background: -moz-linear-gradient(top,  #A87F4A,  #4F3C23);
-}
+}*/
 
 #carousel,
 #carousel_2,
@@ -789,6 +789,7 @@ font-size: 1rem;
 font-weight: bolder;
 text-transform: uppercase;
 border: 1px solid #999;
+text-align: left;
 }
 
 #karousel-btn:hover {
