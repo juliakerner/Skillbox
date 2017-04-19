@@ -994,9 +994,9 @@ div.card.card-inverse {
   font-size: 80%;
 }
 
-
 #carousel,
-#carousel_2 {
+#carousel_2, 
+#carousel_3 {
   margin-top: 15%;
   margin-bottom: 15%;
   margin-left: 5%;
@@ -1004,6 +1004,7 @@ div.card.card-inverse {
  width: 90%;
  height: 90%;
   display: none;
+  z-index: 1040;
 }
 
 .testbutton {
