@@ -1165,16 +1165,15 @@ span.kurolesov-mult {
 #speech-bubble {
   top: 35%;
   right: 2%;
-  height: 18%; 
-}
-
-#speach-bubble:before {
- 
+  height: 18%;
+  padding: 5px;
+  line-height: .7; 
 }
 
 #speech-bubble span {
-  font-size: 70%;
+  font-size: 60%;
 }
+
 
 }
 
