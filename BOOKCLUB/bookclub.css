@@ -316,6 +316,60 @@ color: #fff;
 }
 
 
+.parallax-tri-tol-1 {
+    background-size: cover; 
+  /* The image used */
+    background-image: url('./images/tri_tol_1.jpg');
+
+    /* Full height */
+    height: 100%; 
+    position: relative;
+    opacity: 1;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.parallax-tri-tol-2 {
+    background-size: cover; 
+  /* The image used */
+    background-image: url('./images/tri_tol.jpg');
+
+    /* Full height */
+    height: 50%; 
+    position: relative;
+    opacity: 1;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.parallax-tri-tol-3 {
+    background-size: cover; 
+  /* The image used */
+    background-image: url('./images/tri_tol_2.jpg');
+
+    /* Full height */
+    height: 100%; 
+    position: relative;
+    opacity: 1;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+
+
+
 .cover-container {
   margin-right: auto;
   margin-left: auto;
@@ -334,7 +388,8 @@ color: #fff;
  * Header
  */
 
-#navbar {
+#navbar,
+#navbar-tri-tol {
   margin-top: 5%;
   padding-left: 5%;
   text-align: start;
@@ -438,7 +493,7 @@ a.btn-secondary.btn-lg.btn-block:hover {
   padding: 5rem 0;
  }
 
-a#up-btn {
+#up-btn {
 color: rgba(255,255,255,.8);
 font-size: 1.25rem;
 padding: 15px;
@@ -450,6 +505,8 @@ bottom: 10rem;
 right: 0;
 cursor: pointer;
 text-decoration: none;
+display: none;
+z-index: 99;
 }
 
 /*
@@ -766,6 +823,38 @@ span.kurolesov-mult {
   border: none;
   cursor: pointer;
 }
+
+/*
+ * tri tolstyaka page
+ */
+#cartoons-4 {
+background-color: #635A9C;
+opacity: .7;
+}
+
+.go-down {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  width: 5rem;
+  height: 5rem;
+  background-color: #635A9C;
+  opacity: .8;
+  color: #fff;
+  /*padding-left: .8rem;
+  padding-top: .2rem;*/
+  font-weight: bold;
+  border-radius: 50px; 
+-moz-border-radius: 50px; 
+-webkit-border-radius: 50px; 
+text-align: center;
+}
+
+/****************************************************************/
+
+
+
+
  /*
  * photos page
  */
@@ -972,7 +1061,6 @@ display: none;
 
  @media (min-width: 300px) and (max-width: 767px) {
 
-
 .cover-container {
     width: 80%; /* Must be percentage or pixels for horizontal alignment */
   }
@@ -1083,7 +1171,7 @@ z-index: 10;
   border-radius: 100px;
 }
 
-a#up-btn {
+#up-btn {
 color: rgba(255,255,255,.8);
 font-size: 1rem;
 padding: 12px;

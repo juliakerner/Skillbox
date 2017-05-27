@@ -31,3 +31,20 @@ function myCard() {
 //   modal.find('.modal-title').text('New message to ' + recipient)
 //   modal.find('.modal-body input').val(recipient)
 // })
+
+// scroll down XXXpx from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        document.getElementById("up-btn").style.display = "block";
+    } else {
+        document.getElementById("up-btn").style.display = "none";
+    }
+}
+
+// click on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

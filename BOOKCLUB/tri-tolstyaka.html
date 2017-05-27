@@ -12,9 +12,10 @@
     <script src="https://use.fontawesome.com/aaea520a63.js"></script>
     <title>BOOKCLUB</title>
   </head>
-  <body id="kurolesov-body">
+  <body id="">
 
-<nav id="navbar" class="navbar navbar-toggleable-md fixed-top navbar-light">
+<nav id="navbar" class="navbar navbar-toggleable-md fixed-top navbar-light"
+ style="background-color: rgba(0, 0, 0, 0.5);">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -38,8 +39,8 @@
           Наши встречи/Архив
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="tri-tolstyaka.html">Ю.Олеша<br/>Три Толстяка</a>
-          <a class="dropdown-item active" href="kurolesov.html">Приключения Васи<br/>Куролесова</a>
+          <a class="dropdown-item active" href="tri-tolstyaka.html">Ю.Олеша<br/> Три Толстяка</a>
+          <a class="dropdown-item" href="kurolesov.html">Приключения Васи<br/>Куролесова</a>
           <a class="dropdown-item" href="bazhov.html">Сказы П.П.Бажова</a>
           <a class="dropdown-item" href="kashtanka.html">А.П.Чехов Каштанка </a>
           <a class="dropdown-item" href="indians.html">Индейские сказки</a>
@@ -48,56 +49,28 @@
       </li>
     </ul>
   </div>
-</nav> 
+</nav>  
 
-<div class="parallax-kur-1">
-
-  <div id="speech-bubble">
-          <span>Катя с Ирой сказали, ничего не учить - аморально :) Поэтому смотрим сначала сюда:
-                <button id="KatyaModalKurBtn" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#KatyaModalKur">
-                   <i class="fa fa-book fa-2x" aria-hidden="true"></i>
-                </button>
-          </span><br/>
-
-          <div class="modal fade bd-example-modal-lg" id="KatyaModalKur" tabindex="-1" role="dialog" aria-labelledby="KatyaModalKurLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Презентация Кати и Тани</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-
-                <div class="modal-body">
-                  <h4>Биография и творчество Ю.Коваля</h4>
-                      <div class="container embed-responsive embed-responsive-16by9" id="Anya_ppt">
-                        <iframe src='https://onedrive.live.com/embed?cid=7A92EF822B18BADA&resid=7A92EF822B18BADA%21116&authkey=ACan6LDTeekETeU&em=2&wdAr=1.3333333333333333' width='350px' height='286px' frameborder='0'>This is an embedded <a target='_blank' href='https://office.com'>Microsoft Office</a> presentation, powered by <a target='_blank' href='https://office.com/webapps'>Office Online</a>.</iframe>
-                      </div> 
-                </div>      
-               <!--  <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Send message</button>
-                </div> -->
-              </div>
-            </div>
-          </div>
-  </div> <!--end of #speech-bubble-->
-
-  <div class="scroll-7">
-    <span class="border">СМОТРИМ МУЛЬТИК! <i class="fa fa-hand-o-down fa-2x" aria-hidden="true"></i>
-    </span>
-  </div>
+<div class="parallax-tri-tol-1">
+  <div class="go-down">
+    <span><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></span>
+  </div> 
 </div>
-
 <div class="pos-f-t">
-  <nav id="cartoons-3" class="navbar navbar-inverse" style="min-height: 20rem;">
+  <nav id="cartoons-4" class="navbar navbar-inverse" style="min-height: 15rem;">
       <span class="kurolesov-mult">
-      УРА, СКОРО ЛЕТО!<br/>
-      <small>Ничего не учим, встречаемся в парке, веселимся!<br/>Мультик там <i class="fa fa-arrow-right" aria-hidden="true"></i></small></span>
-      <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent-1" aria-controls="navbarToggleExternalContent-1" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer; margin-left: 80%;">
+      Юрий Олеша<br/>ТРИ ТОЛСТЯКА<br/>
+      <small>Мультик  <i class="fa fa-arrow-right" aria-hidden="true"></i></small>
+      <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent-1" aria-controls="navbarToggleExternalContent-1" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button><br/>
+      <!-- </span>
+      
+      <span class="kurolesov-mult"> -->
+      <small>Фильм  <i class="fa fa-arrow-right" aria-hidden="true"></i></small>
+      <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent-2" aria-controls="navbarToggleExternalContent-1" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+        <span class="navbar-toggler-icon"></span>
+      </button></span>
   </nav>
 
 <div class="collapse" id="navbarToggleExternalContent-1">
@@ -105,30 +78,46 @@
       <div class="btn-group btn-block">
           <a id="multik-btn" class="btn-secondary btn-block"
           onclick="document.getElementById('multik').style.display='block';">
-          Приключения Васи Куролесова</a>
+          Три Толстяка-мультик</a>
           <button id="multik-btn-close" type="button" class="close" data-dismiss="multik-4" aria-label="Close"
                     onclick="document.getElementById('multik').style.display='none';">
               <span aria-hidden="true">&times;</span>
           </button>
       </div>    
             <div id="multik" class="embed-responsive embed-responsive-16by9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/gd32ewVppf0" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/AMFEtBC9004" frameborder="0" allowfullscreen></iframe>
+            </div>
+  </div><br/><br/>
+</div> 
+
+<div class="collapse" id="navbarToggleExternalContent-2">
+  <div class="container"><br/><br/>
+      <div class="btn-group btn-block">
+          <a id="multik-btn" class="btn-secondary btn-block"
+          onclick="document.getElementById('film').style.display='block';">
+          Три Толстяка-фильм</a>
+          <button id="multik-btn-close" type="button" class="close" data-dismiss="multik-4" aria-label="Close"
+                    onclick="document.getElementById('film').style.display='none';">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>    
+            <div id="film" class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/EHEmF3t4_eA" frameborder="0" allowfullscreen></iframe>
             </div>
   </div><br/><br/>
 </div> 
 </div> <!--end of .pos-f-t-->
 
-<div class="parallax-kur-2">
-  <div class="scroll-7">
-    <span class="border">ОТЛИЧНЫХ КАНИКУЛ! <i class="fa fa-bicycle fa-2x" aria-hidden="true"></i>
-    </span>
-  </div>
-</div>
+<div class="parallax-tri-tol-2"></div>
+  <div class="soon_en">something WILL BE HERE :-)<br/><small>So far, keep reading, kids!</small></div>
 
+<div class="parallax-tri-tol-3"></div>
+ 
 <button id="up-btn" class="btn btn-link" onclick="topFunction()"><span><i class="fa fa-hand-o-up fa-3x" aria-hidden="true"></i></span></button>
 
+
 <nav id="footer" class="navbar fixed-bottom navbar-light">
-  <span>© 555 ~ 2017<span>
+  <span style="background-color: rgba(0, 0, 0, 0.5);">© 555 ~ 2017<span>
 </nav>	
          
 
