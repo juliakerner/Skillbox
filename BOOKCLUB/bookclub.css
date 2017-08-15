@@ -841,13 +841,11 @@ opacity: .7;
   background-color: #635A9C;
   opacity: .8;
   color: #fff;
-  /*padding-left: .8rem;
-  padding-top: .2rem;*/
   font-weight: bold;
   border-radius: 50px; 
 -moz-border-radius: 50px; 
 -webkit-border-radius: 50px; 
-text-align: center;
+  text-align: center;
 }
 
 /****************************************************************/
@@ -860,7 +858,7 @@ text-align: center;
  */
 
 /*.testbutton {
-position: fixed;
+tition: fixed;
 left: 2rem;
 top: 40rem;
 opacity: .7;
@@ -890,7 +888,8 @@ opacity: .7;
 
 #carousel,
 #carousel_2,
-#carousel_3 {
+#carousel_3,
+#carousel_4 {
   margin-top: 5%;
   margin-bottom: 15%;
   margin-left: 25%;
