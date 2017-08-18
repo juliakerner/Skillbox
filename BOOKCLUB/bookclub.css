@@ -870,10 +870,6 @@ opacity: .7;
 }
 
 /****************************************************************/
-
-
-
-
  /*
  * photos page
  */
@@ -1096,6 +1092,7 @@ display: none;
 #footer {
     padding: 1.5rem 0;
     font-size: 80%; 
+    background-color: transparent;
   }
 
 .card-deck {
