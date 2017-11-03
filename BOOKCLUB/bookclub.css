@@ -125,6 +125,17 @@ color: #fff;
   position: absolute;
 }
 
+#paustovskiy-body {
+position: absolute; 
+background: url('./images/paustovskiy_bg.jpg') fixed;
+height: 100%; 
+color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+} 
+
 /* instead of blog_body */
 
 .parallax {
@@ -869,6 +880,53 @@ opacity: .7;
   text-align: center;
 }
 
+
+/*
+ * paustovskiy page
+ */
+
+audio {
+  width: 70%;
+}
+
+.row {
+  width: 100%;
+  top: 30%;
+  position: absolute;
+  padding-left: 1%;
+}
+
+.column {
+    text-align: center;
+    margin: auto;
+    padding: 1% 0; 
+    float: left;
+    width: 23%;
+    background-color: #ccc;
+    opacity: .7;
+}
+
+.column h3 {
+  color: black;
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+        margin-bottom: 1%;
+        text-align: center;
+    }
+}
+
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 /****************************************************************/
  /*
  * photos page
@@ -1077,6 +1135,7 @@ display: none;
 
  @media (min-width: 300px) and (max-width: 767px) {
 
+
 .cover-container {
     width: 80%; /* Must be percentage or pixels for horizontal alignment */
   }
@@ -1279,6 +1338,7 @@ span.kurolesov-mult {
   font-size: 60%;
 }
 
+ 
 
 }
 
