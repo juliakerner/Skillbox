@@ -931,9 +931,8 @@ audio {
            top: 20%;
            width: 95%;
            margin-left: 2%;
-           margin-bottom: 10%;
+           margin-bottom: 20%;
            margin-top: 7%;
-           z-index: -1;
     }
 }
 
