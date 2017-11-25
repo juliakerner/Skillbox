@@ -941,14 +941,31 @@ audio {
  /*
  * photos page
  */
-
+/*
+.photobox {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  left: 5%;
+} 
+*/
 #carousel,
-#carousel_2,
 #carousel_3,
-#carousel_4 {
+#carousel_4,
+#carousel_5 {
+  margin-top: 2%;
+  margin-bottom: %;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 1200px;
+  max-height: 800px;
+  display: none;
+}
+
+#carousel_2 {
   margin-top: 5%;
   margin-bottom: 15%;
-  margin-left: 25%;
+  margin-left: 5%;
   margin-right: 5%;
   max-width: 1200px;
   max-height: 800px;
@@ -1176,6 +1193,14 @@ div.card.card-inverse {
   font-size: 90%;
 }
 
+/*.photobox {
+  position: relative;
+  height: 100%;
+  top: 15%;
+  left: 5%;
+}*/
+
+
 #karousel-btn {
   width: 80%;
   font-size: 80%;
@@ -1183,9 +1208,11 @@ div.card.card-inverse {
 
 #carousel,
 #carousel_2, 
-#carousel_3 {
-  margin-top: 15%;
-  margin-bottom: 15%;
+#carousel_3,
+#carousel_4,
+#carousel_5 {
+  margin-top: 5%;
+  margin-bottom: 5%;
   margin-left: 5%;
   margin-right: 5%;
  width: 90%;
@@ -1280,10 +1307,6 @@ text-decoration: none;
  .scroll-6 h4 {
   font-size: 90%;
  }
-
-#carouselExampleIndicators{
-  max-height: 
-}
 
 img.d-block.img-fluid {
   max-height: 300px;  
