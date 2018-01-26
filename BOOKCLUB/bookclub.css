@@ -433,7 +433,7 @@ color: #fff;
 
 #navbar,
 #navbar-tri-tol {
-  margin-top: 5%;
+  margin-top: 2%;
   padding-left: 5%;
   text-align: start;
 }
@@ -468,7 +468,7 @@ a.nav-link-readers.active {
 .navbar-brand span{
   font-family: Zapfino;
   font-size: 2rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem;*/
   font-style: italic;
   text-align: left;
   line-height: 2;
@@ -498,7 +498,11 @@ border: none;
 border-radius: 0;
 }
 
-a.dropdown-item.active {
+#navbarNavDropdown a.dropdown-item, #navbarNavDropdown-readers a.dropdown-item {
+  font-size: 1rem;
+}
+
+#navbarNavDropdown a.dropdown-item.active {
   background-color: #e67300;
 }
 
@@ -937,8 +941,8 @@ audio {
  */
 
 #AlexModalBtn {
-  position: absolute;
-  top: 25%;
+  position: relative;
+  top: 35%;
   left: 10%;
   color: #EA202C;
   background-color: #FDED2A; 
@@ -947,6 +951,7 @@ audio {
   border-radius: 50px;
   box-shadow:7px 7px 18px #EDBB2F;
 }
+
 
 #AlexModal h3 {
   color: #26416b;
@@ -962,11 +967,6 @@ audio {
   color: #c14d36;
 }
 
-/*#AlexModBtnClose {
-  color: #26416b;
-}
-*/
-
 /****************************************************************/
  /*
  * photos page
@@ -975,10 +975,6 @@ audio {
 #carousel-nav {
   margin-top: 5%;
   background-color: rgba(0, 0, 0, 0.2);
-}
-
-#carousel-nav li {
-  width: ;
 }
 
 #carousel-nav li a {
@@ -990,69 +986,6 @@ audio {
 }
 
 
-
-/*#carousel,
-#carousel_3,
-#carousel_4,
-#carousel_5 {
-  margin-top: 2%;
-  margin-bottom: %;
-  margin-left: 5%;
-  margin-right: 5%;
-  max-width: 1200px;
-  max-height: 800px;
-  display: none;
-}
-
-#carousel_2 {
-  margin-top: 5%;
-  margin-bottom: 15%;
-  margin-left: 5%;
-  margin-right: 5%;
-  max-width: 1200px;
-  max-height: 800px;
-  display: none;
-}
-
-#karousel-btn {
-width: 30%;
-height: 3.5rem;
-margin-top: 2%;
-margin-left: 2%;
-opacity: .35;
-color: #000;
-border-radius: 5px 0px 0px 5px; 
--moz-border-radius: 5px 0px 0px 5px; 
--webkit-border-radius: 5px 0px 0px 5px; 
-text-align: center;
-padding: 1rem;
-font-size: 1rem;
-font-weight: bolder;
-text-transform: uppercase;
-border: 1px solid #999;
-text-align: left;
-}
-
-#karousel-btn:hover {
-  opacity: 1;
-}
-
-#karousel-btn-close {
-  height: 3.5rem;
-  background-color: #fff;
-  border: 1px solid #999;
-  margin-top: 2%;
-  border-radius: 0px 5px 5px 0px; 
--moz-border-radius: 0px 5px 5px 0px; 
--webkit-border-radius: 0px 5px 5px 0px; 
-  padding: 1rem;
-  opacity: .35;
-}
-
-#karousel-btn-close:hover {
-  opacity: 1;
-}
-*/
 
  /*
  * kashtanka-words page
@@ -1174,10 +1107,10 @@ display: none;
  */
 
  @media (min-width: 300px) and (max-width: 767px) {
-
+/*
 #navbar {
 margin-top: 2%;
-}
+}*/
 
 .cover-container {
     width: 80%; /* Must be percentage or pixels for horizontal alignment */
