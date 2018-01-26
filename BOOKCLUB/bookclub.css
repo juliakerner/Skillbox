@@ -894,22 +894,17 @@ audio {
   width: 100%;
   top: 30%;
   position: absolute;
-  padding-left: 1%;
 }
 
-.column {
+#paust_col {
     text-align: center;
-    margin: auto;
-    padding: 1% 0; 
-    float: left;
-    width: 23%;
+    color: black;
     background-color: #ccc;
     opacity: .7;
+    border: .1rem solid white;
 }
 
-.column h3 {
-  color: black;
-}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -951,26 +946,52 @@ audio {
   cursor: pointer;
   border-radius: 50px;
   box-shadow:7px 7px 18px #EDBB2F;
-
 }
 
-#AlexModal {
-
+#AlexModal h3 {
+  color: #26416b;
+  font-weight: ;
 }
+
+#AlexModal h4 {
+  color: #284471;
+}
+
+#AlexModal p {
+  font-style: italic;
+  color: #c14d36;
+}
+
+/*#AlexModBtnClose {
+  color: #26416b;
+}
+*/
 
 /****************************************************************/
  /*
  * photos page
  */
-/*
-.photobox {
-  position: absolute;
-  width: 100%;
-  top: 25%;
-  left: 5%;
-} 
-*/
-#carousel,
+
+#carousel-nav {
+  margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#carousel-nav li {
+  width: ;
+}
+
+#carousel-nav li a {
+  font-size: 1.2rem;
+}
+
+.modal.and.carousel {
+  position: fixed; // Needed because the carousel overrides the position property
+}
+
+
+
+/*#carousel,
 #carousel_3,
 #carousel_4,
 #carousel_5 {
@@ -1031,7 +1052,7 @@ text-align: left;
 #karousel-btn-close:hover {
   opacity: 1;
 }
-
+*/
 
  /*
  * kashtanka-words page
