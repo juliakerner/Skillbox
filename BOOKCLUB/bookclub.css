@@ -864,6 +864,7 @@ span.kurolesov-mult {
 /*
  * tri tolstyaka page
  */
+
 #cartoons-4 {
 background-color: #635A9C;
 opacity: .7;
@@ -896,8 +897,9 @@ audio {
 
 #paust_row {
   width: 100%;
-  top: 30%;
-  position: absolute;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #paust_col {
@@ -910,8 +912,9 @@ audio {
 
 
 /* Clear floats after the columns */
+
 .row:after {
-    content: "";
+    content: " ";
     display: table;
     clear: both;
 }
@@ -933,7 +936,8 @@ audio {
            margin-left: 2%;
            margin-bottom: 20%;
            margin-top: 7%;
-    }
+         }
+    
 }
 
 /*
@@ -1180,7 +1184,7 @@ div.card.card-inverse {
   width: 80%;
   font-size: 80%;
 }
-
+/*
 #carousel,
 #carousel_2, 
 #carousel_3,
@@ -1194,15 +1198,15 @@ div.card.card-inverse {
  height: 90%;
   display: none;
   z-index: 1040;
-}
-
+}*/
+/*
 .testbutton {
 position: fixed;
 left: 1rem;
 top: 75rem;
 z-index: 10;
 }
-
+*/
 .soon {
   font-size: 2rem;
   padding-top: 3rem;
@@ -1361,11 +1365,11 @@ span.kurolesov-mult {
 margin-top: 40%;
 }
 
-
+/*
 #karousel-btn {
   width: 45%;
   font-size: 85%;
-}
+}*/
 
 
 .testbutton {
@@ -1421,12 +1425,12 @@ margin-top: 40%;
 padding-bottom: 5rem;
 }
 
-
+/*
 #karousel-btn {
   width: 40%;
   font-size: 90%;
 }
-
+*/
 .soon {
   font-size: 4rem;
   padding-top: 5.5rem;
