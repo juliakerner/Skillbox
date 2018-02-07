@@ -12,7 +12,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>BOOKCLUB</title>
   </head>
-  <body id="home-body">
+  <body id="prince-body">
 
 <nav id="navbar" class="navbar navbar-expand-lg navbar-light"
  style="background-color: rgba(0, 0, 0, 0.5);">
@@ -39,7 +39,7 @@
           Наши встречи/Архив
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="prince.html">А. де Сент-Экзюпери<br/>Маленький принц</a>
+          <a class="dropdown-item active" href="prince.html">А. де Сент-Экзюпери<br/>Маленький принц</a>
           <a class="dropdown-item" href="skazki.html">Сказки народов<br/>России</a>
           <a class="dropdown-item" href="paustovskiy.html">К.Паустовский<br/>Сказки</a>
           <a class="dropdown-item" href="tri-tolstyaka.html">Ю.Олеша<br/>Три Толстяка</a>
@@ -52,7 +52,31 @@
       </li>
     </ul>
   </div>
-</nav>  
+</nav> 
+
+<div class="container-fluid">  
+
+  <div id="PrinceVideo" class="row justify-content-md-center" style="">
+    <div class="col col-lg-6">
+      <h4>Антуан де Сент-Экзюпери "Маленький принц"</h4>
+        <button id="PrinceVideoBtn" type="button" class="btn btn-outline-secondary btn-block" data-toggle="modal" data-target="#PrinceVideoModal">послушай сказку</button>
+
+      <div id="PrinceVideoModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+         <div id="" class="embed-responsive embed-responsive-16by9">
+          <iframe id="cartoonVideo" width="560" height="315" src="https://www.youtube.com/embed/E1hWAwMIlMY?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+         </div>
+        </div>
+      </div>
+      </div> <!--end of .modal-->
+    </div> <!-- end of .col-->
+  </div> <!--end of #PrinceVideo-->
+
+
+
+
+</div> <!--end of container-fluid-->
 
 <nav id="footer" class="navbar fixed-bottom navbar-light">
   <span class="navbar-text" style="background-color: rgba(0, 0, 0, 0.5);">© 555 ~ 2018</span>

@@ -941,6 +941,19 @@ audio {
 }
 
 /*
+ * prince page
+ */
+
+#PrinceVideo {
+  padding-top: 2%;
+  text-align: center;
+}
+
+#PrinceVideoBtn {
+  text-transform: uppercase;
+}
+
+/*
  * skazki page
  */
 
