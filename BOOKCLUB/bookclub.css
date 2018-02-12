@@ -156,7 +156,6 @@ color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 100%;
-    opacity: ;
 } 
 
 /* instead of blog_body */
@@ -970,9 +969,9 @@ audio {
  */
 
 #AlexModalBtn {
-  position: relative;
+  /*position: relative;
   top: 35%;
-  left: 10%;
+  left: 10%;*/
   color: #EA202C;
   background-color: #FDED2A; 
   border: none;
@@ -981,10 +980,8 @@ audio {
   box-shadow:7px 7px 18px #EDBB2F;
 }
 
-
 #AlexModal h3 {
   color: #26416b;
-  font-weight: ;
 }
 
 #AlexModal h4 {
@@ -994,6 +991,9 @@ audio {
 #AlexModal p {
   font-style: italic;
   color: #c14d36;
+}
+#DanyaModal h4 {
+  color: #1f7a7a;
 }
 
 /****************************************************************/
@@ -1065,12 +1065,9 @@ padding: 0;
   color: #000000;
 }
 
-.popover-content {
-  color: rgba(242, 85, 44, 1); 
-}
-.popover-title {
-  color: #553311;
-  font-weight: bolder; 
+a#popover {
+  cursor:help; 
+  text-decoration: underline;
 }
 
 .card-inverse {
@@ -1157,12 +1154,9 @@ margin-top: 2%;
     padding: 1rem 0;
     font-size: 80%; 
     background-color: transparent;
-    z-index: -10;
+    z-index: ;
   }
 
-.card-deck {
-  margin-bottom: 6rem;
-}
 
 .main-content h1,
 h1.cover-heading {
@@ -1197,41 +1191,6 @@ div.card.card-inverse {
   font-size: 90%;
 }
 
-/*.photobox {
-  position: relative;
-  height: 100%;
-  top: 15%;
-  left: 5%;
-}*/
-
-
-#karousel-btn {
-  width: 80%;
-  font-size: 80%;
-}
-/*
-#carousel,
-#carousel_2, 
-#carousel_3,
-#carousel_4,
-#carousel_5 {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
- width: 90%;
- height: 90%;
-  display: none;
-  z-index: 1040;
-}*/
-/*
-.testbutton {
-position: fixed;
-left: 1rem;
-top: 75rem;
-z-index: 10;
-}
-*/
 .soon {
   font-size: 2rem;
   padding-top: 3rem;
@@ -1316,9 +1275,9 @@ img.d-block.img-fluid {
   max-height: 300px;  
 }
 
-div#carousel {
+/*div#carousel {
   max-height: 300px;
-}
+}*/
 
 #pushkin-nav {
   width: 100%;
@@ -1349,8 +1308,6 @@ span.kurolesov-mult {
 #speech-bubble span {
   font-size: 60%;
 }
-
- 
 
 }
 
@@ -1389,12 +1346,6 @@ span.kurolesov-mult {
 .inner-cover {
 margin-top: 40%;
 }
-
-/*
-#karousel-btn {
-  width: 45%;
-  font-size: 85%;
-}*/
 
 
 .testbutton {
@@ -1450,12 +1401,6 @@ margin-top: 40%;
 padding-bottom: 5rem;
 }
 
-/*
-#karousel-btn {
-  width: 40%;
-  font-size: 90%;
-}
-*/
 .soon {
   font-size: 4rem;
   padding-top: 5.5rem;
