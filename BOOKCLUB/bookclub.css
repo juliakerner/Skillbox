@@ -504,9 +504,13 @@ a.nav-link-readers.active {
 
 div.dropdown-menu {
 width: 100%;
-background-color: rgba(255,255,255,.5);
+background-color: rgba(255,255,255,.8);
 border: none;
 border-radius: 0;
+}
+
+#navbarNavDropdown a.dropdown-item {
+  color: #150d04;
 }
 
 #navbarNavDropdown a.dropdown-item, #navbarNavDropdown-readers a.dropdown-item {
@@ -543,6 +547,12 @@ a.btn-secondary.btn-lg.btn-block:hover {
 /*
  * Footer
  */
+
+#footer {
+ margin-top: 2%;
+ padding-left: 0;
+ padding-right: 0;
+}
 
 #footer span {
   width: 100%;
@@ -638,7 +648,7 @@ z-index: 99;
 
 
  /*
- * Pushkin page
+ * Pushkin page **********************************************Pushkin page
  */
 
  #pushkin-nav {
@@ -656,7 +666,7 @@ z-index: 99;
 
  
  /*
- * blog page
+ * blog page ************************************************ Blog page
  */
 
 .soon {
@@ -684,7 +694,7 @@ z-index: 99;
 }
 
  /*
- * Bazhov page
+ * Bazhov page ******************************************* Bazhov page
  */
 
 #carouselExampleIndicators{
@@ -802,7 +812,7 @@ z-index: 99;
 }
 
 /*
- * kurolesov page
+ * kurolesov page ******************************************Kurolesov page
  */
 
 .scroll-7 {
@@ -873,7 +883,7 @@ span.kurolesov-mult {
 }
 
 /*
- * tri tolstyaka page
+ * tri tolstyaka page ************************************** Tri tolstyka page
  */
 
 #cartoons-4 {
@@ -899,7 +909,7 @@ opacity: .7;
 
 
 /*
- * paustovskiy page
+ * paustovskiy page *************************************** Paustovsiy page
  */
 
 audio {
@@ -937,26 +947,26 @@ audio {
         text-align: center;
     }
 
-    .column h3, .column h5 {
-          font-size: 90%; 
+    /*.column h3, .column h5 {
+          font-size: 90%; */
     }
-
+/*
     .row {
            top: 20%;
            width: 95%;
            margin-left: 2%;
            margin-bottom: 20%;
            margin-top: 7%;
-         }
+         }*/
     
 }
 
 /*
- * prince page
+ * prince page ********************************** Prince page
  */
 
 #PrinceVideo {
-  padding-top: 2%;
+  margin-top: 10%;
   text-align: center;
 }
 
@@ -965,7 +975,7 @@ audio {
 }
 
 /*
- * skazki page
+ * skazki page ********************************* Skazki page
  */
 
 #AlexModalBtn {
@@ -996,9 +1006,8 @@ audio {
   color: #1f7a7a;
 }
 
-/****************************************************************/
  /*
- * photos page
+ * photos page *********************************** Photos page
  */
 
 #carousel-nav {
@@ -1017,7 +1026,7 @@ audio {
 
 
  /*
- * kashtanka-words page
+ * kashtanka-words page ****************************** Kashtanka-words page
  */
 
 
@@ -1151,7 +1160,7 @@ margin-top: 2%;
 } 
  
 #footer {
-    padding: 1rem 0;
+    margin-top: 1%;
     font-size: 80%; 
     background-color: transparent;
     z-index: ;
@@ -1205,7 +1214,7 @@ div.card.card-inverse {
 }
 
 .bazhov-slides {
-  padding: 1.8rem; 
+  padding: 2%; 
 }
 
 .scroll span.border,
@@ -1307,6 +1316,13 @@ span.kurolesov-mult {
 
 #speech-bubble span {
   font-size: 60%;
+}
+
+#paust_row {
+  width: 100%;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 }
