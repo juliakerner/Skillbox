@@ -33,9 +33,9 @@ body {
   font-family: "American Typewriter";
 }
 
-div {
+/*div {
   display: block;
-}
+}*/
 
 #pushkin-body {
  background: url('./images/pushkin_bg.jpg') no-repeat center fixed; 
@@ -549,7 +549,6 @@ a.btn-secondary.btn-lg.btn-block:hover {
  */
 
 #footer {
- margin-top: 2%;
  padding-left: 0;
  padding-right: 0;
 }
@@ -579,7 +578,7 @@ z-index: 99;
 }
 
 /*
- * our_readers page
+ * our_readers page ********************************* Readers page
  */
 
  .card-columns {
@@ -965,11 +964,6 @@ audio {
  * prince page ********************************** Prince page
  */
 
-#PrinceVideo {
-  margin-top: 10%;
-  text-align: center;
-}
-
 #PrinceVideoBtn {
   text-transform: uppercase;
 }
@@ -1142,10 +1136,10 @@ display: none;
  */
 
  @media (min-width: 300px) and (max-width: 767px) {
-/*
+
 #navbar {
-margin-top: 2%;
-}*/
+margin-top: 0;
+}
 
 .cover-container {
     width: 80%; /* Must be percentage or pixels for horizontal alignment */
@@ -1160,10 +1154,9 @@ margin-top: 2%;
 } 
  
 #footer {
-    margin-top: 1%;
     font-size: 80%; 
     background-color: transparent;
-    z-index: ;
+    padding-bottom: 0;
   }
 
 
@@ -1317,14 +1310,14 @@ span.kurolesov-mult {
 #speech-bubble span {
   font-size: 60%;
 }
-
+/*
 #paust_row {
   width: 100%;
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
 }
-
+*/
 }
 
 
