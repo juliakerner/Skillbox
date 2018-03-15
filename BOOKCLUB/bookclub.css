@@ -1132,6 +1132,12 @@ display: none;
  * Affix and center
  */
 
+ @media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
  @media (min-width: 300px) and (max-width: 767px) {
 
 #navbar {
