@@ -33,9 +33,6 @@ body {
   font-family: "American Typewriter";
 }
 
-/*div {
-  display: block;
-}*/
 
 #pushkin-body {
  background: url('./images/pushkin_bg.jpg') no-repeat center fixed; 
@@ -1133,7 +1130,23 @@ display: none;
  */
 
  @media only screen and (max-device-width: 1366px) {
-    .parallax {
+    .parallax,
+    .parallax-1,
+    .parallax-2,
+    .parallax-3,
+    .parallax-4,
+    .parallax-5,
+    .parallax-6,
+    .parallax-7,
+    .parallax-ind,
+    .parallax-ind-2,
+    .parallax-ind-3,
+    .parallax-kur-1,
+    .parallax-kur-2,
+    .parallax-tri-tol-1,
+    .parallax-tri-tol-2,
+    .parallax-tri-tol-3
+     {
         background-attachment: scroll;
     }
 }
