@@ -1310,6 +1310,11 @@ span.kurolesov-mult {
 #speech-bubble span {
   font-size: 60%;
 }
+
+#paust_row {
+  margin-top: 1%;
+ }
+
 /*
 #paust_row {
   width: 100%;
@@ -1378,6 +1383,10 @@ z-index: 10;
 
  #pushkin-nav {
   width: 50%;
+ }
+
+ #paust_row {
+  margin-top: 1%;
  }
 
 }
