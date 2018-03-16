@@ -265,7 +265,7 @@ color: #fff;
     background-image: url('./images/bazhov_bg_4.jpg');
 
     /* Full height */
-    min-height: 80%; 
+    min-height: 100%; 
     position: relative;
     opacity: .9;
 
@@ -736,7 +736,7 @@ z-index: 99;
 
 .scroll-4 {
   position: absolute;
-  top: 70%;
+  top: 30%;
   left: 0;
   width: 100%;
   text-align: left;
@@ -754,7 +754,7 @@ z-index: 99;
 
 .scroll-5 {
   position: absolute;
-  top: 150%;
+  top: 60%;
   right: 5%;
   width: 30rem;
   background-color: #fff;
@@ -773,6 +773,7 @@ z-index: 99;
 
 .scroll-6 {
   position: absolute;
+  top: 15%;
   right: 5%;
   width: 30rem;
   background-color: #e69900;
@@ -1145,8 +1146,7 @@ display: none;
     .parallax-kur-2,
     .parallax-tri-tol-1,
     .parallax-tri-tol-2,
-    .parallax-tri-tol-3
-     {
+    .parallax-tri-tol-3 {
         background-attachment: scroll;
     }
 }
@@ -1260,7 +1260,7 @@ text-decoration: none;
 
 .scroll-5 {
   position: absolute;
-  top: 150%;
+  top: 50%;
   right: 5%;
   width: 20rem;
   background-color: #fff;
