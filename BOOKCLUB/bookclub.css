@@ -506,6 +506,11 @@ border: none;
 border-radius: 0;
 }
 
+/*div.dropdown-menu.show {
+  max-height: 350px;
+  overflow: auto;
+}*/
+
 #navbarNavDropdown a.dropdown-item {
   color: #150d04;
 }
@@ -1157,6 +1162,11 @@ display: none;
 margin-top: 0;
 }
 
+div.dropdown-menu.show {
+  max-height: 350px;
+  overflow: auto;
+}
+
 .cover-container {
     width: 80%; /* Must be percentage or pixels for horizontal alignment */
   }
@@ -1293,9 +1303,6 @@ img.d-block.img-fluid {
   max-height: 300px;  
 }
 
-/*div#carousel {
-  max-height: 300px;
-}*/
 
 #pushkin-nav {
   width: 100%;
