@@ -22,15 +22,6 @@ function myCard() {
 // });
 
 
-// $('#exampleModal').on('show.bs.modal', function (event) {
-//   var button = $(event.relatedTarget) // Button that triggered the modal
-//   var recipient = button.data('whatever') // Extract info from data-* attributes
-//   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-//   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-//   var modal = $(this)
-//   modal.find('.modal-title').text('New message to ' + recipient)
-//   modal.find('.modal-body input').val(recipient)
-// })
 
 // scroll down XXXpx from the top of the document, show the button
 
@@ -45,13 +36,15 @@ function scrollFunction() {
 }
 
 // click on the button, scroll to the top of the document
+
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 
 
-// youtube video in modal - playback stop with modal closing
+// ****** YOUTUBE video in modal - playback stop with modal closing *****
+
 $(document).ready(function(){
     /* Get iframe src attribute value i.e. YouTube video url
     and store it in a variable */
@@ -69,3 +62,16 @@ $(document).ready(function(){
         $("#cartoonVideo").attr('src', url);
     });
 });
+
+$('.collapse').collapse()
+
+
+
+
+
+
+
+
+
+
+

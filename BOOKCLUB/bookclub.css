@@ -951,27 +951,51 @@ audio {
         text-align: center;
     }
 
-    /*.column h3, .column h5 {
-          font-size: 90%; */
-    }
-/*
-    .row {
-           top: 20%;
-           width: 95%;
-           margin-left: 2%;
-           margin-bottom: 20%;
-           margin-top: 7%;
-         }*/
-    
-}
+ }
+
 
 /*
  * prince page ********************************** Prince page
  */
 
-#PrinceVideoBtn {
-  text-transform: uppercase;
+#PrinceCardBtn, #PrinceCardBtn:hover  {
+ width: 100%;
+ height: 100%;
+ text-transform: uppercase;
+ text-decoration: none; 
+ color: #110934;
+ text-align: left;
+ white-space: normal; 
 }
+
+.card-header {
+ background-color: #E3F4C3;
+}
+
+.card-header:hover {
+  background-color: #84AF2C;
+}
+
+#PrinceVideo {
+  margin-bottom: 2%;
+}
+
+#PrinceQA {
+  margin-bottom: ;
+}
+
+#PrinceVideoBtn {
+background-color: rgb(242, 242, 242, 0.5)
+}
+
+.card-body {
+  color: #FC600A;
+  text-align: left;
+  font-style: italic;
+  background-color: ;
+}
+
+
 
 /*
  * skazki page ********************************* Skazki page
