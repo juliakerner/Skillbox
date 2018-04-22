@@ -991,13 +991,12 @@ audio {
 #PrinceVideoBtn:hover {
   background-color: rgb(242, 242, 242);
 }
-}
 
 .card-body {
   color: #FC600A;
   text-align: left;
   font-style: italic;
-  background-color: ;
+  background-color: #FBFDF2;
 }
 
 
