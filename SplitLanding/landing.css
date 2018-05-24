@@ -1,9 +1,9 @@
 :root {
   --container-bg-color: #333;
-  --left-bg-color: rgba(223, 39, 39, 0.7);
-  --left-button-hover-color: rgba(161, 11, 11, 0.3);
+  --left-bg-color: rgba(103, 120, 58, 0.7);
+  --left-button-hover-color: rgba(58, 69, 33, 0.3);
   --right-bg-color: rgba(43, 43, 43, 0.8);
-  --right-button-hover-color: rgba(92, 92, 92, 0.3);
+  --right-button-hover-color: rgba(37, 38, 39, 0.3);
   --hover-width: 75%;
   --other-width: 25%;
   --speed: 1000ms;
@@ -28,11 +28,21 @@ h1 {
   white-space: nowrap;
 }
 
+h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 33%;
+  transform: translateX(-50%);
+  white-space: ;
+}
+
 .button {
   display: block;
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 60%;
   height: 2.5rem;
   padding-top: 1.3rem;
   width: 15rem;
@@ -44,6 +54,47 @@ h1 {
   text-transform: uppercase;
   text-decoration: none;
   transform: translateX(-50%);
+}
+
+
+/***************** overlays ***********************/
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 75%;
+    height: 70%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(103, 120, 58,1);
+    z-index: 3;
+    cursor: pointer;
+}
+
+#overlay1 {
+    position: fixed;
+    display: none;
+    width: 75%;
+    height: 70%;
+    top: 0;
+    left: 25%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(43, 43, 43,1);
+    z-index: 3;
+    cursor: pointer;
+}
+
+#text, #text1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 150%;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
 }
 
 .split.left .button:hover {
@@ -66,13 +117,13 @@ h1 {
 .split {
   position: absolute;
   width: 50%;
-  height: 100%;
+  height: 70%;
   overflow: hidden;
 }
 
 .split.left {
   left:0;
-  background: url('https://image.ibb.co/m56Czw/designer.jpg') center center no-repeat;
+  background: url('./SLImages/leaf.jpeg') center center no-repeat;
   background-size: cover;
 }
 
@@ -86,7 +137,7 @@ h1 {
 
 .split.right {
   right:0;
-  background: url('https://image.ibb.co/m3ZbRb/programmer.png') center center no-repeat;
+  background: url('./SLImages/clouds.jpeg') center center no-repeat;
   background-size: cover;
 }
 
@@ -132,13 +183,34 @@ h1 {
     font-size: 2rem;
   }
 
+  h3 {
+    font-size: 1rem;
+  }
+
+  #text, #text1 {
+    font-size: 90%;
+  }
+
   .button {
     width: 12rem;
+    top: 70%;
   }
 }
 
 @media(max-height: 700px) {
   .button {
-    top: 70%;
+    top: 80%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+   #text, #text1 {
+    font-size: 90%;
   }
 }

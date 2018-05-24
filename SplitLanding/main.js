@@ -17,3 +17,20 @@ right.addEventListener("mouseenter", () => {
 right.addEventListener("mouseleave", () => {
   container.classList.remove("hover-right");
 });
+
+/********************* overlay*******************************/
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function on1() {
+    document.getElementById("overlay1").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+
+function off1() {
+    document.getElementById("overlay1").style.display = "none";
+}
