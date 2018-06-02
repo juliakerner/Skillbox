@@ -12,10 +12,10 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>BOOKCLUB</title>
   </head>
-  <body id="home-body">
+  <body id="klyk-body">
 
 <nav id="navbar" class="navbar navbar-expand-lg navbar-light"
- style="background-color: rgba(0, 0, 0, 0.5);">
+ style="background-color: rgba(0, 0, 0, 0.3);">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -35,11 +35,11 @@
         <a class="nav-link" href="blog.html">Блог</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle active" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Наши встречи/Архив
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="klyk.html">Джек Лондон<br/>Белый клык</a>
+          <a class="dropdown-item active" href="klyk.html">Джек Лондон<br/>Белый клык</a>
           <a class="dropdown-item" href="prince.html">А. де Сент-Экзюпери<br/>Маленький принц</a>
           <a class="dropdown-item" href="skazki.html">Сказки народов<br/>России</a>
           <a class="dropdown-item" href="paustovskiy.html">К.Паустовский<br/>Сказки</a>
@@ -53,10 +53,65 @@
       </li>
     </ul>
   </div>
-</nav>  
+</nav> 
+
+<div class="container-fluid" style="padding-top: 1%; padding-bottom: 1%; margin-top: 25%; margin-bottom: 10%; background-color: rgba(0, 0, 0, 0.3);">  
+
+  <div id="KlykVideo" class="row justify-content-md-center" style="">
+    <div class="col col-lg-6" style="text-align: center;">
+      <h4>Джек Лондон "Белый клык"</h4>
+        <button id="KlykVideoBtn" type="button" class="btn btn-outline-light btn-block" data-toggle="modal" data-target="#KlykVideoModal">ПОСМОТРИ ФИЛЬМ</button>
+     
+      <div id="KlykVideoModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+         <div id="" class="embed-responsive embed-responsive-16by9">
+          <iframe class="cartoonVideo" width="560" height="315" src="https://www.youtube.com/embed/oENiIrmZiaA?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+         </div>
+        </div>
+      </div>
+      </div> <!--end of .modal-->
+    </div> <!-- end of .col-->
+  </div> <!--end of #KlykVideo-->
+
+  <div id="KlykAudio" class="row justify-content-md-center" style="">
+    <div class="col col-lg-6" style="text-align: center;">
+     <button id="KlykAudioBtn" type="button" class="btn btn-outline-light btn-block" data-toggle="modal" data-target="#KlykAudioModal">ПОСЛУШАЙ КНИГУ по-русски</button>
+
+    <div id="KlykAudioModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"  aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+           <div id="" class="embed-responsive embed-responsive-16by9">         
+            <iframe class="cartoonVideo" width="560" height="315" src="https://www.youtube.com/embed/cbwYLsgDye4?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+           </div> 
+          </div>
+        </div>
+    </div> <!--end of .modal-->
+   </div> <!-- end of .col-->
+  </div> <!--end of #KlykAudio-->
+  
+<div id="KlykAudio_eng" class="row justify-content-md-center" style="">
+    <div class="col col-lg-6" style="text-align: center;">
+     <button id="KlykAudioBtn_eng" type="button" class="btn btn-outline-light btn-block" data-toggle="modal" data-target="#KlykAudioModal_eng">ПОСЛУШАЙ КНИГУ по-английски</button>
+
+    <div id="KlykAudioModal_eng" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"  aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+           <div id="" class="embed-responsive embed-responsive-16by9">         
+            <iframe class="cartoonVideo" width="560" height="315" src="https://www.youtube.com/embed/IlD8L9iWQs8?rel=0"  frameborder="0" allow="encrypted-media" allowfullscreen=></iframe>
+           </div> 
+          </div>
+        </div>
+    </div> <!--end of .modal-->
+   </div> <!-- end of .col-->
+  </div> <!--end of #KlykAudio_eng-->
+
+
+
+</div> <!--end of container-fluid-->
 
 <nav id="footer" class="navbar fixed-bottom navbar-light">
-  <span class="navbar-text" style="background-color: rgba(0, 0, 0, 0.5);">© 555 ~ 2018</span>
+  <span class="navbar-text" style="background-color: rgba(0, 0, 0, 0.3);">© 555 ~ 2018</span>
 </nav>	
          
 

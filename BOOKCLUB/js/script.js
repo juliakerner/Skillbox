@@ -48,19 +48,46 @@ function topFunction() {
 $(document).ready(function(){
     /* Get iframe src attribute value i.e. YouTube video url
     and store it in a variable */
-    var url = $("#cartoonVideo").attr('src');
+    var url = $(".cartoonVideo").attr('src');
     
     /* Assign empty url value to the iframe src attribute when
     modal hide, which stop the video playing */
     $("#PrinceVideoModal").on('hide.bs.modal', function(){
-        $("#cartoonVideo").attr('src', '');
+        $(".cartoonVideo").attr('src', '');
+    });
+
+    $("#KlykVideoModal").on('hide.bs.modal', function(){
+        $(".cartoonVideo").attr('src', '');
     });
     
+    $("#KlykAudioModal").on('hide.bs.modal', function(){
+        $(".cartoonVideo").attr('src', '');
+    });
+
+    $("#KlykAudioModal_eng").on('hide.bs.modal', function(){
+        $(".cartoonVideo").attr('src', '');
+    });
+
+
     /* Assign the initially stored url back to the iframe src
     attribute when modal is displayed again */
     $("#PrinceVideoModal").on('show.bs.modal', function(){
-        $("#cartoonVideo").attr('src', url);
+        $(".cartoonVideo").attr('src', url);
     });
+
+     $("#KlykVideoModal").on('show.bs.modal', function(){
+        $(".cartoonVideo").attr('src', url);
+    });
+
+      $("#KlykAudioModal").on('show.bs.modal', function(){
+        $(".cartoonVideo").attr('src', url);
+    });
+
+      $("#KlykAudioModal_eng").on('show.bs.modal', function(){
+        $(".cartoonVideo").attr('src', url);
+    });
+
+
 });
 
 

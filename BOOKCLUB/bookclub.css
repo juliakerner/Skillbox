@@ -159,6 +159,17 @@ color: #fff;
     background-size: 100% 100%;
 } 
 
+#klyk-body {
+position: absolute; 
+background: url('./images/klyk_bg.jpg') fixed;
+height: 100%; 
+color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+} 
+
 /* instead of blog_body */
 
 .parallax {
@@ -978,7 +989,10 @@ audio {
   background-color: #84AF2C;
 }
 
-#PrinceVideo {
+#PrinceVideo,
+#KlykVideo,
+#KlykAudio,
+#KlykAudio_eng {
   margin-bottom: 2%;
 }
 
@@ -986,11 +1000,18 @@ audio {
   margin-bottom: ;
 }
 
-#PrinceVideoBtn {
+#PrinceVideoBtn, 
+#KlykVideoBtn, 
+#KlykAudioBtn, 
+#KlykAudioBtn_eng {
   background-color: rgb(242, 242, 242, 0.5);
 }
 
-#PrinceVideoBtn:hover {
+#PrinceVideoBtn:hover,
+#KlykVideoBtn:hover,
+#KlykAudioBtn:hover,
+#KlykAudioBtn_eng:hover
+ {
   background-color: rgb(242, 242, 242);
 }
 
