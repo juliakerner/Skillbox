@@ -521,10 +521,6 @@ border: none;
 border-radius: 0;
 }
 
-/*div.dropdown-menu.show {
-  max-height: 350px;
-  overflow: auto;
-}*/
 
 #navbarNavDropdown a.dropdown-item {
   color: #150d04;
@@ -887,7 +883,7 @@ span.kurolesov-mult {
 
 #speech-bubble span {
   font-style: italic;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #1a1a00;
   font-weight: bolder;
 }
@@ -968,7 +964,7 @@ audio {
 
 
 /*
- * prince page ********************************** Prince page
+ * prince and klyk page ********************************** Prince and Klyk pages
  */
 
 #PrinceCardBtn  {
@@ -992,9 +988,11 @@ audio {
 #PrinceVideo,
 #KlykVideo,
 #KlykAudio,
-#KlykAudio_eng {
+#KlykAudio_eng,
+#KlykReview {
   margin-bottom: 2%;
 }
+
 
 #PrinceQA {
   margin-bottom: ;
@@ -1003,7 +1001,8 @@ audio {
 #PrinceVideoBtn, 
 #KlykVideoBtn, 
 #KlykAudioBtn, 
-#KlykAudioBtn_eng {
+#KlykAudioBtn_eng,
+#KlykReviewBtn {
   background-color: rgb(242, 242, 242, 0.5);
 }
 
@@ -1022,7 +1021,10 @@ audio {
   background-color: #FBFDF2;
 }
 
-
+ #KlykPageModals {
+  margin-top: 20%;
+  margin-bottom: 10%;
+ }
 
 /*
  * skazki page ********************************* Skazki page
@@ -1215,6 +1217,39 @@ display: none;
     }
 }
 
+ @media (min-height: 300px) and (max-height: 700px) {
+
+  nav#navbar {
+    margin-top: 0;
+  }
+  nav#footer {
+    padding: 0;
+  }
+
+  .navbar-brand span {
+    font-size: 80%;
+  }
+
+  span.navbar-text {
+    font-size: 80%;
+  }
+
+
+#speech-bubble span {
+  font-size: 80%;
+}
+
+  #PhotoModals {
+    margin-bottom: 5%;
+  }
+
+  #KlykPageModals {
+  margin-top: 0;
+  margin-bottom: 5%;
+  }
+
+ }
+
  @media (min-width: 300px) and (max-width: 767px) {
 
 #navbar {
@@ -1224,6 +1259,7 @@ margin-top: 0;
 div.dropdown-menu.show {
   max-height: 350px;
   overflow: auto;
+  margin-bottom: 10%;
 }
 
 .cover-container {
@@ -1264,10 +1300,6 @@ font-size: 85%;
   font-size: 85%;
 }
 
-/*clearfix {
-  width: 100%;
-  height: 10rem;
-}*/
 
 div.card.card-inverse {
   width: 100%;
@@ -1403,23 +1435,10 @@ span.kurolesov-mult {
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-  /*.clearfix {
-  width: 100%;
-  height: 10rem;
-}*/
-   
-  /* Start the vertical centering */
-  
-  /* Handle the widths */
- 
   .cover-container {
     width: 90%; /* Must be percentage or pixels for horizontal alignment */
   }
  
-/*.main-content {
-  margin-top: 15rem;
-}*/
-
 .main-content h1 {
     font-size: 5vw;
 }
@@ -1514,6 +1533,7 @@ margin-top: 10%;
  }
 
 }
+ 
 
 
 

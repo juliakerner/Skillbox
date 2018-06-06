@@ -55,60 +55,79 @@
   </div>
 </nav> 
 
-<div class="container-fluid" style="padding-top: 1%; padding-bottom: 1%; margin-top: 25%; margin-bottom: 10%; background-color: rgba(0, 0, 0, 0.3);">  
+<div id="KlykPageModals" class="container-fluid" style="width: 100%; background-color: rgba(0, 0, 0, 0.3);">
 
+<div class="container-fluid" style="padding-top: 2%; padding-bottom: 0.5%;">  
   <div id="KlykVideo" class="row justify-content-md-center" style="">
     <div class="col col-lg-6" style="text-align: center;">
-      <h4>Джек Лондон "Белый клык"</h4>
-        <button id="KlykVideoBtn" type="button" class="btn btn-outline-light btn-block" data-toggle="modal" data-target="#KlykVideoModal">ПОСМОТРИ ФИЛЬМ</button>
-     
+      <h4>Джек Лондон "Белый клык"</h4></br>
+        <button id="KlykVideoBtn" type="button" class="btn btn-outline-light btn-block" data-toggle="modal" data-target="#KlykVideoModal">ПОСМОТРИ ФИЛЬМ</button>  
       <div id="KlykVideoModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-         <div id="" class="embed-responsive embed-responsive-16by9">
+         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="cartoonVideo" width="560" height="315" src="https://www.youtube.com/embed/oENiIrmZiaA?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
          </div>
         </div>
-      </div>
+       </div>
       </div> <!--end of .modal-->
     </div> <!-- end of .col-->
   </div> <!--end of #KlykVideo-->
+</div> <!--end of container-fluid-->
 
+
+<div class="container-fluid" style="padding-top: 0.5%; padding-bottom: 0.5%;">  
   <div id="KlykAudio" class="row justify-content-md-center" style="">
     <div class="col col-lg-6" style="text-align: center;">
      <button id="KlykAudioBtn" type="button" class="btn btn-outline-light btn-block" data-toggle="modal" data-target="#KlykAudioModal">ПОСЛУШАЙ КНИГУ по-русски</button>
-
     <div id="KlykAudioModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"  aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
            <div id="" class="embed-responsive embed-responsive-16by9">         
-            <iframe class="cartoonVideo" width="560" height="315" src="https://www.youtube.com/embed/cbwYLsgDye4?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+            <iframe class="cartoonAudio" width="560" height="315" src="https://www.youtube.com/embed/cbwYLsgDye4?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
            </div> 
           </div>
         </div>
     </div> <!--end of .modal-->
    </div> <!-- end of .col-->
   </div> <!--end of #KlykAudio-->
-  
+</div>  <!--end of container-fluid-->
+
+<div class="container-fluid" style="padding-top: 0.5%; padding-bottom: 0.5%;">    
 <div id="KlykAudio_eng" class="row justify-content-md-center" style="">
     <div class="col col-lg-6" style="text-align: center;">
      <button id="KlykAudioBtn_eng" type="button" class="btn btn-outline-light btn-block" data-toggle="modal" data-target="#KlykAudioModal_eng">ПОСЛУШАЙ КНИГУ по-английски</button>
-
     <div id="KlykAudioModal_eng" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"  aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
            <div id="" class="embed-responsive embed-responsive-16by9">         
-            <iframe class="cartoonVideo" width="560" height="315" src="https://www.youtube.com/embed/IlD8L9iWQs8?rel=0"  frameborder="0" allow="encrypted-media" allowfullscreen=></iframe>
-           </div> 
+            <iframe class="cartoonAudio_eng" width="560" height="315" src="https://www.youtube.com/embed/IlD8L9iWQs8?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+          </div>
+         </div>
+        </div> 
+    </div> <!--end of .modal--> 
+  </div> <!-- end of .col--> 
+</div> <!--end of #KlykAudio_eng--> 
+</div> <!--end of container-fluid-->
+
+<div class="container-fluid" style="padding-top: 0.5%; padding-bottom: 2%;">
+  <div id="KlykReview" class="row justify-content-md-center">
+   <div class="col col-lg-6" style="text-align: center;">
+     <button id="KlykReviewBtn" type="button" class="btn btn-outline-light btn-block" data-toggle="modal" data-target="#KlykReviewModal">ДЛЯ ЛЕНИВЫХ</button>
+    <div id="KlykReviewModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" area-labeledby="" area-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="cartoonReview" width="560" height="315" src="https://www.youtube.com/embed/O1nNjQsQ4Bs?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
+      </div>
     </div> <!--end of .modal-->
-   </div> <!-- end of .col-->
-  </div> <!--end of #KlykAudio_eng-->
+   </div>  <!-- end of .col-->
+  </div> <!--end of #KlykReview--> 
+</div><!--end of container-fluid-->
 
-
-
-</div> <!--end of container-fluid-->
+</div> <!--end of #KlykPageModals-->
 
 <nav id="footer" class="navbar fixed-bottom navbar-light">
   <span class="navbar-text" style="background-color: rgba(0, 0, 0, 0.3);">© 555 ~ 2018</span>
