@@ -1009,8 +1009,8 @@ audio {
 #PrinceVideoBtn:hover,
 #KlykVideoBtn:hover,
 #KlykAudioBtn:hover,
-#KlykAudioBtn_eng:hover
- {
+#KlykAudioBtn_eng:hover,
+#KlykReviewBtn:hover {
   background-color: rgb(242, 242, 242);
 }
 
