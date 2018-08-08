@@ -989,7 +989,8 @@ audio {
 #KlykVideo,
 #KlykAudio,
 #KlykAudio_eng,
-#KlykReview {
+#KlykReview,
+#GoldRush {
   margin-bottom: 2%;
 }
 
@@ -1002,7 +1003,8 @@ audio {
 #KlykVideoBtn, 
 #KlykAudioBtn, 
 #KlykAudioBtn_eng,
-#KlykReviewBtn {
+#KlykReviewBtn,
+#GoldRushBtn {
   background-color: rgb(242, 242, 242, 0.5);
 }
 
@@ -1010,7 +1012,8 @@ audio {
 #KlykVideoBtn:hover,
 #KlykAudioBtn:hover,
 #KlykAudioBtn_eng:hover,
-#KlykReviewBtn:hover {
+#KlykReviewBtn:hover,
+#GoldRushBtn:hover {
   background-color: rgb(242, 242, 242);
 }
 
@@ -1024,6 +1027,11 @@ audio {
  #KlykPageModals {
   margin-top: 20%;
   margin-bottom: 10%;
+ }
+
+ #KlykPresentationModals {
+  margin-top: 15%;
+  margin-bottom: 10%;	
  }
 
 /*
@@ -1045,18 +1053,22 @@ audio {
   box-shadow: 0px 0px 50px #EDBB2F;
 }
 
-#AlexModal h3 {
+#AlexModal h3,
+#GoldRushModal h3 {
   color: #26416b;
 }
 
-#AlexModal h4 {
+#AlexModal h4,
+#GoldRushModal h4 {
   color: #284471;
 }
 
-#AlexModal p {
+#AlexModal p,
+#GoldRushModal p {
   font-style: italic;
   color: #c14d36;
 }
+
 #DanyaModal h4 {
   color: #1f7a7a;
 }
