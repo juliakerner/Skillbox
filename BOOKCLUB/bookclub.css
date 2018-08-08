@@ -1033,6 +1033,11 @@ audio {
   margin-top: 15%;
   margin-bottom: 10%;	
  }
+ #GoldRushModal p {
+  font-style: italic;
+  color: #c14d36;
+  text-align: start;
+ }
 
 /*
  * skazki page ********************************* Skazki page
@@ -1063,8 +1068,7 @@ audio {
   color: #284471;
 }
 
-#AlexModal p,
-#GoldRushModal p {
+#AlexModal p {
   font-style: italic;
   color: #c14d36;
 }
