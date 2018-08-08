@@ -1061,6 +1061,7 @@ audio {
 #AlexModal h3,
 #GoldRushModal h3 {
   color: #26416b;
+  text-align: start;
 }
 
 #AlexModal h4,
