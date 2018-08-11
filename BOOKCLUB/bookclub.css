@@ -1004,7 +1004,8 @@ audio {
 #KlykAudioBtn, 
 #KlykAudioBtn_eng,
 #KlykReviewBtn,
-#GoldRushBtn {
+#GoldRushBtn,
+#IraModalBtn {
   background-color: rgb(242, 242, 242, 0.5);
 }
 
@@ -1013,7 +1014,8 @@ audio {
 #KlykAudioBtn:hover,
 #KlykAudioBtn_eng:hover,
 #KlykReviewBtn:hover,
-#GoldRushBtn:hover {
+#GoldRushBtn:hover,
+#IraModalBtn:hover {
   background-color: rgb(242, 242, 242);
 }
 
@@ -1029,10 +1031,6 @@ audio {
   margin-bottom: 10%;
  }
 
- #KlykPresentationModals {
-  margin-top: 15%;
-  margin-bottom: 10%;	
- }
  #GoldRushModal p {
   font-style: italic;
   color: #c14d36;
