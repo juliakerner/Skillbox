@@ -1005,7 +1005,8 @@ audio {
 #KlykAudioBtn_eng,
 #KlykReviewBtn,
 #GoldRushBtn,
-#IraModalBtn {
+#IraModalBtn,
+#KatyaModalBtn {
   background-color: rgb(242, 242, 242, 0.5);
 }
 
@@ -1015,7 +1016,8 @@ audio {
 #KlykAudioBtn_eng:hover,
 #KlykReviewBtn:hover,
 #GoldRushBtn:hover,
-#IraModalBtn:hover {
+#IraModalBtn:hover,
+#KatyaModalBtn:hover {
   background-color: rgb(242, 242, 242);
 }
 
