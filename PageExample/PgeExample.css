@@ -1,0 +1,124 @@
+body {
+	height: 100%;
+	font-family: 'Amatic SC'; font-size: 22px;
+	background: url('./P_E_images/BG_2.jpeg') fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.fakeimg {
+      height: 200px;
+      background: #aaa;
+  }
+
+.fakeimg img {
+	height: 100%;
+	width: 100%;
+}
+ a {
+ 	color: #795359;
+ }
+
+ a:hover {
+ 	color: #4c3437;
+ }
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	background-color: #397542;
+}
+
+ .nav-link.active: hover {
+	opacity: 0.7;
+} 
+
+
+#hero {
+	background-image: url('./P_E_images/BG_1.jpeg');
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+	margin-bottom: 0;
+}
+
+#main {
+	margin-top: 30px;
+}
+
+
+#footer {
+	background-image: url('./P_E_images/BG_3.jpeg');
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+	margin-bottom: 0;
+	background-color: #ece7e5;
+	margin-bottom: 0;
+	padding: 20px; 
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.sticky + .container {
+  padding-top: 102px;
+}
+
+/*****************FOOTER**************/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 65px;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
