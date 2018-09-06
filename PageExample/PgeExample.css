@@ -1,11 +1,24 @@
 body {
 	height: 100%;
-	font-family: 'Amatic SC'; font-size: 22px;
+	font-family: 'Amatic SC'; font-size: 22px;	
+}
+
+#home-body {
 	background: url('./P_E_images/BG_2.jpeg') fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+#services-body {
+	background: url('./P_E_images/Serv_BG.jpeg') fixed center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	height: 100%;
+	width: 100%;
 }
 
 .fakeimg {
@@ -17,6 +30,7 @@ body {
 	height: 100%;
 	width: 100%;
 }
+
  a {
  	color: #795359;
  }
@@ -28,11 +42,6 @@ body {
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
 	background-color: #397542;
 }
-
- .nav-link.active: hover {
-	opacity: 0.7;
-} 
-
 
 #hero {
 	background-image: url('./P_E_images/BG_1.jpeg');
@@ -47,8 +56,14 @@ body {
 	margin-top: 30px;
 }
 
+#services-table {
+	max-width: 1200px;
+	margin-top: 50%;
+	position: relative;
+}
 
-#footer {
+
+#footer, #footer-s {
 	background-image: url('./P_E_images/BG_3.jpeg');
 	background-position: center;
     background-repeat: no-repeat;
@@ -56,7 +71,6 @@ body {
     position: relative; 
 	margin-bottom: 0;
 	background-color: #ece7e5;
-	margin-bottom: 0;
 	padding: 20px; 
 }
 
@@ -70,6 +84,18 @@ body {
 
 .sticky + .container {
   padding-top: 102px;
+}
+
+@media screen and (max-width: 992px) {
+
+  div#footer-s {
+  	display: none;
+  }
+
+  #services-table {
+  	margin-top: 50%;
+  }  
+	
 }
 
 /*****************FOOTER**************/
