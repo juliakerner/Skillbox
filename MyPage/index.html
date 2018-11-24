@@ -54,7 +54,7 @@
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
           <h1 class="mx-auto my-0 text-uppercase">Julia Kerner</h1>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5">Photographer, developer, traveler, dreamer.</h2>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">Photographer, web-developer, traveler, dreamer.</h2>
           <a href="#about" class="btn btn-primary js-scroll-trigger">Welcome</a>
         </div>
       </div>
@@ -81,7 +81,7 @@
         <!-- Featured Project Row -->
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+            <img class="img-fluid hover-shadow mb-3 mb-lg-0" src="img/bg-masthead.jpg" onclick="openModal();currentSlide(1)" alt="">
           </div>
           <div class="col-xl-4 col-lg-5">
             <div class="featured-text text-center text-lg-left">
@@ -89,6 +89,58 @@
               <p class="text-black-50 mb-0">Photography is my life-long passion. I picked it up as a kid, watching my father developing black and white films, roll after roll, moving prints from one solution to enother under the red light.</p>
               <p class="text-black-50 mb-0">I was holding my breath, watching - the magic happening right in front of my eyes - familiar faces and places appearing out of nowhere on a little white square of paper.</p>
               <p class="text-black-50 mb-0">Since then I am looking at this world through the eye of my camera, following the steps of my father.</p>
+            </div>
+          </div>
+        </div>
+<!--Featured Project Lightbox Modal -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="img/bg-masthead.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="img/img2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="img/img3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="img/img4.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+              <img class="demo" src="img/bg-masthead.jpg" onclick="currentSlide(1)" alt="Nature">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="img/img2.jpg" onclick="currentSlide(2)" alt="Snow">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="img/img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="img/img4.jpg" onclick="currentSlide(4)" alt="Lights">
             </div>
           </div>
         </div>
@@ -224,7 +276,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
-
+    <script src="js/mypage.js"></script>
   </body>
 
 </html>
