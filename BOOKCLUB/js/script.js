@@ -130,3 +130,23 @@ $(document).ready(function(){
 
 });
 
+$(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $(".EseninVideo").attr('src');
+   
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#EseninWorkModal").on('hide.bs.modal', function(){
+        $(".EseninVideo").attr('src', '');
+    });
+
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */    
+    $("#EseninWorkModal").on('show.bs.modal', function(){
+        $(".EseninVideo").attr('src', url);
+    });
+
+});
+
+

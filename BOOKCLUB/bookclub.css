@@ -170,6 +170,16 @@ color: #fff;
     background-size: 100% 100%;
 } 
 
+#esenin-body {
+position: absolute; 
+background: url('./images/esenin_bg.jpg') fixed;
+height: 100%; 
+color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+} 
 /* instead of blog_body */
 
 .parallax {
@@ -1038,6 +1048,44 @@ audio {
   color: #c14d36;
   text-align: start;
  }
+
+
+/*
+ * Esenin page ********************************* Esenin page
+ */
+
+ #esenin-head {
+  text-align: left;
+  padding: 1rem;
+ }
+
+ .EseninNav {
+  width: 25%;
+  position: fixed;
+  z-index: 1;
+  top: 25%;
+  left: 1rem;
+  background: none;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.EseninNav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+.EseninNav a:hover {
+  color: #408000;
+}
+
+@media screen and (max-height: 450px) {
+  .EseninNav {padding-top: 15px;}
+  .EseninNav a {font-size: 18px;}
+} 
 
 /*
  * skazki page ********************************* Skazki page
