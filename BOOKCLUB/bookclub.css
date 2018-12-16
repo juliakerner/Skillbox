@@ -1063,7 +1063,7 @@ audio {
   width: 25%;
   position: fixed;
   z-index: 1;
-  top: 25%;
+  top: 30%;
   left: 1rem;
   background: none;
   overflow-x: hidden;
@@ -1073,7 +1073,7 @@ audio {
 .EseninNav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 3vw;
   color: white;
   display: block;
 }
@@ -1082,10 +1082,13 @@ audio {
   color: #408000;
 }
 
-@media screen and (max-height: 450px) {
+/*@media screen and (max-height: 450px) {
   .EseninNav {padding-top: 15px;}
-  .EseninNav a {font-size: 18px;}
-} 
+  .EseninNav a {font-size: 80%;}
+  #esenin-head { font-size: 80%;}
+} */
+
+
 
 /*
  * skazki page ********************************* Skazki page
