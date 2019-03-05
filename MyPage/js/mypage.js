@@ -38,21 +38,28 @@
 //   captionText.innerHTML = dots[slideIndex-1].alt;
 // }
 
-/* Open overlay */
-function openOverlay() {
-  document.getElementById("NatureOverlay").style.height = "100%";
-}
+// /* Open overlay */
+// function openOverlay() {
+//   document.getElementById("NatureOverlay").style.height = "100%";
+// }
 
-/* Close overlay */
-function closeOverlay() {
-  document.getElementById("NatureOverlay").style.height = "0%";
-}
+// /* Close overlay */
+// function closeOverlay() {
+//   document.getElementById("NatureOverlay").style.height = "0%";
+// }
 
+ function onN() {
+   document.getElementById("NatureOverlay").style.display = "block";
+ }
 
-function on() {
-  document.getElementById("NatureOverlay").style.display = "block";
-}
+ function offN() {
+   document.getElementById("NatureOverlay").style.display = "none";
+ }
 
-function off() {
-  document.getElementById("NatureOverlay").style.display = "none";
-}
+ function onP() {
+   document.getElementById("PeopleOverlay").style.display = "block";
+ }
+
+ function offP() {
+   document.getElementById("PeopleOverlay").style.display = "none";
+ }
