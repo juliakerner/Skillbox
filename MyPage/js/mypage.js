@@ -63,3 +63,11 @@
  function offP() {
    document.getElementById("PeopleOverlay").style.display = "none";
  }
+
+ function onA() {
+   document.getElementById("AnimalsOverlay").style.display = "block";
+ }
+
+ function offA() {
+   document.getElementById("AnimalsOverlay").style.display = "none";
+ }
